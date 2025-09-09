@@ -2,14 +2,7 @@ import os
 import subprocess
 import sys
 
-if __name__ == '__main__':
-    if len(sys.argv) < 3:
-        print("Usage: python src/main_evaluate.py <experiment_folder_path> <process>")
-    
-    print('Begun the script...')
-    exp_folder_path = sys.argv[1]
-    process = sys.argv[2]
-    
+def main_evaluate(exp_folder_path, process):
     try:
         for scop_folder in os.listdir(exp_folder_path):
             if os.path.isdir(os.path.join(exp_folder_path, scop_folder)):
@@ -85,3 +78,14 @@ if __name__ == '__main__':
     except Exception as e:
         print(f"An error occurred during the process: {e}")
         sys.exit(1)
+
+
+if __name__ == '__main__':
+    if len(sys.argv) < 3:
+        print("Usage: python src/main_evaluate.py <experiment_folder_path> <process>")
+    
+    print('Begun the script...')
+    exp_folder_path = sys.argv[1]
+    process = sys.argv[2]
+    
+    main_evaluate(exp_folder_path, process)
