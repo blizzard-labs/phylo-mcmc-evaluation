@@ -56,9 +56,6 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
     parser.add_argument("--input", type=str,
                         help="Input file or folder path",
                         required=False)
-    parser.add_argument("--output", type=str,
-                        help="Output file or folder path",
-                        required=False)
     parser.add_argument("--label", type=str,
                         help="Label for the current run, used in naming output files",
                         required=False, default=''.join(random.choice(characters) for _ in range(7)))

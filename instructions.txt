@@ -1,0 +1,12 @@
+* Install and ready dependencies
+* add all pfam files
+
+unzip tools.zip
+
+python src/main.py --mode modelgen --input data/model_gen/example/alignments --label example --actions cleanup-pfam extract-subst-params extract-top-params cleanup-params generate-model sample-model
+^ note not enough samples for generating model
+
+* pick sequences for parameters
+
+python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions generate-tree-topologies simulate-evolution cleanup-folders
+python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions run_mcmc --time_cap=0.083 

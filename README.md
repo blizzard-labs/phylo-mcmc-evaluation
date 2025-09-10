@@ -13,6 +13,11 @@ If you want to read more about the documentation for ReconBench, a PDF is attach
 You can also reach out to Krishna Bhatt [krishbhatt2019@gmail.com] or the Holmes Lab [] for any questions.
 
 ## Download
+You can download Reconbench with 
+```
+git clone https://github.com/blizzard-labs/phylo-mcmc-evaluation.git
+```
+After installing all requirements, you can run the script with `python src/main.py --[OPTIONS]`.
 
 ## Requirements
 ReconBench requires Python 3.9+. All python dependencies can be installed through pip by
@@ -40,4 +45,11 @@ After installing the BEAST software, open BEAST's "AppLauncher" app and install 
 
 ## Running the Evaluation
 
+ReconBench has three major functionalities, that can be accessed by three modes:
+* `modelgen`: Used to generate an bio-informed model for information. Given alignment and tree data for a phylogenetic group, generates a multivariate distribution of various evolutionary parameters (sequence, topology, etc.) This can be sampled to generate highly realistic synthetic datasets.
+* `simulate`: Used to generate sequences and run MCMC. Given datasets of parameters, generates sequences (with INDELible) and trees (through simulated annealing) to fit the data. This data is organized and fed to the MCMC software, recording trace information and wall-clock time.
+* `evaluate`: Used to generate final summary statistics for each software. Given output files from Historian and BAli-Phy, parses traces and computes MCMC statistics for topology and sequence. Additionally computes the posterior decoding alignment and CCD-1 MAP tree to compare RF, SP, and more scores to the ground truth. Organizes all data and analyzes correlations.
 
+```
+python src/main.py --mode <mode> --actions <action1 action2 ...> --input <filepath> --label <output_header>
+```
