@@ -39,13 +39,14 @@ class evolSimulator:
             
         if not os.path.isdir(self.output_folder):
             os.mkdir(self.output_folder)
-    
-    def process_seq(self, seq_folder):
+
+    def process_seq(self, seq_folder, max_iterations, timeout_hours):
+        print(f'Processing sequence folder: {seq_folder} for max_iterations={max_iterations}, timeout_hours={timeout_hours}')
         seq_results = {}
         seq_results['path'] = seq_folder
-        seq_results['elapsed_historian'], seq_results['elapsed_baliphy'] = self.runSoftwareSequence(seq_folder)
+        seq_results['elapsed_historian'], seq_results['elapsed_baliphy'] = self.runSoftwareSequence(seq_folder, iter_cap_per_seq=max_iterations, timeout_hours=timeout_hours)
         return seq_results
-
+        
     def generate_treetop_with_params(self, max_iterations=1000):
         for idx, row in self.params.iterrows():
             seq_folder = os.path.join(self.output_folder, 'seq_' + str(idx + 1))
@@ -363,7 +364,7 @@ class evolSimulator:
         
         return key_params, os.path.join(sequence_folder, 'historian', 'lg.json')
         
-    def runSoftwareSequence(self, sequence_folder, iter_cap_per_seq=100000, timeout_hours=2, conda_env="phylo"):
+    def runSoftwareSequence(self, sequence_folder, iter_cap_per_seq=100000, timeout_hours=7, conda_env="phylo"):
         #Fixed number of iterations
         #Running Measure: total wall-clock, avg. time/iteration, convergence/iteration
         #Final Measure: SP, TC, RF, RFL, etc.
@@ -468,27 +469,26 @@ class evolSimulator:
         return elapsed_h, elapsed_b
 
 
-    def runBenchmark(self, sequence_folders=[]):
+    def runBenchmark(self, sequence_folders=[], max_iterations=100000, timeout_hours=7):
         if len(sequence_folders) == 0:
             for folder in os.listdir('data/simulation'):
-                if folder.endswith('e2'): #! Restricting to Experiment 2
-                    for seq_folder in os.listdir(os.path.join('data/simulation', folder)):
-                        if os.path.isdir(os.path.join('data/simulation', folder, seq_folder)):
-                            sequence_folders.append(os.path.join('data/simulation', folder, seq_folder))
+                for seq_folder in os.listdir(os.path.join('data/simulation', folder)):
+                    if os.path.isdir(os.path.join('data/simulation', folder, seq_folder)):
+                        sequence_folders.append(os.path.join('data/simulation', folder, seq_folder))
 
         results = []
 
         def process_seq(seq_folder):
             seq_results = {}
             seq_results['path'] = seq_folder
-            seq_results['elapsed_historian'], seq_results['elapsed_baliphy'] = self.runSoftwareSequence(seq_folder)
+            seq_results['elapsed_historian'], seq_results['elapsed_baliphy'] = self.runSoftwareSequence(seq_folder, iter_cap_per_seq=max_iterations, timeout_hours=timeout_hours)
             return seq_results
 
         
         # Process two sequences at a time, with progress monitoring
         print(f"Starting benchmark for {len(sequence_folders)} sequences...")
         with concurrent.futures.ProcessPoolExecutor(max_workers=2) as executor:
-            future_to_seq = {executor.submit(self.process_seq, seq_folder): seq_folder for seq_folder in sequence_folders}
+            future_to_seq = {executor.submit(self.process_seq, seq_folder, max_iterations, timeout_hours): seq_folder for seq_folder in sequence_folders}
             completed = 0
             for future in concurrent.futures.as_completed(future_to_seq):
                 seq_folder = future_to_seq[future]

@@ -50,6 +50,54 @@ ReconBench has three major functionalities, that can be accessed by three modes:
 * `simulate`: Used to generate sequences and run MCMC. Given datasets of parameters, generates sequences (with INDELible) and trees (through simulated annealing) to fit the data. This data is organized and fed to the MCMC software, recording trace information and wall-clock time.
 * `evaluate`: Used to generate final summary statistics for each software. Given output files from Historian and BAli-Phy, parses traces and computes MCMC statistics for topology and sequence. Additionally computes the posterior decoding alignment and CCD-1 MAP tree to compare RF, SP, and more scores to the ground truth. Organizes all data and analyzes correlations.
 
+Here is the basic structure of a call to ReconBench:
 ```
-python src/main.py --mode <mode> --actions <action1 action2 ...> --input <filepath> --label <output_header>
+python src/main.py --mode <mode> --actions <action1 action2 ...> --input <filepath> --label <output_header> [--OPTIONS]
 ```
+
+## Step-by-step Guide
+
+This short tutorial will give you an example of how to use ReconBench using the example dataset found in `data/model_gen/example`. This was a set of 10 alignments collected from Pfam and their respective trees (generated with Pfam's FastTree program) organized into two folders: `alignments/` and `trees/`. Any input to ReconBench must be provided in the same organization. 
+
+Specifically for Pfam data, we provide a cleaning function to convert to standard FASTA and Newick format. You can call this through
+```
+python src/main.py --mode modelgen --input data/model_gen/example/alignments --label example --actions cleanup-pfam
+```
+Note that for the `modelgen` mode, the alignment folder path is specified under the `--input` flag, the dataset's name is given by the `--label` flag, and `--actions` specifies the actions to be taken.
+
+We can then continue to extract parameters to generate and sample from a model, all in one command.
+
+```
+python src/main.py --mode modelgen --input data/model_gen/example/alignments --label example --actions extract-subst-params extract-top-params cleanup-params generate-model sample-model
+```
+
+Note that multiple actions can be placed together, seperated by spaces. Additionally note that the model cannot actually be generated due to the low number of alignments/trees in our example dataset. For now, I have selected parameters in the `data/model_gen/example/experiment_parameters.csv`. Ensure that after you have sampled your parameters, the match the same format as this file for the next step of simulation. If you have a pickled models object that you want to load in, ensure it is named as `data/model_gen/example/bd_models.pkl`.
+
+**WARNING: Extracting substitution or topology parameters may fail for certain trees/alignments.** This is a known issue- for now, remove all failed sets from the original dataset and try again.
+
+Now, we can move onto simulating datasets. Similarly, you can generate trees, simulate evolution, and clean up your data for all of your experimental parameter sets in one command:
+
+```
+python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions generate-tree-topologies simulate-evolution cleanup-folders
+```
+
+Note here that the `--input` flag for the simulate mode specifies the path to the CSV file containing all of the parameter datasets. We can now run Historian/BAli-Phy on the ground truths, specifying the maximum run time and maximum number of iterations (per sequence) with the `--timeout` and `--max_iter` flags respectively. The programs will die upon reaching whichever criteria occurs first.
+
+```
+python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions run-mcmc --timeout 0.083  --max_iter 30
+```
+
+After running the software, we can parse the output trace files with
+
+```
+python src/main.py --mode evaluate --input data/simulation --actions trace_parser
+```
+
+Note that no `--label` flag is required here and the `--input` flag specifies the location of the simulation folder in this mode. After parsing the traces, open the TreeStat2 GUI software through the BEAST AppLauncher. Here, you can select the following parameters: `CCD1 RF distance`, `CCD1 information content (log(p))`, `Colless tree-imbalance`, `Tree Length`, `Tree Topology`. Then, for each sequence, upload the Historian and BAli-Phy's tree trace named `parsed_trace.log.trees` and `cleaned.trees`, located in their respective folders for each sequence in the simulation folder. Save the TreeStat2 output to the same folder (`historian`/`baliphy-1`), titled `treetrace.log`. This should produce a CCD-1 MAP tree as well.
+
+After running TreeStat on all of the sequences, run the following to complete the evaluation:
+```
+python src/main.py --mode evaluate --input data/simulation --actions clean_treestat convergence comparison summarize
+```
+
+You can find an example with 4 SCOP datasets here: 

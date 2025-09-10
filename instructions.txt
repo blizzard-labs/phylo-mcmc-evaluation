@@ -9,4 +9,4 @@ python src/main.py --mode modelgen --input data/model_gen/example/alignments --l
 * pick sequences for parameters
 
 python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions generate-tree-topologies simulate-evolution cleanup-folders
-python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions run_mcmc --time_cap=0.083 
+python src/main.py --mode simulate --input data/model_gen/example/experiment_parameters.csv --label example --actions run-mcmc --timeout 0.083 

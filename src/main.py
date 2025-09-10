@@ -22,18 +22,19 @@ from main_evaluate import main_evaluate
 
 if __name__ == "__main__":
     header = """
-=====================================================================================================                                                                                                     
-_____ _____ _____ _____    _____                     _               _              _____         _ 
-|     |     |     |     |  | __  |___ ___ ___ ___ ___| |_ ___ _ _ ___| |_ ___ ___   |   __|_ _ ___| |
-| | | |   --| | | |   --|  |    -| -_|  _| . |   |_ -|  _|  _| | |  _|  _| -_|  _|  |   __| | | .'| |
-|_|_|_|_____|_|_|_|_____|  |__|__|___|___|___|_|_|___|_| |_| |___|___|_| |___|_|    |_____|\_/|__,|_|
-
+================================================================================================================                                                  
+ ______     ______     ______     ______     __   __     ______     ______     __   __     ______     __  __    
+/\  == \   /\  ___\   /\  ___\   /\  __ \   /\ "-.\ \   /\  == \   /\  ___\   /\ "-.\ \   /\  ___\   /\ \_\ \   
+\ \  __<   \ \  __\   \ \ \____  \ \ \/\ \  \ \ \-.  \  \ \  __<   \ \  __\   \ \ \-.  \  \ \ \____  \ \  __ \  
+ \ \_\ \_\  \ \_____\  \ \_____\  \ \_____\  \ \_\\"\_\  \ \_____\  \ \_____\  \ \_\\"\_\  \ \_____\  \ \_\ \_\ 
+  \/_/ /_/   \/_____/   \/_____/   \/_____/   \/_/ \/_/   \/_____/   \/_____/   \/_/ \/_/   \/_____/   \/_/\/_/ 
+                                                                                                                                                                    
 Phylogenetic MCMC Evaluation Tool v0.1.0, released on 09.08.2025 by the Holmes Lab
 Written by Krishna Bhatt (krishbhatt2019@gmail.com)
 Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
 
-=====================================================================================================                                                                                                    
-    """
+================================================================================================================
+"""
     print(header)
     parser = argparse.ArgumentParser(description="Phylogenetic MCMC Evaluation Tool")
     characters = string.ascii_letters + string.digits
@@ -59,9 +60,12 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
     parser.add_argument("--label", type=str,
                         help="Label for the current run, used in naming output files",
                         required=False, default=''.join(random.choice(characters) for _ in range(7)))
-    parser.add_argument("--help", action="help", 
-                        help="Show this help message and exit")
-    
+    parser.add_argument("--max_iter", type=int,
+                        help="Maximum iterations for MCMC runs per sequence(only for simulate mode)",
+                        required=False, default=100000)
+    parser.add_argument("--timeout", type=float,
+                        help="Timeout in hours for MCMC runs (only for simulate mode)",
+                        required=False, default=7)
     
     args = parser.parse_args()
     print(f"Selected mode: <{args.mode}>")
@@ -86,13 +90,15 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
         #! Modeltest-NG can be run on linux, however to maintainc consistency, this program is based on MacOS
         
         try:
-            mc = modelConstructor('osx', args.label, args.input, 
-                                args.input.replace('alignments', 'protein_evolution_parameters.csv'), log=False)
+            mc = modelConstructor('osx', args.label, args.input, log=False)
         except Exception as e:
             print(f"Error initializing modelConstructor: {e}\nDouble-check the input paths/format")
             sys.exit(1)
         
         for action in args.actions:
+            if action not in ['cleanup-pfam', 'extract-subst-params']:
+                mc = modelConstructor('osx', args.label, args.input, params_file=args.input.replace('alignments', 'protein_evolution_parameters.csv'), log=False)
+                
             print(f"Running action: <{action}>...")
             if action == 'cleanup-pfam':
                 try:
@@ -120,7 +126,7 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
             
             elif action == 'cleanup-params':
                 try:
-                    mc.cleanup_params(mc.params_file)
+                    mc.cleanup_params(mc.params_wr_file)
                     print(f'Cleaned parameters file- ELAPSED TIME: {time.time() - start}============================')
                 except Exception as e:
                     print(f"Error during cleanup_params: {e}\nDouble-check the input paths/format")
@@ -150,8 +156,8 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
     #*===========================================================================================
     
     elif args.mode == "simulate":
-        supported_actions = ['generate_tree_topologies', 'simulate_evolution', 'cleanup_folders',
-                             'run_mcmc']
+        supported_actions = ['generate-tree-topologies', 'simulate-evolution', 'cleanup-folders',
+                             'run-mcmc']
         
         actions = [action.lower() in supported_actions for action in args.actions]
         
@@ -172,36 +178,36 @@ Latest version: https://github.com/blizzard-labs/phylo-mcmc-evaluation
         
         for action in args.actions:
             print(f"Running action: <{action}>...")
-            if action == 'generate_tree_topologies':
+            if action == 'generate-tree-topologies':
                 try:
                     es.generate_treetop_with_params(max_iterations=1000)
                     print(f'Generated tree topologies- ELAPSED TIME: {time.time() - start}============================')
                 except Exception as e:
-                    print(f"Error during generate_tree_topologies: {e}\nDouble-check the input paths/format")
+                    print(f"Error during generate-tree-topologies: {e}\nDouble-check the input paths/format")
                     sys.exit(1)
             
-            elif action == 'simulate_evolution':
+            elif action == 'simulate-evolution':
                 try:
                     es.runIndelible()
                     print(f'Simulated evolution- ELAPSED TIME: {time.time() - start}============================')
                 except Exception as e:
-                    print(f"Error during simulate_evolution: {e}\nDouble-check the input paths/format")
+                    print(f"Error during simulate-evolution: {e}\nDouble-check the input paths/format")
                     sys.exit(1)
             
-            elif action == 'cleanup_folders':
+            elif action == 'cleanup-folders':
                 try:
                     es.cleanupSimFolders()
                     print(f'Cleaned up folders- ELAPSED TIME: {time.time() - start}============================')
                 except Exception as e:
-                    print(f"Error during cleanup_folders: {e}\nDouble-check the input paths/format")
+                    print(f"Error during cleanup-folders: {e}\nDouble-check the input paths/format")
                     sys.exit(1)
             
-            elif action == 'run_mcmc':
+            elif action == 'run-mcmc':
                 try:
-                    es.runBenchmark()
+                    es.runBenchmark(timeout_hours=args.timeout, max_iterations=args.max_iter)
                     print(f'Ran MCMC analyses- ELAPSED TIME: {time.time() - start}============================')
                 except Exception as e:
-                    print(f"Error during run_mcmc: {e}\nDouble-check the input paths/format")
+                    print(f"Error during run-mcmc: {e}\nDouble-check the input paths/format")
                     sys.exit(1)
             
             print(f"Completed action: <{action}>.")
