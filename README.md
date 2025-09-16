@@ -10,7 +10,7 @@ The purpose of this work was to design and implement a comprehensive evaluation 
 
 ## Documentation
 If you want to read more about the documentation for ReconBench, a PDF is attached to [`the repository`](https://github.com/blizzard-labs/phylo-mcmc-evaluation/blob/main/docs/2025_report.pdf), or viewable in [`Google Drive`](https://docs.google.com/document/d/1fC3UFOoWkuVDuJioU_jt4Lg4zIOlZc2OwekApCNZfwo/preview).
-You can also reach out to Krishna Bhatt [krishbhatt2019@gmail.com] or the Holmes Lab [https:/holmeslab.org] for any questions.
+You can also reach out to Krishna Bhatt [krishbhatt2019@gmail.com] or the Holmes Lab [https://holmeslab.org] for any questions.
 * **2025 Summer Evaluation Results**: Comparison of Historian and BAli-Phy conducted during the summer of 2025. All details on this initial evaluation can be found in the attached PDF above. [[`Results`](https://github.com/blizzard-labs/phylo-mcmc-evaluation/tree/2025-summer-evaluation)]
 
 ## Download
