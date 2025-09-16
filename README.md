@@ -1,7 +1,7 @@
 # 2025 Historian & BAli-Phy Evaluation (ReconBench)
+This branch contains the results of the 2025 Summer Historian/BAli-Phy. You can find the original ReconBench software [`here`](https://github.com/blizzard-labs/phylo-mcmc-evaluation/tree/2025-summer-evaluation).
 
 ## Summary
-This branch contains the results of the 2025 Summer Historian/BAli-Phy. You can find the original ReconBench software [`here`](https://github.com/blizzard-labs/phylo-mcmc-evaluation/tree/2025-summer-evaluation).
 
 ### Experiment 1: Representative Sets (Equal Iterations)
 For the first experiment, I used four representative parameter sets, one for each respective SCOP type, with indel rates and extension rates equal to those derived in Annabel’s modelfitting of the GGI model. The purpose of this experiment was to analyze Historian and BAli-Phy’s performance on realistic and representative datasets, specifically testing long-run convergence, accuracy, and efficiency over a set number of iterations, independent of any extreme parameters.
