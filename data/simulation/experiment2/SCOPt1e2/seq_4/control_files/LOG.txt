@@ -1,0 +1,42 @@
+********************************************************************************
+INDELible V1.03 by Will Fletcher : Simulation began at: Wed Sep  3 18:49:31 2025
+********************************************************************************
+
+  Actual Insertion : Deletion Ratio  0.458824 : 0.541176	(Total indel rate = 1)
+  Actual average insertion length    8.76923
+  Actual average deletion length     3.63043
+  Number of insertion events         39
+  Number of deletion events          46
+
+  * Block 1 was completed in 0.074545 seconds.
+
+********************************************************************************
+
+  * Simulation completed. Whole batch took: 0.076112 seconds.
+
+INDELible V1.03 Simulations completed at: Wed Sep  3 18:49:31 2025
+
+********************************************************************************
+
+
+ Original Control File 
+
+-----------------------
+
+
+[TYPE] AMINOACID 1
+
+[MODEL] modelname
+   [submodel] LG
+   [rates] 0.0087110824484571 1.6562084412475064 0
+   [insertmodel] NB 0.8503141904321359 1
+   [deletemodel] NB 0.7122157489227713 1
+   [insertrate] 0.1187203342902567
+   [deleterate] 0.1409848320504095
+
+[TREE] treename ((((T4:0.023258938374855376,T5:0.010348168850802475):0.4603914865942502,(T8:0.010754770383105905,T2:0.1634022817131986):0.15675665922925708):0.031096286315718924,T9:0.30245249428097143):0.4603914865942502,(((T7:0.010754770383105905,T1:0.1634022817131986):0.018284862422257797,T10:0.30245249428097143):0.031096286315718924,(T6:0.010348168850802475,T3:0.023258938374855376):0.018284862422257797):0.15675665922925708);
+
+[PARTITIONS] partitionname
+  [treename modelname 83]
+
+[EVOLVE] partitionname 1 simulated  
