@@ -5,6 +5,8 @@ This branch contains the results of the 2025 Summer Historian/BAli-Phy. You can 
 
 **`data/matrices`**: Contains all matrices that can be used for the evaluation. The experiments here used the LG08 matrix provided in `data/matrices/lg.json`.
 
+**`data/pfam_data`**: Contains the original dataset used to generate each SCOP model. Note that SCOPT1 was split into 8 random partitions with `src/utils/partition_files.py` before processing (with only one being used). Additionally, some data failed RPANDA's curve fitting. These alignment-tree pairs were discarded.
+
 **`data/model_gen`**: Contains the pickled model objects used to generate synthetic datasets for each SCOP type, along with summary statistics and plots available in `data/model_gen/SCOPtypeX/model_info`.
 
 **`data/simulation`**: Contains simulation files and relevant output files from the MCMC software for each of the three experiments. Due to file size constraints, Historian and BAli-Phy output files are compressed into `historian.zip` and `baliphy-1.zip`, respectively. If file sizes are too large, trace files may be seperated into a archive such as `baliphy-trace.zip`.
