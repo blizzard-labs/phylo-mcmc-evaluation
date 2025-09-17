@@ -540,7 +540,7 @@ def main():
     es.runBenchmark()
     print(f'Ran benchmark- ELAPSED TIME: {time.time() - start}============================')
     
-    print('COMPLEETTEEEETETETETE!!!!')
+    print('COMPLETE!!!')
 
 if __name__ == '__main__':
     main()

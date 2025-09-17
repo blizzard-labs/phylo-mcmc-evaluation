@@ -302,7 +302,7 @@ def main():
     mc.sample_model(n_samples=1000)
     print(f'Sampled from model- ELAPSED TIME: {time.time() - start}============================')
     
-    print('COMPLEETTEEEETETETETE!!!!')
+    print('COMPLETE!!!')
 
 
 if __name__ == "__main__":
