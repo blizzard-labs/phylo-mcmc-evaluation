@@ -1,0 +1,486 @@
+# STOCKHOLM 1.0
+#=GF ID   CRAL_TRIO_N
+#=GF AC   PF03765.19
+#=GF DE   CRAL/TRIO, N-terminal domain
+#=GF AU   Bateman A;0000-0002-6982-4660
+#=GF AU   Griffiths-Jones SR;0000-0001-6043-807X
+#=GF SE   Prosite
+#=GF GA   23.00 23.00;
+#=GF TC   23.00 23.00;
+#=GF NC   22.90 22.90;
+#=GF BM   hmmbuild HMM.ann SEED.ann
+#=GF SM   hmmsearch -Z 75585367 -E 1000 --cpu 4 HMM pfamseq
+#=GF TP   Domain
+#=GF CL   CL0214
+#=GF RN   [1]
+#=GF RM   9461221
+#=GF RT   Crystal structure of the Saccharomyces cerevisiae
+#=GF RT   phosphatidylinositol-transfer protein. 
+#=GF RA   Sha B, Phillips SE, Bankaitis VA, Luo M; 
+#=GF RL   Nature 1998;391:506-510.
+#=GF DR   INTERPRO; IPR011074;
+#=GF DR   PROSITE_PROFILE; PS50191;
+#=GF DR   SCOP; 1aua; fa;
+#=GF DR   SO; 0000417; polypeptide_domain;
+#=GF CC   This all-alpha domain is found to the N-terminus of
+#=GF CC   Pfam:PF00650.
+#=GF SQ   229
+#=GS G8YKQ6_PICSO/53-119       AC G8YKQ6.1
+#=GS Q6BYH1_DEBHA/51-117       AC Q6BYH1.1
+#=GS G3AFJ6_SPAPN/75-141       AC G3AFJ6.1
+#=GS C5MFC1_CANTT/74-138       AC C5MFC1.1
+#=GS A0A1D8PD50_CANAL/72-136   AC A0A1D8PD50.1
+#=GS C4XYA9_CLAL4/46-112       AC C4XYA9.1
+#=GS A3LXJ3_PICST/40-106       AC A3LXJ3.2
+#=GS G3B6V7_CANTC/51-119       AC G3B6V7.1
+#=GS A5DFG4_PICGU/50-116       AC A5DFG4.2
+#=GS G8JUS1_ERECY/51-116       AC G8JUS1.1
+#=GS H2APD2_KAZAF/49-113       AC H2APD2.1
+#=GS A7TQN3_VANPO/48-111       AC A7TQN3.1
+#=GS I2H6G5_TETBL/48-109       AC I2H6G5.1
+#=GS G0WD40_NAUDC/47-114       AC G0WD40.1
+#=GS G0VHY6_NAUCC/48-111       AC G0VHY6.1
+#=GS I2GXL2_TETBL/49-113       AC I2GXL2.1
+#=GS G8C2F3_TETPH/47-108       AC G8C2F3.1
+#=GS G8ZUJ6_TORDC/47-109       AC G8ZUJ6.1
+#=GS C5DD54_LACTC/48-110       AC C5DD54.1
+#=GS W1Q7Y0_OGAPD/50-111       AC W1Q7Y0.1
+#=GS J7RZT1_KAZNA/52-118       AC J7RZT1.1
+#=GS Q6FP14_CANGA/48-109       AC Q6FP14.1
+#=GS A5DIA3_PICGU/61-123       AC A5DIA3.2
+#=GS G3AVZ1_CANTC/69-131       AC G3AVZ1.1
+#=GS Q6BJA9_DEBHA/70-132       AC Q6BJA9.2
+#=GS A3LND9_PICST/66-128       AC A3LND9.2
+#=GS M3HTD0_CANMX/71-133       AC M3HTD0.1
+#=GS G8YSC5_PICSO/78-140       AC G8YSC5.1
+#=GS A5DUQ4_LODEL/74-136       AC A5DUQ4.1
+#=GS C4Y8K4_CLAL4/69-131       AC C4Y8K4.1
+#=GS I1BQP1_RHIO9/56-108       AC I1BQP1.1
+#=GS S2JPM8_MUCC1/55-107       AC S2JPM8.1
+#=GS S2JQ56_MUCC1/56-108       AC S2JQ56.1
+#=GS F2UCF9_SALR5/32-84        AC F2UCF9.1
+#=GS D2VWP7_NAEGR/51-101       AC D2VWP7.1
+#=GS SFH5_YARLI/17-82          AC Q6C9R9.1
+#=GS V5FXS4_BYSSN/108-165      AC V5FXS4.1
+#=GS SFH5_COCIM/115-172        AC Q1DSY1.1
+#=GS S8BHC5_PENO1/102-159      AC S8BHC5.1
+#=GS B6QFP1_TALMQ/93-150       AC B6QFP1.1
+#=GS K9GNF2_PEND2/94-151       AC K9GNF2.1
+#=GS C5GHX8_AJEDR/126-183      AC C5GHX8.1
+#=GS H3HE78_PHYRM/17-75        AC H3HE78.1
+#=GS R1EI56_BOTPV/146-204      AC R1EI56.1
+#=GS M2UM87_COCH5/30-87        AC M2UM87.1
+#=GS SFH5_PHANO/66-123         AC Q0V0B0.1
+#=GS E9EDJ1_METAQ/51-109       AC E9EDJ1.1
+#=GS G9P388_HYPAI/12-70        AC G9P388.1
+#=GS F7VVR8_SORMK/90-144       AC F7VVR8.1
+#=GS SFH5_MAGO7/135-189        AC A4R6K8.1
+#=GS M2PQH0_CERS8/109-173      AC M2PQH0.1
+#=GS S2KEH1_MUCC1/17-79        AC S2KEH1.1
+#=GS A0A015ISL7_RHIIW/33-93    AC A0A015ISL7.1
+#=GS I1BXL1_RHIO9/11-72        AC I1BXL1.1
+#=GS S2JJI7_MUCC1/13-74        AC S2JJI7.1
+#=GS W1NK12_AMBTC/57-122       AC W1NK12.1
+#=GS I1JL47_SOYBN/60-117       AC I1JL47.1
+#=GS I1N333_SOYBN/65-121       AC I1N333.2
+#=GS B9SL24_RICCO/65-120       AC B9SL24.1
+#=GS B9IGK1_POPTR/63-121       AC B9IGK1.2
+#=GS PATL6_ARATH/51-105        AC Q9SCU1.1
+#=GS A0A3Q7I196_SOLLC/65-118   AC A0A3Q7I196.1
+#=GS B9T1B9_RICCO/66-124       AC B9T1B9.1
+#=GS PATL5_ARATH/308-362       AC Q9M0R2.2
+#=GS M1CER3_SOLTU/121-186      AC M1CER3.1
+#=GS I1LNP2_SOYBN/64-118       AC I1LNP2.1
+#=GS A0A804IAB0_MUSAM/63-119   AC A0A804IAB0.1
+#=GS Q7QGG5_ANOGA/59-107       AC Q7QGG5.4
+#=GS G3PXE4_GASAC/61-115       AC G3PXE4.1
+#=GS H2XNU9_CIOIN/27-80        AC H2XNU9.1
+#=GS H2YUG2_CIOSA/40-92        AC H2YUG2.1
+#=GS F6R864_MONDO/62-116       AC F6R864.2
+#=GS G3PEL6_GASAC/22-96        AC G3PEL6.1
+#=GS A0A1X7TIN4_AMPQE/31-81    AC A0A1X7TIN4.1
+#=GS Q38DL2_TRYB2/65-109       AC Q38DL2.1
+#=GS Q238Z1_TETTS/24-77        AC Q238Z1.1
+#=GS W5LY62_LEPOC/260-312      AC W5LY62.1
+#=GS G4ULY2_NEUT9/34-81        AC G4ULY2.1
+#=GS M7SAK3_EUTLA/31-78        AC M7SAK3.1
+#=GS Q2H2D9_CHAGB/34-81        AC Q2H2D9.1
+#=GS G3JQ78_CORMM/39-86        AC G3JQ78.1
+#=GS C7Z4A2_FUSV7/42-89        AC C7Z4A2.1
+#=GS G0RVC3_HYPJQ/42-89        AC G0RVC3.1
+#=GS U7PPK2_SPOS1/65-115       AC U7PPK2.1
+#=GS S3BZ09_OPHP1/52-104       AC S3BZ09.1
+#=GS S3E9E9_GLAL2/34-84        AC S3E9E9.1
+#=GS Q0U7Z0_PHANO/27-77        AC Q0U7Z0.1
+#=GS R1GPK8_BOTPV/31-83        AC R1GPK8.1
+#=GS R7YYI9_CONA1/29-81        AC R7YYI9.1
+#=GS N1PFU9_DOTSN/35-87        AC N1PFU9.1
+#=GS A8NS45_COPC7/55-112       AC A8NS45.2
+#=GS S8BH36_PENO1/55-111       AC S8BH36.1
+#=GS K9G829_PEND2/52-108       AC K9G829.1
+#=GS M5BIZ5_THACB/14-64        AC M5BIZ5.1
+#=GS Q5BGT7_EMENI/62-112       AC Q5BGT7.1
+#=GS A1CAD6_ASPCL/58-112       AC A1CAD6.1
+#=GS E4UUM4_ARTGP/48-98        AC E4UUM4.1
+#=GS C1GJH9_PARBD/88-138       AC C1GJH9.2
+#=GS E9DBP3_COCPS/66-116       AC E9DBP3.1
+#=GS D8PZF3_SCHCM/42-89        AC D8PZF3.1
+#=GS K5VTF7_PHACS/28-80        AC K5VTF7.1
+#=GS U5HCQ1_USTV1/24-77        AC U5HCQ1.1
+#=GS U5HCQ2_USTV1/24-74        AC U5HCQ2.1
+#=GS A0A0D1C443_USTMA/180-229  AC A0A0D1C443.1
+#=GS Q5KQ68_CRYNJ/21-76        AC Q5KQ68.2
+#=GS F4RT29_MELLP/25-85        AC F4RT29.1
+#=GS F4PTG1_CAVFA/15-63        AC F4PTG1.1
+#=GS A0A804IP76_MUSAM/8-59     AC A0A804IP76.1
+#=GS B9GFY8_POPTR/10-61        AC B9GFY8.1
+#=GS K7M4B1_SOYBN/8-59         AC K7M4B1.1
+#=GS I1KYM3_SOYBN/8-60         AC I1KYM3.1
+#=GS M4E056_BRARP/8-59         AC M4E056.1
+#=GS D7MP16_ARALL/8-59         AC D7MP16.1
+#=GS C5X7H6_SORBI/8-59         AC C5X7H6.1
+#=GS M1B198_SOLTU/8-59         AC M1B198.1
+#=GS B9SWQ7_RICCO/8-59         AC B9SWQ7.1
+#=GS M7Z6R1_TRIUA/8-59         AC M7Z6R1.1
+#=GS C8V7J8_EMENI/224-277      AC C8V7J8.1
+#=GS V5F9W3_BYSSN/222-275      AC V5F9W3.1
+#=GS Q2ULJ5_ASPOR/100-153      AC Q2ULJ5.1
+#=GS Q4WLQ5_ASPFU/101-154      AC Q4WLQ5.1
+#=GS B6HPL1_PENRW/102-155      AC B6HPL1.1
+#=GS W1QI71_OGAPD/89-141       AC W1QI71.1
+#=GS Q6FWD9_CANGA/88-141       AC Q6FWD9.1
+#=GS G8ZUT6_TORDC/90-143       AC G8ZUT6.1
+#=GS CSR1_ASHGO/108-161        AC Q757H2.2
+#=GS K0KPC6_WICCF/99-152       AC K0KPC6.1
+#=GS S8AD58_DACHA/94-147       AC S8AD58.1
+#=GS C1H2M7_PARBA/224-277      AC C1H2M7.2
+#=GS A6R6I1_AJECN/119-172      AC A6R6I1.1
+#=GS D5GDP8_TUBMM/110-163      AC D5GDP8.1
+#=GS R4XJ95_TAPDE/161-214      AC R4XJ95.1
+#=GS M2VAJ9_COCH5/111-164      AC M2VAJ9.1
+#=GS E9CVH3_COCPS/89-142       AC E9CVH3.1
+#=GS H6C2U0_EXODN/101-154      AC H6C2U0.1
+#=GS K1WPF0_MARBU/90-143       AC K1WPF0.1
+#=GS A7F0C7_SCLS1/106-159      AC A7F0C7.1
+#=GS M1WDK0_CLAP2/95-148       AC M1WDK0.1
+#=GS G0S2K5_CHATD/107-160      AC G0S2K5.1
+#=GS N4TNE2_FUSC1/224-277      AC N4TNE2.1
+#=GS F9XM40_ZYMTI/91-144       AC F9XM40.1
+#=GS B8MAN3_TALSN/213-266      AC B8MAN3.1
+#=GS B6QDL6_TALMQ/220-273      AC B6QDL6.1
+#=GS V5FVA7_BYSSN/100-153      AC V5FVA7.1
+#=GS Q2GUJ8_CHAGB/48-101       AC Q2GUJ8.1
+#=GS I1S3C7_GIBZE/44-97        AC I1S3C7.1
+#=GS F4RU40_MELLP/45-98        AC F4RU40.1
+#=GS A1CIW0_ASPCL/88-141       AC A1CIW0.1
+#=GS Q5BG45_EMENI/92-145       AC Q5BG45.1
+#=GS A2QBA1_ASPNC/89-142       AC A2QBA1.1
+#=GS Q0CAU2_ASPTN/68-121       AC Q0CAU2.1
+#=GS G3J6C8_CORMM/143-190      AC G3J6C8.1
+#=GS A0A0D2WQT6_CAPO3/15-67    AC A0A0D2WQT6.1
+#=GS Q54BI6_DICDI/78-138       AC Q54BI6.1
+#=GS F0ZPJ2_DICPU/3-58         AC F0ZPJ2.1
+#=GS Q6CHI5_YARLI/30-94        AC Q6CHI5.1
+#=GS M9LQM6_PSEA3/98-159       AC M9LQM6.1
+#=GS V5GEZ1_KALBG/53-114       AC V5GEZ1.1
+#=GS I2FPW7_USTH4/108-169      AC I2FPW7.1
+#=GS C4R2X9_KOMPG/26-71        AC C4R2X9.1
+#=GS G8Y224_PICSO/61-107       AC G8Y224.1
+#=GS SFH5_KLULA/29-74          AC Q6CXS7.1
+#=GS SFH5_ASHGO/34-84          AC Q75BM4.1
+#=GS SFH5_CANGA/29-81          AC Q6FQI6.1
+#=GS I2GZC4_TETBL/29-81        AC I2GZC4.1
+#=GS G8ZZA0_TORDC/30-81        AC G8ZZA0.1
+#=GS G8BNQ4_TETPH/29-80        AC G8BNQ4.1
+#=GS SFH5_VANPO/29-81          AC A7TK50.1
+#=GS J7RIL7_KAZNA/29-77        AC J7RIL7.1
+#=GS YJX4_SCHPO/599-658        AC Q9UU99.1
+#=GS S9VXA1_SCHCR/386-445      AC S9VXA1.1
+#=GS S8BQ81_DACHA/116-176      AC S8BQ81.1
+#=GS B8MPD2_TALSN/98-158       AC B8MPD2.1
+#=GS D5GH16_TUBMM/195-255      AC D5GH16.1
+#=GS H6BN03_EXODN/110-170      AC H6BN03.1
+#=GS M7UFK0_BOTF1/68-125       AC M7UFK0.1
+#=GS L8FXR9_PSED2/73-130       AC L8FXR9.1
+#=GS S3D844_GLAL2/74-131       AC S3D844.1
+#=GS G4NEY9_MAGO7/45-102       AC G4NEY9.1
+#=GS G4UHB6_NEUT9/31-88        AC G4UHB6.1
+#=GS F7VU58_SORMK/31-88        AC F7VU58.1
+#=GS G2Q9U3_MYCTT/47-104       AC G2Q9U3.1
+#=GS B2B616_PODAN/31-87        AC B2B616.1
+#=GS U7PUT4_SPOS1/51-112       AC U7PUT4.1
+#=GS N1RRB6_FUSC4/38-100       AC N1RRB6.1
+#=GS M1W2I2_CLAP2/36-97        AC M1W2I2.1
+#=GS N4VFS6_COLOR/53-112       AC N4VFS6.1
+#=GS J4VY38_BEAB2/40-101       AC J4VY38.1
+#=GS K2R3J4_MACPH/75-136       AC K2R3J4.1
+#=GS Q0UD14_PHANO/29-88        AC Q0UD14.1
+#=GS E3S0Y0_PYRTT/29-89        AC E3S0Y0.1
+#=GS M2TMQ4_COCH5/29-89        AC M2TMQ4.1
+#=GS E4ZZA8_LEPMJ/29-89        AC E4ZZA8.1
+#=GS R0K2H8_SETT2/29-89        AC R0K2H8.1
+#=GS B6Q696_TALMQ/69-129       AC B6Q696.1
+#=GS R7Z758_CONA1/105-165      AC R7Z758.1
+#=GS J3K1Z6_COCIM/88-148       AC J3K1Z6.2
+#=GS F9X4T2_ZYMTI/101-161      AC F9X4T2.1
+#=GS M2Z6R6_PSEFD/113-173      AC M2Z6R6.1
+#=GS N1PVW1_DOTSN/98-158       AC N1PVW1.1
+#=GS M3B765_SPHMS/112-172      AC M3B765.1
+#=GS C5GL50_AJEDR/106-166      AC C5GL50.2
+#=GS C1GV84_PARBA/71-131       AC C1GV84.1
+#=GS K9G113_PEND2/81-141       AC K9G113.1
+#=GS S7ZPU3_PENO1/50-110       AC S7ZPU3.1
+#=GS V5G656_BYSSN/96-156       AC V5G656.1
+#=GS C5FQU4_ARTOC/76-136       AC C5FQU4.1
+#=GS R9AR04_WALI9/28-87        AC R9AR04.1
+#=GS I4Y7E6_WALMC/27-86        AC I4Y7E6.1
+#=GS W1Q7P9_OGAPD/51-113       AC W1Q7P9.1
+#=GS C4R5Q9_KOMPG/46-109       AC C4R5Q9.1
+#=GS A8P4H7_COPC7/32-88        AC A8P4H7.1
+#=GS B0D5N7_LACBS/4-61         AC B0D5N7.1
+#=GS F8PXP6_SERL3/31-87        AC F8PXP6.1
+#=GS K5VWN7_AGABU/44-127       AC K5VWN7.1
+#=GS B8P4C0_POSPM/38-95        AC B8P4C0.1
+#=GS K5W3H6_PHACS/34-92        AC K5W3H6.1
+#=GS G4T6V6_SERID/32-89        AC G4T6V6.1
+#=GS A7TF65_VANPO/52-113       AC A7TF65.1
+#=GS I2GW46_TETBL/49-110       AC I2GW46.1
+#=GS G8BQ28_TETPH/53-118       AC G8BQ28.1
+#=GS Q6CUT0_KLULA/48-114       AC Q6CUT0.1
+#=GS F4S8S4_MELLP/41-107       AC F4S8S4.1
+#=GS Q752B5_ASHGO/48-113       AC Q752B5.1
+#=GS H2AUI9_KAZAF/49-110       AC H2AUI9.1
+#=GS Q6FNY5_CANGA/49-111       AC Q6FNY5.1
+#=GS C4R8A0_KOMPG/51-114       AC C4R8A0.1
+#=GS K0KY05_WICCF/51-112       AC K0KY05.1
+#=GS K0KG17_WICCF/47-107       AC K0KG17.1
+G8YKQ6_PICSO/53-119                  KYQKVLEHF.......SQEGLSVAISEENKK.................SKDTSKYKPLSEAEKAW.LTRE........................CFLRYLRATKW.HYKDAIDRIEL
+Q6BYH1_DEBHA/51-117                  KYDKVLKYF.......QQEDFKVAVSEANQK.................DKDSSKYKELSESEKAW.LTRE........................CFLRYLRATKW.HYEDTISRIEL
+G3AFJ6_SPAPN/75-141                  KYLAVLHHF.......QQEDLKVAISEDTHN.................HKKTELYQPLTHDEKSW.LTRE........................CFLRYLRATKW.NEKDAINRVEL
+C5MFC1_CANTT/74-138                  KYITVLTHF.......QDANLKVATSEQDH...................KSGKKSKELTIGEKSW.LTRE........................CFLRYLRATKW.NVDEAIDRIEL
+A0A1D8PD50_CANAL/72-136              KYLHVLKHF.......QQSDLKIAISEETH...................KHKRKTKELTIGEKSW.ITRE........................CILRYLRATKW.HESEAIDRIEL
+C4XYA9_CLAL4/46-112                  KYALVFAHF.......ANEDFKAASSEHEAK.................SKDKSNYKPLTPSEKAW.LTRE........................CFLRYLRATKW.ETKDAIARIEL
+A3LXJ3_PICST/40-106                  KYLTVFKHF.......SNPDIAIPVSEDNHK.................HKDTSQYKPLTESEKSW.LTRE........................CFLRYLRATKW.DEQEAINRIEL
+G3B6V7_CANTC/51-119                  MYLKVHQHF.......SNPQFVVASTEHDQQQ...............KNKDETKFTALTDAEKAW.LTRE........................CFFRYLRASKW.NLAECIARIEL
+A5DFG4_PICGU/50-116                  KYLKVLNHF.......SDPDLKAPATEDDHK.................HKRHDSYVALNDYERAW.LTRE........................CFLRYLRATKW.DQAEAISRIEL
+G8JUS1_ERECY/51-116                  KYKAVLKHF.......SRPELVLPTVEATH..................DDGRHKMRPLSQYEKAW.LTRE........................CIIRYLKAVKW.VVGEAINRLTL
+H2APD2_KAZAF/49-113                  KYITVLNHF.......KNPDLMIPMTEKNR...................NDTSDLMPLSIFEKAW.ITRE........................CILRYLRATKW.VVKDAIQRIIL
+A7TQN3_VANPO/48-111                  KYLKVLKHF.......SQPNLKVPSVEKN....................PSEKDFAPLTEYEKAW.LSRE........................CLLRYLRATKW.VLKDAIERITL
+I2H6G5_TETBL/48-109                  MYLKVLKHF.......SNPLLEIPDQEK......................AKIPASVLTDCEKAW.LSKE........................CILRYLRATKW.VLNDAIERITL
+G0WD40_NAUDC/47-114                  MYLDVLHHF.......QDESLTFPAREKPDE................SNTTADSKKPLSEFEKAW.LTRE........................CILRYLRATKW.VLQDCIARISL
+G0VHY6_NAUCC/48-111                  MYDEVATHF.......QDPDLEIPLKEKN....................NPPDSLAPLNEFEKAW.LTRE........................CFIRYLRATKW.VVADCIDRIKL
+I2GXL2_TETBL/49-113                  MYENVLAHF.......STPDLEIPTEEKKH...................AENGKSSPLTVYEKAW.LSRE........................CILRYLRATKW.KENDCIDRINL
+G8C2F3_TETPH/47-108                  KYRKVLEHF.......SKADLEIPVKEV......................KTAESAPLTEFEKAW.LTRE........................CFLRYLRATKW.VLNDAIDRITL
+G8ZUJ6_TORDC/47-109                  MYDEVLEHF.......SNPKLELPTTEKQ.....................KDGELKPLTEEEKAW.LTRE........................CFLRYLRATKW.VLKDCIERIAE
+C5DD54_LACTC/48-110                  KYQEVLKHF.......SDPELRISTSEKE.....................KDAELQPLSDLEKAW.LTRE........................CFKRYLRATKW.DVKECIERIAL
+W1Q7Y0_OGAPD/50-111                  KYLTVLKHF.......QDPELKVPTTEH......................HKGDLQPLTADQKAW.LTRE........................CFLRYLRATKW.DVSQAIKRIEG
+J7RZT1_KAZNA/52-118                  MYAEVLKYF.......QDEKLLVRNSEKHSD.................GSDPHAKSPLTLEEKAW.LTRE........................CLLRYLRATKW.NVSDAIDRLKK
+Q6FP14_CANGA/48-109                  KYDEVYKYL.......TNAELKVGNKEK......................NPTESSGLIDEERAW.LTRE........................CIIRYLKATKW.HVKDAIDRILG
+A5DIA3_PICGU/61-123                  KYNHLLSYF.......ETFVTKELPVNDR.....................SGAATHPILESEKAW.LTKE........................CFLRYLRASKW.KQQTAIKRIED
+G3AVZ1_CANTC/69-131                  KYSQVFNHF.......KEYIKENIPVNDT.....................HGAKKHPVLPEEKAW.LTKE........................CFLRYLRATKW.KPDAAIKRIEE
+Q6BJA9_DEBHA/70-132                  KYDEVLKHF.......QEHVKKDLPVNDQ.....................AGAAKHAVLDEEIAW.LTKE........................CFLRYLRASKW.RLETAIKRIEE
+A3LND9_PICST/66-128                  KYETVLAHF.......QEFIKNDLPVNDK.....................HDAARHPLVEQELAW.LTKE........................CILRYLRASKW.KVDVAIKRMEE
+M3HTD0_CANMX/71-133                  KYEQLLAHF.......EEYIKKDIPVNDQ.....................HNAPTHPLLEEELAW.LTKE........................CFLRYLRATKW.KLDAAIKRLED
+G8YSC5_PICSO/78-140                  KYDQMLEHF.......KQYAMKEHPVSDK.....................PDAPTCLLTEEEKAW.LTKE........................CFLRYLRATKW.KLDAAIKRMED
+A5DUQ4_LODEL/74-136                  LYDQLLEYY.......QDYITKEIPINDS.....................HNAPKHPLTEDELVW.LTKE........................CFLRYLRASKW.KLETAKTRIHD
+C4Y8K4_CLAL4/69-131                  KYKQVLEYF.......QDYATQEIPVNDS.....................SGAPKHAMTEEEKAW.LTKE........................CFLRYLRASKW.KVDNCIKRIKE
+I1BQP1_RHIO9/56-108                  KLVQLKKYI.......ESIMLPET...............................HEYYPNERGF.ITEA........................TLKRYMRARKW.NYENAKTMLEN
+S2JPM8_MUCC1/55-107                  KIVDLLAYM.......DTIILPKD...............................DPYYPNERGF.LSEG........................TAHRYMRARKW.DFEAAKTMLEN
+S2JQ56_MUCC1/56-108                  KVTKLLQYI.......ESIMLPET...............................DKYYPSERGF.VTEN........................TVKRYMRARKW.DYEQAKTMLEN
+F2UCF9_SALR5/32-84                   TLKEFKDRL.......QDLFAA............................................ASQEGNEHLHPLLSNE............CLCRYLRARDW.KLKPAEKLLRD
+D2VWP7_NAEGR/51-101                  ILKKFTQMF.......EDDRSK...................................LTQLQQYYCFHDR.......F................CFVRYLKARDW.DIPNATKLLKS
+SFH5_YARLI/17-82                     ALKKLQDEL.......PKILEK....................................TDYNEMYGHKLS.......EAEDGPGKAYSEVKRDIILLKFLKARDY.DIAQTKDMLTD
+V5FXS4_BYSSN/108-165                 ALSQFFDKL.......PSILSK....................................TSHSEMWGVTLK.......DASHPPT........ANILIKFLRANEG.NVTLAEQQLTK
+SFH5_COCIM/115-172                   ALSQFFDRL.......APIVEK....................................AGHNEMWGVPLK.......DAQDAPT........VNIMIKFLRANEG.NVKLAEEQLVK
+S8BHC5_PENO1/102-159                 GLAQFFEQL.......PKIVTE....................................TGYSEMWGVHLK.......SHEDVPT........VNVLIKFLRANEG.NVQAAQDQLRK
+B6QFP1_TALMQ/93-150                  GLSKFFEGL.......PEILKK....................................TGHTEMWGVPLK.......DSNDIPT........VNVLIKFLRANEG.NVKLAEQQLTK
+K9GNF2_PEND2/94-151                  ALGELFNRL.......PTILGN....................................VGHTEMWGVPLK.......DSHDIPT........VNVLIKFLRANEG.NVKAAETQLSK
+C5GHX8_AJEDR/126-183                 ALSELFEKL.......ASILKK....................................AAYNEMWGVTLK.......DSDDIPT........VNVLIKFLRANEG.NVKLAEEQLTK
+H3HE78_PHYRM/17-75                   PINQLLKAL.......PSLIEA...................................SSGYSEVFGVTLD.......PSGPFTT........KLILQKFLRANAN.DVDKAKTQLGE
+R1EI56_BOTPV/146-204                 PINQLLKLL.......PDLIKD...................................ANGYSEVYGVTLD.......PAGPFHT........KLILQKFLRANAN.NLDKAKEQLAE
+M2UM87_COCH5/30-87                   PLTKFYDAF.......EALVTE....................................AQHSEVYGIELS.......KSNAFHT........KLILQKFLRANQN.DLNKAKAQLLE
+SFH5_PHANO/66-123                    PLSKFYDIF.......EDVIKS....................................AEHNEVYGILLT.......KENPFQT........KLILQKFLRANQN.DLDKAKQQLLE
+E9EDJ1_METAQ/51-109                  PLTKLTARL.......PDITKK....................................ADHNEMWGVDLS.......TDSAHAP.......TQVILFKFLKANNN.DVAAAEKQLTL
+G9P388_HYPAI/12-70                   PLAQFTARL.......ADIKKS....................................SGHTEMWGVELS.......DDASHAP.......TQVILQKFLRANNG.DLAGAEKQLTD
+F7VVR8_SORMK/90-144                  PLAQLWKAA.......E........................................GHDHFEIWGVPLS.......DPERHIP.......TQVVFQKFLNANDG.DVEKAKAQLLR
+SFH5_MAGO7/135-189                   GVAKLWEVC.......Q........................................AHEHKEIWGVTLQ.......DPSSDVP.......TEIVLTKFLNANDG.DVPKAVDQLTK
+M2PQH0_CERS8/109-173                 ALKELRAQL.......SEAIAGA................................VTDRESVTLWGVPLSGDAPATDARVSV............VLMKFLRARDL.DVEAARKMLSD
+S2KEH1_MUCC1/17-79                   AVQQLKDAL.......PDILTEA................................FGTSNVQALWGVPLDKD..SDDERIKV............VLVKFLRARNM.EIPVAKDMLIN
+A0A015ISL7_RHIIW/33-93               KVEELKTHL.......PDILKG..................................ADVQNYTLWGVELNKD..SNDRRLEV............ILIKFLKARNF.EIDQAKEMLIK
+I1BXL1_RHIO9/11-72                   AVSQLKASL.......PEITKCA.................................QVPENYQLWNIALDKE..STDSRLDV............LLVKFLRARNL.DLVKATKMLTD
+S2JJI7_MUCC1/13-74                   SVAKLKAKL.......NDIKQAA.................................QVSEGYKLWDIALDQD..STDPRLDV............LLVKFIRARES.DLAKATQMLTD
+W1NK12_AMBTC/57-122                  ALSELKQKLHLSIQSNQFSPDS..................................DKETEISMWGVPILG....GDDRSDV............ILLKFLRARDF.RVSDALTMLQK
+I1JL47_SOYBN/60-117                  ALQELKTKL.......KASFED...................................SPSDASMWGIPLLG....GDDKADV............ILLKFLRARDF.RVGDAHHMLMK
+I1N333_SOYBN/65-121                  ALQDLKNKL.......QSSYSS......................................TPSMWGVPLLNN..NNADNADV............ILLKFLRARDF.RVHDALSMLLK
+B9SL24_RICCO/65-120                  ALQELKDKL.......SASESN.....................................VDCSMWGIPLLG....GAEKADV............ILLKFLRARDF.RVLDAFHMLDK
+B9IGK1_POPTR/63-121                  ALQELRDKL.......SVSYGS..................................DATSECSMWGIPLLS....NDEKADV............ILLKFLRARDF.RVQDSLHMLEK
+PATL6_ARATH/51-105                   SLQELKEKL.......SASSSK......................................ASSMWGVSLLG....GDDKADV............ILLKFLRARDF.KVADSLRMLEK
+A0A3Q7I196_SOLLC/65-118              ALQELKDKL.......QSSSSS.......................................CSMWGIPLLG....GDEKADV............ILLKFLRARDF.KVSDSLHMLEK
+B9T1B9_RICCO/66-124                  ALLEFRKEC.......QKMKEQ....................................LRDITLWGVPLLPS..KGHESTDN............VLLKFLKAKEF.KAQDAFHMLRK
+PATL5_ARATH/308-362                  ALQELRHLL.......QVSQDS.....................................SKTSIWGVPLLK.....DDRTDV............VLLKFLRARDF.KPQEAYSMLNK
+M1CER3_SOLTU/121-186                 ALEELKFLV.......QEAIKDQTFT..........................TGTTDLPQEVSIWGVPLLK.....DDRSDV............ILLKFLRARDF.KVKESFAMLKN
+I1LNP2_SOYBN/64-118                  AIDELKKLL.......KEELED.....................................EEVSIWGVPLFK.....DDRTDV............ILLKFLRAREL.KVKDALVMFQN
+A0A804IAB0_MUSAM/63-119              ALRELKQLL.......SASPTP.......................................ISMWGVPLASSA.PGDDRADV............VLLKFLRARDF.DAGQAHDMLLR
+Q7QGG5_ANOGA/59-107                  KIRQLRQQLNIYNENHQRALGC.......................................................RRDDS............FLLRFLRAKKF.DVEKAFKMMQK
+G3PXE4_GASAC/61-115                  ALKELRAAM.......KERAAE...................................GDDLAKLVLDQFG.......EKPDS............LMLRFLRARKF.EVVRAHELMKG
+H2XNU9_CIOIN/27-80                   ALQKLRERI.......SATIND....................................DTKRGLLLRKHS.......EADDS............FLLRFLRTRKF.DPEKAYELLQA
+H2YUG2_CIOSA/40-92                   SLSQLRQLI.......EETESV.....................................KPCGEIMKRLK.......TVDDG............FLLRFLRTRKF.NVEKAFDLIKA
+F6R864_MONDO/62-116                  AVRELRELI.......QERADS...................................GDDMGLLVAEKVQ.......GKEND............FFLRFVRARKF.DVSRAYDLLKG
+G3PEL6_GASAC/22-96                   KMTHLQAGLSPETLEKAKAELKENP.............................DTLHQDIQEVRDMIITRPDIGFLRTDDA............FILRFLRARKF.NHFEAFRLLAQ
+A0A1X7TIN4_AMPQE/31-81               AIADFRAAI.......EEKEND.......................................PELEGVIFE.......RKDSP............FLLRFLRAKKF.DQSRSFSLYIK
+Q38DL2_TRYB2/65-109                  VLSEFKVTV.......QGTEW.............................................YDEG.......MHDDW............ALIRYLVACDF.KAKKSFEMLRN
+Q238Z1_TETTS/24-77                   AFNELKAKV.......VEQCKK.......................................................MKLDEDQVKFDRYTEDNQCVRLLWAREF.KVEKAFEMWKK
+W5LY62_LEPOC/260-312                 CLIQLRQWL.......QETHKG.....................................KSEAGEWKPEK.......IPKDE............HILRFLRARDF.NMDKAREMLCQ
+G4ULY2_NEUT9/34-81                   ALKSFKTNL.......AEKGYY....................................KP.........GP....PASHDDQ............TLLRYLRARRW.NVVDAFKQFKE
+M7SAK3_EUTLA/31-78                   ALKDFKVFV.......EEKGLF....................................KP.........GP....PPSHDDA............TLLRYLRARKW.VVEDAYKQFSD
+Q2H2D9_CHAGB/34-81                   QLKAFKIFL.......EDKGLY....................................KS.........GP....PPSHDDQ............TLLRFLRARKW.VVNDAYQQFKD
+G3JQ78_CORMM/39-86                   ALQKFKAVL.......EERGVW....................................KR.........GP....PPSHNDQ............TLLRYLRARRW.IVQDAYAQFKD
+C7Z4A2_FUSV7/42-89                   AFVQFKKVL.......EERGLL....................................KR.........GP....PASHDDP............LLLRYLRARRW.VVEDAYQQFKD
+G0RVC3_HYPJQ/42-89                   ALGRFKAAL.......QDKKLW....................................RP.........GP....PPSHDDQ............TLLRYLRARRW.IVDDALAQFKD
+U7PPK2_SPOS1/65-115                  AFAEFKAYL.......AEQGAY....................................TP......RADTA....PASHDDP............TLLRFLRARRW.VVADAYKQFKE
+S3BZ09_OPHP1/52-104                  AFAEFKTYL.......VEHKAY....................................QPG....DAATQT....PPSHDDP............TLLRFLRARRW.IVEEAYAQFKD
+S3E9E9_GLAL2/34-84                   AFRNFKAYC.......QEKGYF....................................TPR......EGGK....EASHDDP............TLLRFLRARRF.VVADAYKQFQE
+Q0U7Z0_PHANO/27-77                   KLDAFKQIC.......LEQKYY....................................TPA......AGGK....AASHDDE............TLLRYLRARRF.VPQEAFKQFKD
+R1GPK8_BOTPV/31-83                   ALDKFKDLC.......KDAGYY....................................RPP....GVDGKK....IASHDDE............TMLRYLRARKF.SPPDALKQFKD
+R7YYI9_CONA1/29-81                   ALEKFKQIC.......QKQGYY....................................QPP....FTDDTI....EASHDDE............TLLRYLRARKF.NPRDAFRQFKE
+N1PFU9_DOTSN/35-87                   QLAKFKQLC.......EQKGYY....................................HPG....DTSKNV....PPSHDDE............TLLRYLRARKF.IPKDAFGQFKD
+A8NS45_COPC7/55-112                  AFEAFKELL.......VQEGLY....................................RPS...VLSEDGKSVVEPASHDDP............TVLRFLRARSF.QPPEALAQFKR
+S8BH36_PENO1/55-111                  KLEEFKKVC.......AEHKYY....................................TPAVKAADGVETT....PASHGDA............TMLRFLRARRF.DVEGAWGQFKD
+K9G829_PEND2/52-108                  KLEEFKAIC.......AQRKYY....................................TPAVEQADGVEAK....PASQDDA............TLLRFLRARKF.DVEGAWAQFKD
+M5BIZ5_THACB/14-64                   ALDEFKGIL.......EKSGEY....................................KPG......REGS....KPSHSDA............TLIRFLRARRY.SPTNAAQHFKD
+Q5BGT7_EMENI/62-112                  KLTEFKAFC.......EKEGYY....................................KPG......GEGE....KPSHDDA............TMLRFLRARRF.DVNGAWGQFKD
+A1CAD6_ASPCL/58-112                  KLREFKALC.......ERNGYY....................................KPA......AQGEGPDTKPSHDDA............TMLRFLRARKF.DVNGAWGQFKD
+E4UUM4_ARTGP/48-98                   ALEAFKQQC.......IERNIY....................................TPA......KDGQ....KASHDDS............TLLRFLRARRF.DVNGALGQFQS
+C1GJH9_PARBD/88-138                  ALQSLKAEL.......IEKKLY....................................TEA.......HGEN...PASHDDS............TLLRYLRARKF.DAPAAVAQFQA
+E9DBP3_COCPS/66-116                  ALEEFKAVC.......IEKGLY....................................TPA......EEGK....AASHEDP............TLLRFLRARKF.DVNGALDQFKA
+D8PZF3_SCHCM/42-89                   AFAKFKADL.......ESAKLY....................................TP.........GE....EPSHDDS............TLLRFLRARKF.DPKAAQKQFAA
+K5VTF7_PHACS/28-80                   AFASFRKNL.......AEAQLY....................................VPA....DDGVSE....RASHDEP............TLLRFLRARRF.DPKKAQRQFAD
+U5HCQ1_USTV1/24-77                   AFDQFKQRL.......EGAGYY....................................TPA...GEEDEDK....EASHSDA............TLVRFLRARKF.QVDGAYDQFVA
+U5HCQ2_USTV1/24-74                   AFDEFKQRL.......QDGGYY....................................TPA......EDGK....EASHTEA............TIVRFLRARKF.QVEGAYNQFVA
+A0A0D1C443_USTMA/180-229             ALHELTQAL.......KSDGAL...............................................HDPESEPPSYQET............QLLRFLRARSF.NVQAARAMYLK
+Q5KQ68_CRYNJ/21-76                   ALKEFRQEL.......TTEELIPAD.............................WEALVQR.....IGYN.......RFDDQ............TLLRFLRARKF.DLPKAKLMWAN
+F4RT29_MELLP/25-85                   MLKKFKEEL.......ATEGYF....................................KEGSGAVKDDMYGGGLPGASHDDA............TLLRFLRARKF.DLEKSKLMFTD
+F4PTG1_CAVFA/15-63                   ALQEVKDLVNKNMTDATKEEAE.......................................................KLDDS............MILRFCRARKW.VVKDAYEMLNN
+A0A804IP76_MUSAM/8-59                AIKQFSALL.......DKVDEQ......................................LKATFQNMHQ.......GYPTA............TMMRYLKARDW.CVPKAYKMLVD
+B9GFY8_POPTR/10-61                   AIKQLQSIM.......DQIDES......................................MKNTYQNMHQ.......GYPTE............TLVRFLKARDW.NVAKAHKMLVD
+K7M4B1_SOYBN/8-59                    AIKQLQSLM.......ENLDEQ......................................QKNTFQIMHR.......GYPTE............TLVRFLKARDG.NVVKAHKMLID
+I1KYM3_SOYBN/8-60                    AVKQLQTLM.......ENVDDE.....................................QLKNTFQIMHQ.......GYQTE............TLIRFLKARDW.NIAKAHKMLID
+M4E056_BRARP/8-59                    AIDEFLELI.......DQVEEP......................................LKKTFENVHQ.......GYLRE............HLSRFLKARDW.NVCKAKTMLVE
+D7MP16_ARALL/8-59                    AIDEFQELM.......DQVEEP......................................LKETYERVHQ.......GFLRE............NLGRFLKARDW.NVCKAHTMLVE
+C5X7H6_SORBI/8-59                    VIKQLSALM.......EQLEEP......................................LKTTFQNVHQ.......GNLRG............TLVRFLKAREW.SVPKAHKMLMD
+M1B198_SOLTU/8-59                    AIAQFEALM.......EQVDEA......................................LKTTFQNIHQ.......GCTRD............AYLRFLTAREG.NVANAHKMLVD
+B9SWQ7_RICCO/8-59                    AVNQFRELM.......DQVEES......................................LQKTYQNVHQ.......GCQTE............TLVRFLKAREW.NVTKAHKMLVD
+M7Z6R1_TRIUA/8-59                    AVQQLAHLL.......DQVEEP......................................LKKTFQNVHQ.......GCPSE............TLVRFLKAREW.HVTNAHKMLVD
+C8V7J8_EMENI/224-277                 TSKEFQKAL.......AEIKPE....................................DMRTAFWSMVKQ.......DNPDS............LLLRFLRARKW.DVKKALMMLIS
+V5F9W3_BYSSN/222-275                 QNKEFQQAL.......SEIKPE....................................ELRLALWSMTKQ.......DNPDS............LLLRFLRARKW.DLTKALVMLVS
+Q2ULJ5_ASPOR/100-153                 QSKEFQQAI.......TDMKPE....................................EIRVTLWNMVKQ.......DNPDS............LLLRFLRARKW.DIKKALIMLVS
+Q4WLQ5_ASPFU/101-154                 QSKEFQQTL.......VDMSPE....................................DIRTTFWTMVKQ.......DNPDS............LLLRFLRARKW.DVKNALVMFIS
+B6HPL1_PENRW/102-155                 QSKEFKQAL.......EDMKPE....................................EIRTAFWSMVKG.......DNPDA............LLLRFLRARKW.DTKKALVMLIS
+W1QI71_OGAPD/89-141                  LSGKVHEAF.......RPLDAE.....................................TRNAFWDFLRH.......DTPDN............LLLRFVRARKW.DVDKSLAMIAN
+Q6FWD9_CANGA/88-141                  SDFELHEAL.......KNSNPD....................................DTREEFWNMIRA.......DFPDS............LLLRFIRARKW.DLNKSMTMISN
+G8ZUT6_TORDC/90-143                  VLNQIHHTL.......KDLDPA....................................TTRDHFWDMLRV.......ETPDT............VLLKFVRARKW.KIDKTMSMIAH
+CSR1_ASHGO/108-161                   GLEEMYELL.......KELDGA....................................AVSKEFWSMLRC.......DYPDN............LLLRFVRARKW.DINKAMIMMAH
+K0KPC6_WICCF/99-152                  THKSIHESF.......KDLQPE....................................DIYENFWNMLRT.......DSPDN............LILRFLRARKW.DSDKALAMLAH
+S8AD58_DACHA/94-147                  NPEELEAVL.......ASPSAE....................................DLRIVFWEFVKH.......DDPDV............LLLHFLRARKW.DVQSALTMLIS
+C1H2M7_PARBA/224-277                 LNKEFFSAL.......SSQSPE....................................ELRLAFWNTIKH.......DHPDG............LLLRFLRARKW.DVNKALVMLVS
+A6R6I1_AJECN/119-172                 LNKEFLTAL.......ASQSPE....................................ELRMTFWNAIKQ.......DNPDA............FLLRFLRARKW.DVQKALVMLIS
+D5GDP8_TUBMM/110-163                 HTKEFKAAL.......ASQTPS....................................ELRDAFWSMVKC.......DNPDA............LLLRFLRARKW.DVDKALVMMVA
+R4XJ95_TAPDE/161-214                 QSTEFKEAL.......ATQTPQ....................................ELRDQFWSMVKA.......DHPDG............LLLRFLRARKW.DVQKALIMMIS
+M2VAJ9_COCH5/111-164                 QTAEFKAAI.......ANIPPE....................................ELRTTFWSMVKH.......DHPDA............LLLRFLRARKW.DVEKALVMMIS
+E9CVH3_COCPS/89-142                  QTKEFYDAL.......STHTPE....................................QLRIAFWSMVKQ.......DHPDA............LLLRFLRARKW.DVNRAMIMLIS
+H6C2U0_EXODN/101-154                 QVKDFHHTL.......ATQSPE....................................ALRAAFWSMVKA.......DHPDA............LLLRFLRARKW.DVDKALVMLVS
+K1WPF0_MARBU/90-143                  QTKEFQDAL.......SNMSPE....................................LLRATFWGMVKH.......DHPDA............LLLRFLRARKW.DVDKALVMMVS
+A7F0C7_SCLS1/106-159                 QTKEFHDAL.......ASLPPA....................................SIRAAFWSMVKY.......DHPDA............LLLRFLRARKW.DVDKALVMMIS
+M1WDK0_CLAP2/95-148                  LTKQFQEIL.......ASQKPE....................................DIREALWGMMKH.......DHPDA............LVLRFLRARKW.NIDQALVMLIS
+G0S2K5_CHATD/107-160                 QTKQFYDTL.......ASQSPQ....................................SIRDTIWSMIKH.......DNPDA............LVLRFLRARKW.DVERALIMLVS
+N4TNE2_FUSC1/224-277                 ETKQFHETL.......ANESPE....................................TIRHTIWSMVKH.......DHPDA............LVLRFLRARKW.DVEKALVMLVS
+F9XM40_ZYMTI/91-144                  QTKEFQQAL.......ASLSPE....................................ALRDALWSMSKH.......DHPDA............LLLRFLRARKW.DVQAALVMLIA
+B8MAN3_TALSN/213-266                 MNKDFKQAV.......ADLSPE....................................QLRESLWSMLKA.......DHPDA............LLLRFLRARKW.DVNKAVVMLIS
+B6QDL6_TALMQ/220-273                 QNKDFKQAL.......VNITPE....................................QLRDGMWTMLKA.......DHPDA............FLLRFLRARKW.DVHKAVVMLVS
+V5FVA7_BYSSN/100-153                 TMKDFQQTI.......ADKTPE....................................QLRQTLWAMVKK.......DHPDV............LLLRFLRARKW.DVNKAVIMLIS
+Q2GUJ8_CHAGB/48-101                  QTSEFREHL.......SDKSTD....................................VFRHRLWAFILA.......DHPDV............LVLRFLRARKW.DVEKAVIMLVS
+I1S3C7_GIBZE/44-97                   KTNDFLQHL.......NNKSPE....................................NFSRSLWEAFLA.......DHPDT............TLLRFLRARDF.DVVKAVDMFVS
+F4RU40_MELLP/45-98                   INNEMKELI.......SKHGPE....................................RYAEALWRFTML.......DDPDY............TVIRFIRARKL.NVKDSVKMFIE
+A1CIW0_ASPCL/88-141                  EIKHIQHIL.......TQISPE....................................EIRDGLLSTARH.......DHPDA............LLLRFLRARKW.DVNKAFVMMLD
+Q5BG45_EMENI/92-145                  EIKSIKEIL.......HDTTAE....................................ELRAGLLSTAKN.......DNPDA............LLLRFLRARKF.DVAKSFDMMLR
+A2QBA1_ASPNC/89-142                  DIKSVREAL.......SDTSID....................................DLRSGLLYTAKH.......DSPDV............LLLRFLRARKW.DVSKAFGMMLK
+Q0CAU2_ASPTN/68-121                  DLKSLREAL.......DSVSSK....................................ALFTGLLNALKQ.......ESPDR............FLLRFLQARKW.DTGKAFAMLVH
+G3J6C8_CORMM/143-190                 ALDSFRSLL.......AKREYP................................................DFE.KSTPAQDV............KLLRFLRARRW.DVEAAYTQFND
+A0A0D2WQT6_CAPO3/15-67               ALEAMWRKV.......ET....T.................................GLLDEDKFWLAIGH.......EDADV............FLLRFLRARRF.EVDKAFTMLTE
+Q54BI6_DICDI/78-138                  IFKQFKEKV.......WKDGNEKSTN..........................TGFGEISEKEREWLE..........DGGDM............LLLRYLRARDY.DLSLSFNLLKN
+F0ZPJ2_DICPU/3-58                    IFKKFKQRI.......EKEILDES...............................SKVGEKEKKWLS..........DDIDM............MLLRYLRARDY.EAEASYQLLKG
+Q6CHI5_YARLI/30-94                   KYKQVLQFL.......QEKTEFPTSEKGAE...................KNSGPMEPLTDEEKAW.LSEE........................CILRYLRATKW.NVADAQKRLLS
+M9LQM6_PSEA3/98-159                  KYDEMLQHF.......KSIDEFPTSLKG.......................TSPKKPLTEWEKMRNLSRE........................SMIRYLRATKW.DVASAKKRLTE
+V5GEZ1_KALBG/53-114                  KYDQMLQHF.......KSTTEYPTSLKS.......................NADKKPLDEVEIMRNLSRE........................SMIRYLRATKW.DVAAAQKRLTD
+I2FPW7_USTH4/108-169                 KYDEMLEYF.......KSLDEYPTTLKA.......................NSPKKPLTEWEKLRNLSRE........................SMLRYLRATRW.DVASAKKRLTE
+C4R2X9_KOMPG/26-71                   EYDELWGNQ.......LDPKGS............................................FYKE.......SIAKK............LATKFLRANRW.DLELAKKQLTN
+G8Y224_PICSO/61-107                  EYDEIFGYR.......INTDKK.......................................................EHVDVAV.......RNEILLKFLIANDY.DVNAAQKALVA
+SFH5_KLULA/29-74                     GYDELYGHK.......LTPDDQ............................................FYEE.......VIVDN............LIYKFCRANQF.EIEGAKSQLKK
+SFH5_ASHGO/34-84                     DYDELYGHK.............L.................................LEEGPAEVAKFYSK.......DHAHA............LLFKFLKANAF.SYEGAVKQLVS
+SFH5_CANGA/29-81                     GYDELYGHKICKEIGSADEVQQ............................................YYNE.......DIAQS............LLFKLCKAYQF.NYDEIVTHLVK
+I2GZC4_TETBL/29-81                   GYDELYGYKLNYGDKDKELVTK............................................YFDE.......SIARA............LIFKLCKAYDF.KYDDVKTHIID
+G8ZZA0_TORDC/30-81                   GYDELYGYKMNPEDKDENTKK.............................................FYDE.......VTAKA............LIYKLCKATNF.NYQETVDRFVE
+G8BNQ4_TETPH/29-80                   GYDELWGYKLNYEDSNEESLE.............................................YYDE.......DIARS............LVYKICKGYQF.EYDTVIQVLVD
+SFH5_VANPO/29-81                     DYDELYGYKLNYNDSKEKLVEQ............................................YYDE.......DIAKA............LIFKICKAYQF.DKTKIITSIVD
+J7RIL7_KAZNA/29-77                   GYDELYGYKLVSEGAGSE................................................FYNK.......DVADA............LVFKLCKAYQF.QYEDIMQHLIH
+YJX4_SCHPO/599-658                   MYEEVLKYC.......LELKEIPVASN........................SSKKTDLIELERLW.LTRE........................CILRYLRATKW.HVSNAKKRIVD
+S9VXA1_SCHCR/386-445                 MYKEVFIYC.......NDLKDIPVSSK........................SDKTEGLSEVEKYF.LTKE........................CILRFLRATKW.NASATKKRILD
+S8BQ81_DACHA/116-176                 KYDELLALC.......KEITEVPDTKEK.......................NAPKSPLTDSERMF.MTRE........................CLFRYLRATKW.NVAEAKKRIEG
+B8MPD2_TALSN/98-158                  KYSELLDLI.......SNLSDLPVSSKL.......................NTPVTPLADNERMW.LTQE........................CLLRYLRATKW.NVAAASERVKS
+D5GH16_TUBMM/195-255                 KYAEILAWA.......QALGPIPVSSDR.......................AAAAREIDDEEKMW.LTRE........................CFLRYLRATKW.NVADVKKRLEA
+H6BN03_EXODN/110-170                 KYETLLKKV.......SAWTGIPETSSK.......................GSKTRPLTDAERMW.LTRD........................CLLRYLRATTW.NVAQAENRLRN
+M7UFK0_BOTF1/68-125                  KYDALLETV.......KSWTEIPAKD..........................SKGGPITDSEKLW.LTRE........................CLCRYLRATKW.SATEAPKRLLG
+L8FXR9_PSED2/73-130                  KYEEVLATV.......KTWTGIPSTK..........................GKEGPVMEEEIMW.LTRD........................CILRYLRATKW.QPAEAAKRLLS
+S3D844_GLAL2/74-131                  KYESLLETA.......KSWKEIPSAK..........................EKGGPVTDSEIMW.LTRE........................CLLRYLRATKW.NTAEAAKRLLG
+G4NEY9_MAGO7/45-102                  KYDWLLEQV.......KKWTEVPSTK..........................GKGGPLTDAERMW.LTRE........................CLLRYLRATKW.VEKDAEKRLRE
+G4UHB6_NEUT9/31-88                   KYNWLLEQV.......KNWKEVPATE..........................GKAGPITDREKFW.LTRE........................CLLRFLRATKW.NQKEAEKRILG
+F7VU58_SORMK/31-88                   KYNWLLEQV.......KNWKEVPATE..........................GKTGPLTDRERFW.LTRE........................CLLRYLRATKW.NQKEAERRVLG
+G2Q9U3_MYCTT/47-104                  KYDWLLQQV.......KGWTEVPSTK..........................GKAGPLTDGEKFW.LTKE........................CLLRYLRATKW.HEKEADKRLLE
+B2B616_PODAN/31-87                   KYDWLLERV.......KGWTEIPSTS...........................KAGPPTDSEKFW.LTKE........................CLLRYLRATKW.NQQEAEKRLLK
+U7PUT4_SPOS1/51-112                  KYEWLLEQV.......KSWTTVASSKDS......................KEDKSGPLTDEDRFW.LTRE........................CLLRYLRATKW.HEKDAAKRLHE
+N1RRB6_FUSC4/38-100                  KYEALLEQV.......KGITEIQCEKKAD.....................EEDKSGPITDHERSW.LTRE........................CLLRYLRATKW.SVDDSAKRLKA
+M1W2I2_CLAP2/36-97                   KYKALLEKA.......QAFTEIKCPSKD......................HKEKSGPVTDQERAW.LTRE........................CLLRYLRATNW.TVKESEQRLLD
+N4VFS6_COLOR/53-112                  KYDSLLSQV.......RAWTEVKCPAA........................ADKSGPLTDSDRQW.LTRQ........................CLLRYLRATKW.DLKTAERRLLE
+J4VY38_BEAB2/40-101                  KYEALLTKA.......KSWTEVTCGNDK......................ERSKSGPLQDRERAW.LTRD........................CLLRYLRATKW.HVDDAGKRVQA
+K2R3J4_MACPH/75-136                  KYQELLESV.......KKWEKVPKSTAK.......................KPEEEPLSDDERMW.LTRE........................CLLRYLRAVKWTSVAAAEKRLLD
+Q0UD14_PHANO/29-88                   KYDELLTEV.......KSWESLPTTKT........................GTETAPVSEDERFW.LTRE........................CLLRYLRATKW.DLKSAIQRLRA
+E3S0Y0_PYRTT/29-89                   KYDQLLADV.......QTWELLPTTSVK.......................TAETTPITDDERMW.ITRE........................CLLRYLRATKW.NVAQAAQRLRA
+M2TMQ4_COCH5/29-89                   KYDQLLADV.......RTWDSLPTTLAK.......................ATETSPVTDDERMW.LTRE........................CLLRYLRAVKW.NVQQAAERLRS
+E4ZZA8_LEPMJ/29-89                   KYDQLLADI.......RSWDSIPTTSAK.......................GAESTTLTDEERMW.LTRE........................CLLRYLRATKW.NLAQAADRLRS
+R0K2H8_SETT2/29-89                   KYEQLLADV.......RTWESPVEPSDK.......................SAETGALTDGQRMW.LTRE........................CLLRYLRATKW.NVQQAAQRLRG
+B6Q696_TALMQ/69-129                  KYDEVLQTV.......TGFTSVPTSLAK.......................NASESPLTDNERMW.LTRE........................CLLRFLRATKW.NVPEAIKRIRA
+R7Z758_CONA1/105-165                 KYADVLAAV.......QAWTTVPTSSGR.......................SPKHEPLLDDERLW.LTKE........................CLLRYLRATKW.VVPTAIQRLQQ
+J3K1Z6_COCIM/88-148                  KYETVLKAV.......SEWTTIPTTSSK.......................NAPTEPLTDDERMF.LTRE........................CLLRYLRATKW.NVADAIQRLQA
+F9X4T2_ZYMTI/101-161                 KYTAVLSAV.......SEWTNVPATTAK.......................NAPSSPITDHERMF.LTRE........................CLLRYLRATKW.NVPSAIKRLQS
+M2Z6R6_PSEFD/113-173                 KYSTVLAQV.......SQWQAVPTSTAK.......................GAPDAPLKDHERMF.LTRE........................CILRYLRATKW.NTKDALSRLQG
+N1PVW1_DOTSN/98-158                  KYTAVREQV.......SQWTTIPTSTAK.......................GAAQAPIEEYERMF.LTRE........................CLLRYLRATKW.RPADAVRRLQE
+M3B765_SPHMS/112-172                 KYNAVLAEV.......SQWTTISASTAK.......................NAAQAPIEEHERMF.LTRE........................CLLRYLRATKW.VTADALKRLQG
+C5GL50_AJEDR/106-166                 KYEQLLTVV.......SEWTTIPTTTAK.......................NAPTEPITDDDRMF.MTRE........................CLLRYLRATKW.DLAAATNRLRG
+C1GV84_PARBA/71-131                  KYDSVLKTV.......SEWTTVPTTSAK.......................NAPTEPITDDDRMF.LTRE........................CLLRYLRATKW.DVTAAVIRLQG
+K9G113_PEND2/81-141                  KYEAVLKSA.......SSWTTVATKAEK.......................NAPTSPITEDERMW.LTRE........................CLLRYLRATKW.DVSDAETRLQS
+S7ZPU3_PENO1/50-110                  KYETVLKTV.......SSWATVPIKAEK.......................NAPTEPITDDERMW.LTRE........................CILRYLRASKW.NIFEAETRLQK
+V5G656_BYSSN/96-156                  KYETVLKTV.......SSWTTVPTTTAK.......................NAPTESITEDERMF.LTRE........................CLLRYLRASKW.NVHDAISRLQS
+C5FQU4_ARTOC/76-136                  KYDSLLALV.......TGWTTIPATSAK.......................NAPLEPLSDDERMF.LTRE........................CLLRYLRATKW.NVTSAESRLQA
+R9AR04_WALI9/28-87                   KYDLVLTAM.......RQLNTLPMSEN........................DNTPAGISGVEERF.LTRE........................CMLRYLRATRW.NTVTTIERLQK
+I4Y7E6_WALMC/27-86                   KYTNLLSQV.......KAITELPNDEN........................SSEKTALTATEKFW.LTRE........................CLLRYLRAVKW.DVSAAETRIKK
+W1Q7P9_OGAPD/51-113                  KYSTVLKHF.......QSTEKYPVLEKNC.....................NTSDYVELNDFEKAW.LSKE........................CILRYLRACDW.NVDETIKRLTN
+C4R5Q9_KOMPG/46-109                  KYQQVLDHF.......KNEDLKLPITEKY....................KEGDETRSLTTEEKAW.LTKE........................CILRYCRACNW.NVTDTITRLEN
+A8P4H7_COPC7/32-88                   MYEEVLAHF.......TKDSYVLPNE...........................EKGELTEKEKFW.LSRE........................CLLRYLRASKW.KVATAIQRLES
+B0D5N7_LACBS/4-61                    MYDTVLEHF.......SAGSYVLPNV..........................DENGELTPAEKFW.LSRE........................CLLRYLRATKW.KVQPAITRLEA
+F8PXP6_SERL3/31-87                   MYEKVYQHF.......VQDGYVVPEL...........................ENGELLEEEKMW.LSYE........................CILRYLRATKW.DVNEAIKRLEG
+K5VWN7_AGABU/44-127                  HYDVVFSHF.......NNSEYKLPGYEDLDKAKERLEEVRKREGFESEMRRREWTAELVEEEKFW.LSYE........................CILRYLRASKW.KSEMAIERLEN
+B8P4C0_POSPM/38-95                   PFDEVLQHF.......QDEDYVLPNV...........................EDGALTDEEKFW.LSYE........................CMHRYLRAVKWASSKAAIKRLEE
+K5W3H6_PHACS/34-92                   IADEVLAYF.......SKDEYELPVK..........................EGDKKLIEEEKFW.LTYE........................CMLRYCRATRWESAKQAIKRLEE
+G4T6V6_SERID/32-89                   KRLQVLAHF.......TAEDYKLPNV..........................EKDPKLMEMEKFW.LTND........................CMLRYLRATKW.DVPAAIKRLES
+A7TF65_VANPO/52-113                  VYRKVLEHF.......QDDEFELPLSTK......................DKVNRRCLSSWEKFW.LTRE........................CILRFLRAAKW.DRENTIKNLEE
+I2GW46_TETBL/49-110                  AYRKLLTYF.......SDPKYELAVNTK......................DTSKRRALSPREKFW.LTRE........................CILRFLRAAKW.HEENAIKNLEE
+G8BQ28_TETPH/53-118                  IYVKLLNHF.......NAEDFTLPVNTEVA..................KDDPALQKSLSEFEKFW.LSRE........................CLLRFLRAAKW.NFNDAVANLSE
+Q6CUT0_KLULA/48-114                  IYHAVLQHF.......SDPQLRLPVNGHAED.................LQDSNNYSTLGDWEKFW.LSRE........................CILRYLRATAW.NAEQTIRRLHN
+F4S8S4_MELLP/41-107                  IYQNVLNHL.......STPNYQLPITLNQLR.................QKDTQSLLPLSDIERCY.CSRE........................FILRTCRATRW.NQTACINRIEE
+Q752B5_ASHGO/48-113                  KYTHVLKYF.......QDEKLVLPLKSSKK..................QESAEQTAALSAYERFW.LTRE........................CLLRYLRATSW.NVEAAIERLRK
+H2AUI9_KAZAF/49-110                  KYNEVLSHF.......KDESLTLPISTD......................PSSDKLPLNSWEMFW.LSRE........................CIYRYLKAQKW.NVANAIKALTN
+Q6FNY5_CANGA/49-111                  KLAQMLEHF.......NKPDLVLPVSSTD.....................DTGKTRPISSWEKFF.LTRD........................CFLRYLRAQKW.DVPKAIKMLTE
+C4R8A0_KOMPG/51-114                  LYDQVLEYF.......SNEDLRIPVTEKN....................SSSSDHQPLSYDEKAW.LTRE........................AILRYLRATKW.HYKDCIDRIEG
+K0KY05_WICCF/51-112                  KYNEILKHF.......QNPDLKVFTSES......................KPLEKESLSQLEKSW.LTKE........................CFLRYLRATKW.NVDDCIKRIEG
+K0KG17_WICCF/47-107                  KYNEVLKHF.......QDSNLEVAKAPK.......................SSEKASLTSHEKSW.LTRE........................CFLRYLRATKW.IVKDAIERLEL
+#=GC seq_cons                        thpplhpth.......pshp......................................p.tppha.hscp........................sLLRaLRApKW.slpcAhpplpp

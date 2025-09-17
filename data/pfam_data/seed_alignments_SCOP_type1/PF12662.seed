@@ -1,0 +1,747 @@
+# STOCKHOLM 1.0
+#=GF ID   cEGF
+#=GF AC   PF12662.11
+#=GF DE   Complement Clr-like EGF-like
+#=GF AU   Wouters M;0000-0002-2121-912X
+#=GF AU   Coggill P;0000-0001-5731-1588
+#=GF SE   Wouters M
+#=GF GA   26.60 26.60;
+#=GF TC   26.60 26.60;
+#=GF NC   26.50 26.50;
+#=GF BM   hmmbuild HMM.ann SEED.ann
+#=GF SM   hmmsearch -E 1000 --cpu 4 -Z 75585367 HMM pfamseq
+#=GF TP   Domain
+#=GF WK   EGF-like_domain
+#=GF CL   CL0001
+#=GF RN   [1]
+#=GF RM   15772310
+#=GF RT   Evolution of distinct EGF domains with specific functions.
+#=GF RA   Wouters MA, Rigoutsos I, Chu CK, Feng LL, Sparrow DB, Dunwoodie
+#=GF RA   SL;
+#=GF RL   Protein Sci. 2005;14:1091-1103.
+#=GF DR   INTERPRO; IPR026823;
+#=GF DR   SO; 0000417; polypeptide_domain;
+#=GF CC   cEGF, or complement Clr-like EGF, domains have six conserved
+#=GF CC   cysteine residues disulfide-bonded into the characteristic
+#=GF CC   pattern 'ababcc'. They are found in blood coagulation proteins
+#=GF CC   such as fibrillin, Clr and Cls, thrombomodulin, and the LDL
+#=GF CC   receptor. The core fold of the EGF domain consists of two small
+#=GF CC   beta-hairpins packed against each other. Two major structural
+#=GF CC   variants have been identified based on the structural context of
+#=GF CC   the C-terminal cysteine residue of disulfide 'c' in the
+#=GF CC   C-terminal hairpin: hEGFs and cEGFs. In cEGFs the C-terminal
+#=GF CC   thiol resides on the C-terminal beta-sheet, resulting in long
+#=GF CC   loop-lengths between the cysteine residues of disulfide 'c',
+#=GF CC   typically C[10+]XC. These longer loop-lengths may have arisen by
+#=GF CC   selective cysteine loss from a four-disulfide EGF template such
+#=GF CC   as laminin or integrin.  Tandem cEGF domains have five linking
+#=GF CC   residues between terminal cysteines of adjacent domains. cEGF
+#=GF CC   domains may or may not bind calcium in the linker region. cEGF
+#=GF CC   domains with the consensus motif CXN4X[F,Y]XCXC are hydroxylated
+#=GF CC   exclusively on the asparagine residue.
+#=GF SQ   352
+#=GS FBLN5_PONAB/187-210       AC Q5RC26.1
+#=GS H3CNV5_TETNG/198-221      AC H3CNV5.1
+#=GS AGRE1_RAT/54-84           AC Q5Y4N8.1
+#=GS H3DDK6_TETNG/732-755      AC H3DDK6.1
+#=GS FBN2_MOUSE/825-848        AC Q61555.2
+#=GS A0A8M2B2Z6_DANRE/217-240  AC A0A8M2B2Z6.1
+#=GS B3MZ83_DROAN/709-732      AC B3MZ83.2
+#=GS B4MF28_DROVI/749-772      AC B4MF28.2
+#=GS FBN2_MOUSE/1665-1688      AC Q61555.2
+#=GS B3RL37_TRIAD/323-345      AC B3RL37.1
+#=GS PROS_MOUSE/223-246        AC Q08761.1
+#=GS PROS_MACMU/196-219        AC Q28520.2
+#=GS H3CG09_TETNG/337-360      AC H3CG09.1
+#=GS LRP8_CHICK/372-394        AC Q98931.1
+#=GS B6AGF9_CRYMR/195-218      AC B6AGF9.1
+#=GS TRBM_BOVIN/196-218        AC P06579.1
+#=GS TRBM_HUMAN/422-444        AC P07204.2
+#=GS B3SD52_TRIAD/183-206      AC B3SD52.1
+#=GS H7C0I7_HUMAN/61-83        AC H7C0I7.1
+#=GS B3SD52_TRIAD/358-381      AC B3SD52.1
+#=GS G3SFX5_GORGO/2384-2407    AC G3SFX5.2
+#=GS FBN2_MOUSE/2505-2528      AC Q61555.2
+#=GS A7RVK3_NEMVE/151-174      AC A7RVK3.1
+#=GS Q68EF9_MOUSE/181-204      AC Q68EF9.1
+#=GS SCUB3_HUMAN/257-280       AC Q8IX30.1
+#=GS A7RGB0_NEMVE/301-324      AC A7RGB0.1
+#=GS H3DNK6_TETNG/1324-1347    AC H3DNK6.1
+#=GS A7RN00_NEMVE/192-215      AC A7RN00.1
+#=GS H2XYP0_CIOIN/500-523      AC H2XYP0.1
+#=GS A7T8E5_NEMVE/343-364      AC A7T8E5.1
+#=GS A7SG77_NEMVE/13-34        AC A7SG77.1
+#=GS A7S7V4_NEMVE/91-112       AC A7S7V4.1
+#=GS AGRE1_MOUSE/245-275       AC Q61549.1
+#=GS A9V5W5_MONBE/1040-1061    AC A9V5W5.1
+#=GS B3RJF7_TRIAD/102-125      AC B3RJF7.1
+#=GS SCUB3_MOUSE/92-115        AC Q66PY1.1
+#=GS B3RS18_TRIAD/111-132      AC B3RS18.1
+#=GS B3SCC4_TRIAD/530-551      AC B3SCC4.1
+#=GS B3S3N0_TRIAD/618-639      AC B3S3N0.1
+#=GS B3S3N0_TRIAD/459-480      AC B3S3N0.1
+#=GS B3RQ06_TRIAD/233-254      AC B3RQ06.1
+#=GS U3KME5_RABIT/2257-2280    AC U3KME5.2
+#=GS A7RF88_NEMVE/67-99        AC A7RF88.1
+#=GS B3S3N0_TRIAD/418-439      AC B3S3N0.1
+#=GS B3RQ10_TRIAD/438-459      AC B3RQ10.1
+#=GS A9VCG0_MONBE/329-350      AC A9VCG0.1
+#=GS A7SRT8_NEMVE/11-32        AC A7SRT8.1
+#=GS A7SRT8_NEMVE/138-159      AC A7SRT8.1
+#=GS A7RQ82_NEMVE/65-86        AC A7RQ82.1
+#=GS B3RZV6_TRIAD/351-372      AC B3RZV6.1
+#=GS B9QP44_TOXGV/983-1006     AC B9QP44.1
+#=GS G1TAQ7_RABIT/522-543      AC G1TAQ7.2
+#=GS A0A125YX19_TOXGV/123-148  AC A0A125YX19.1
+#=GS W5QHQ8_SHEEP/991-1012     AC W5QHQ8.1
+#=GS B3SE10_TRIAD/7-28         AC B3SE10.1
+#=GS A7SRT8_NEMVE/347-368      AC A7SRT8.1
+#=GS A7ST24_NEMVE/265-286      AC A7ST24.1
+#=GS A7TAU1_NEMVE/175-196      AC A7TAU1.1
+#=GS A7T1U1_NEMVE/90-111       AC A7T1U1.1
+#=GS A7SIA1_NEMVE/107-128      AC A7SIA1.1
+#=GS FBN1_MOUSE/1428-1451      AC Q61554.2
+#=GS A7RVK3_NEMVE/192-215      AC A7RVK3.1
+#=GS B3RL37_TRIAD/89-112       AC B3RL37.1
+#=GS A7RF86_NEMVE/85-108       AC A7RF86.1
+#=GS A7SBY9_NEMVE/235-256      AC A7SBY9.1
+#=GS B3RZV6_TRIAD/310-331      AC B3RZV6.1
+#=GS A7SCA6_NEMVE/186-207      AC A7SCA6.1
+#=GS H3C692_TETNG/2455-2478    AC H3C692.1
+#=GS B3RQ10_TRIAD/356-377      AC B3RQ10.1
+#=GS A7S357_NEMVE/580-602      AC A7S357.1
+#=GS B3M965_DROAN/804-827      AC B3M965.2
+#=GS B4HV95_DROSE/971-994      AC B4HV95.1
+#=GS A7RVN4_NEMVE/291-314      AC A7RVN4.1
+#=GS G3IL49_CRIGR/137-160      AC G3IL49.1
+#=GS A7SME0_NEMVE/157-180      AC A7SME0.1
+#=GS A7RN00_NEMVE/101-124      AC A7RN00.1
+#=GS B0XEB3_CULQU/214-237      AC B0XEB3.1
+#=GS B3RQ06_TRIAD/109-132      AC B3RQ06.1
+#=GS H3DJ72_TETNG/865-888      AC H3DJ72.1
+#=GS A7RVK3_NEMVE/110-133      AC A7RVK3.1
+#=GS B4H2A4_DROPE/914-937      AC B4H2A4.1
+#=GS B4J121_DROGR/905-928      AC B4J121.1
+#=GS A7RVK5_NEMVE/549-572      AC A7RVK5.1
+#=GS B4MY15_DROWI/578-599      AC B4MY15.2
+#=GS AGRE1_HUMAN/241-271       AC Q14246.3
+#=GS C1QR1_MOUSE/403-427       AC O89103.1
+#=GS C1QR1_HUMAN/406-430       AC Q9NPY3.3
+#=GS AGRL4_MOUSE/80-111        AC Q923X1.3
+#=GS F6Z1C2_MOUSE/17-39        AC F6Z1C2.1
+#=GS Q5WQV6_DANRE/261-283      AC Q5WQV6.2
+#=GS A7T0C2_NEMVE/19-42        AC A7T0C2.1
+#=GS V5BBZ5_TOXGV/332-355      AC V5BBZ5.1
+#=GS A0A8M2B2Z6_DANRE/180-201  AC A0A8M2B2Z6.1
+#=GS B4HV95_DROSE/621-644      AC B4HV95.1
+#=GS I3JQH4_ORENI/159-182      AC I3JQH4.2
+#=GS FBLN1_DANRE/173-196       AC O42182.1
+#=GS B4K1Y2_DROGR/434-457      AC B4K1Y2.1
+#=GS B3RQ07_TRIAD/2605-2628    AC B3RQ07.1
+#=GS W5K392_ASTMX/738-760      AC W5K392.2
+#=GS B3RQ10_TRIAD/1495-1518    AC B3RQ10.1
+#=GS H3DI89_TETNG/247-268      AC H3DI89.1
+#=GS A7S9P5_NEMVE/260-282      AC A7S9P5.1
+#=GS A7RVK5_NEMVE/382-405      AC A7RVK5.1
+#=GS PROS_BOVIN/181-204        AC P07224.1
+#=GS AGRE1_HUMAN/53-83         AC Q14246.3
+#=GS B7Q8G4_IXOSC/1627-1650    AC B7Q8G4.1
+#=GS H7BXL0_HUMAN/23-47        AC H7BXL0.1
+#=GS FBLN2_HUMAN/923-946       AC P98095.2
+#=GS G3IFZ1_CRIGR/366-389      AC G3IFZ1.1
+#=GS FBLN1_DANRE/396-419       AC O42182.1
+#=GS FBLN1_CHICK/422-445       AC O73775.2
+#=GS B3RRK6_TRIAD/135-158      AC B3RRK6.1
+#=GS L8Y7Y6_TUPCH/1135-1159    AC L8Y7Y6.1
+#=GS H3DKQ0_TETNG/907-930      AC H3DKQ0.1
+#=GS A7RVN4_NEMVE/332-355      AC A7RVN4.1
+#=GS B4JZT0_DROGR/646-669      AC B4JZT0.1
+#=GS B7QBX8_IXOSC/306-329      AC B7QBX8.1
+#=GS CCBE1_MOUSE/157-180       AC Q3MI99.2
+#=GS A7RIX8_NEMVE/146-169      AC A7RIX8.1
+#=GS A7RIX8_NEMVE/21-44        AC A7RIX8.1
+#=GS B5DS00_DROPS/700-723      AC B5DS00.2
+#=GS Q54YP0_DICDI/299-322      AC Q54YP0.1
+#=GS B3RIT7_TRIAD/582-605      AC B3RIT7.1
+#=GS B3S2H0_TRIAD/340-363      AC B3S2H0.1
+#=GS G1P849_MYOLU/871-894      AC G1P849.1
+#=GS A7T4U6_NEMVE/22-45        AC A7T4U6.1
+#=GS A7SNM8_NEMVE/87-110       AC A7SNM8.1
+#=GS B3SD52_TRIAD/11-34        AC B3SD52.1
+#=GS A7S8T1_NEMVE/104-127      AC A7S8T1.1
+#=GS A7SNM6_NEMVE/51-74        AC A7SNM6.1
+#=GS A7SXS3_NEMVE/62-85        AC A7SXS3.1
+#=GS B0G154_DICDI/981-1004     AC B0G154.1
+#=GS GAS6_RAT/174-197          AC Q63772.1
+#=GS A7S357_NEMVE/661-684      AC A7S357.1
+#=GS A7SBC1_NEMVE/265-288      AC A7SBC1.1
+#=GS A7RN04_NEMVE/93-116       AC A7RN04.1
+#=GS A7SNM6_NEMVE/11-33        AC A7SNM6.1
+#=GS B4J121_DROGR/864-887      AC B4J121.1
+#=GS A7RSD3_NEMVE/330-353      AC A7RSD3.1
+#=GS B3SD50_TRIAD/19-42        AC B3SD50.1
+#=GS F7CLL4_MONDO/3938-3962    AC F7CLL4.2
+#=GS LRP2_RAT/3988-4012        AC P98158.1
+#=GS A7RSD3_NEMVE/207-230      AC A7RSD3.1
+#=GS LRP2_RAT/3134-3157        AC P98158.1
+#=GS A7RJZ9_NEMVE/267-291      AC A7RJZ9.1
+#=GS A7SSL3_NEMVE/118-141      AC A7SSL3.1
+#=GS A7SIZ8_NEMVE/157-180      AC A7SIZ8.1
+#=GS L9JZJ2_TUPCH/2473-2496    AC L9JZJ2.1
+#=GS A7RVK5_NEMVE/673-696      AC A7RVK5.1
+#=GS A7T713_NEMVE/13-36        AC A7T713.1
+#=GS D6REJ2_HUMAN/72-95        AC D6REJ2.1
+#=GS F6ZFS0_MOUSE/19-42        AC F6ZFS0.1
+#=GS B3RS19_TRIAD/125-148      AC B3RS19.1
+#=GS A7S8T1_NEMVE/22-45        AC A7S8T1.1
+#=GS F1MCN3_BOVIN/146-170      AC F1MCN3.1
+#=GS AGRE2_CANLF/144-168       AC Q2Q421.2
+#=GS B3RZV6_TRIAD/90-113       AC B3RZV6.1
+#=GS A7SBZ1_NEMVE/185-208      AC A7SBZ1.1
+#=GS B3RS19_TRIAD/43-66        AC B3RS19.1
+#=GS A7RGE4_NEMVE/397-419      AC A7RGE4.1
+#=GS Q23587_CAEEL/1723-1744    AC Q23587.4
+#=GS A7RGF1_NEMVE/106-127      AC A7RGF1.1
+#=GS B4GQE7_DROPE/35-57        AC B4GQE7.1
+#=GS A7RL39_NEMVE/83-105       AC A7RL39.1
+#=GS A9V5W5_MONBE/1495-1516    AC A9V5W5.1
+#=GS A7RF87_NEMVE/32-53        AC A7RF87.1
+#=GS A7SME0_NEMVE/113-136      AC A7SME0.1
+#=GS H3C2H5_TETNG/374-397      AC H3C2H5.1
+#=GS FBLN1_DANRE/354-377       AC O42182.1
+#=GS A7SBZ1_NEMVE/144-166      AC A7SBZ1.1
+#=GS FBN1_BOVIN/510-533        AC P98133.2
+#=GS A7RN04_NEMVE/11-35        AC A7RN04.1
+#=GS A7SXS3_NEMVE/189-211      AC A7SXS3.1
+#=GS H3C3D2_TETNG/316-338      AC H3C3D2.1
+#=GS NELL2_XENTR/576-603       AC A2VCU8.1
+#=GS H3CW50_TETNG/573-600      AC H3CW50.1
+#=GS NELL1_HUMAN/572-599       AC Q92832.4
+#=GS FBLN1_CAEEL/410-433       AC O77469.3
+#=GS A7RGE4_NEMVE/562-585      AC A7RGE4.1
+#=GS B3RIT6_TRIAD/94-117       AC B3RIT6.1
+#=GS NID2_HUMAN/783-804        AC Q14112.3
+#=GS B3RIT7_TRIAD/460-483      AC B3RIT7.1
+#=GS B4JZT0_DROGR/328-351      AC B4JZT0.1
+#=GS B7Q439_IXOSC/113-136      AC B7Q439.1
+#=GS B3SDW9_TRIAD/68-91        AC B3SDW9.1
+#=GS A7SBY8_NEMVE/376-399      AC A7SBY8.1
+#=GS W5P538_SHEEP/322-345      AC W5P538.1
+#=GS C1QR1_RAT/322-345         AC Q9ET61.1
+#=GS C1QR1_HUMAN/325-348       AC Q9NPY3.3
+#=GS LTBP3_HUMAN/596-619       AC Q9NS15.4
+#=GS H2QM37_PANTR/881-904      AC H2QM37.2
+#=GS G3IFZ1_CRIGR/324-347      AC G3IFZ1.1
+#=GS FBLN1_CHICK/380-403       AC O73775.2
+#=GS B3M965_DROAN/333-357      AC B3M965.2
+#=GS B4MY15_DROWI/351-375      AC B4MY15.2
+#=GS FBN1_BOVIN/745-768        AC P98133.2
+#=GS B4HV95_DROSE/323-346      AC B4HV95.1
+#=GS H3CMC8_TETNG/244-267      AC H3CMC8.1
+#=GS B6AEN1_CRYMR/179-202      AC B6AEN1.1
+#=GS B6AEN1_CRYMR/92-116       AC B6AEN1.1
+#=GS B7PP87_IXOSC/7-30         AC B7PP87.1
+#=GS A7T5E3_NEMVE/27-50        AC A7T5E3.1
+#=GS B4L5J5_DROMO/1386-1409    AC B4L5J5.1
+#=GS Q23587_CAEEL/400-422      AC Q23587.4
+#=GS G1P849_MYOLU/1081-1104    AC G1P849.1
+#=GS W5PKX8_SHEEP/694-717      AC W5PKX8.1
+#=GS F6X4H6_CIOIN/89-112       AC F6X4H6.2
+#=GS B0W3Y5_CULQU/123-146      AC B0W3Y5.1
+#=GS B1ASH4_MOUSE/246-269      AC B1ASH4.1
+#=GS Q8SYF5_DROME/181-205      AC Q8SYF5.1
+#=GS Q55CM2_DICDI/339-362      AC Q55CM2.1
+#=GS B0G154_DICDI/213-236      AC B0G154.1
+#=GS B0G154_DICDI/254-277      AC B0G154.1
+#=GS A7RSD3_NEMVE/84-107       AC A7RSD3.1
+#=GS Q54YP0_DICDI/504-527      AC Q54YP0.1
+#=GS B3RZV6_TRIAD/172-195      AC B3RZV6.1
+#=GS A7RGE3_NEMVE/7-28         AC A7RGE3.1
+#=GS A7RKU2_NEMVE/87-108       AC A7RKU2.1
+#=GS LRP1_HUMAN/2962-2985      AC Q07954.2
+#=GS LRP1B_MOUSE/2948-2971     AC Q9JI18.1
+#=GS A7SIZ8_NEMVE/21-44        AC A7SIZ8.1
+#=GS A7RVK5_NEMVE/505-529      AC A7RVK5.1
+#=GS A7T5E3_NEMVE/193-216      AC A7T5E3.1
+#=GS B7Q8G4_IXOSC/1230-1253    AC B7Q8G4.1
+#=GS B7Q8G4_IXOSC/62-85        AC B7Q8G4.1
+#=GS F7ALZ5_CALJA/2295-2316    AC F7ALZ5.3
+#=GS G1R0Y5_NOMLE/589-614      AC G1R0Y5.2
+#=GS B7Q8G4_IXOSC/1504-1527    AC B7Q8G4.1
+#=GS F6SDH3_CIOIN/351-372      AC F6SDH3.2
+#=GS B7Q8G4_IXOSC/105-128      AC B7Q8G4.1
+#=GS A7RF88_NEMVE/24-46        AC A7RF88.1
+#=GS A7SBY9_NEMVE/276-297      AC A7SBY9.1
+#=GS B3S0C6_TRIAD/539-560      AC B3S0C6.1
+#=GS A7SBY9_NEMVE/150-173      AC A7SBY9.1
+#=GS B3LYM1_DROAN/580-603      AC B3LYM1.2
+#=GS Q86B77_DROME/341-364      AC Q86B77.1
+#=GS B4K4V0_DROMO/578-601      AC B4K4V0.2
+#=GS B4M4P1_DROVI/528-551      AC B4M4P1.1
+#=GS A7RVK5_NEMVE/339-362      AC A7RVK5.1
+#=GS B4K4U9_DROMO/484-507      AC B4K4U9.1
+#=GS A7RIX8_NEMVE/186-209      AC A7RIX8.1
+#=GS Q559U0_DICDI/309-332      AC Q559U0.1
+#=GS A7SBY8_NEMVE/330-353      AC A7SBY8.1
+#=GS B7Q8G4_IXOSC/1188-1211    AC B7Q8G4.1
+#=GS B9GI91_POPTR/500-522      AC B9GI91.1
+#=GS VSR3_ARATH/498-520        AC O80977.1
+#=GS Q339K4_ORYSJ/500-522      AC Q339K4.1
+#=GS A7RK41_NEMVE/64-90        AC A7RK41.1
+#=GS E3NCL0_CAERE/3795-3819    AC E3NCL0.1
+#=GS B4I3A6_DROSE/688-710      AC B4I3A6.1
+#=GS LTBP4_MOUSE/610-633       AC Q8K4G1.2
+#=GS A7RQZ7_NEMVE/57-79        AC A7RQZ7.1
+#=GS UROM_MOUSE/88-110         AC Q91X17.1
+#=GS UROM_CANLF/91-113         AC Q862Z3.1
+#=GS A7RFT0_NEMVE/62-83        AC A7RFT0.1
+#=GS Q5WQV6_DANRE/143-164      AC Q5WQV6.2
+#=GS B4H852_DROPE/544-571      AC B4H852.1
+#=GS Q9V4B8_DROME/541-568      AC Q9V4B8.3
+#=GS FBN3_HUMAN/1176-1199      AC Q75N90.3
+#=GS FBN2_HUMAN/1263-1286      AC P35556.3
+#=GS B7Q8G4_IXOSC/426-449      AC B7Q8G4.1
+#=GS F7ALZ5_CALJA/1365-1388    AC F7ALZ5.3
+#=GS B0G154_DICDI/739-760      AC B0G154.1
+#=GS B7PIR8_IXOSC/21-44        AC B7PIR8.1
+#=GS Q4T5R2_TETNG/294-317      AC Q4T5R2.1
+#=GS A7SBZ1_NEMVE/689-712      AC A7SBZ1.1
+#=GS B3RRK6_TRIAD/175-196      AC B3RRK6.1
+#=GS E5RJM4_HUMAN/16-39        AC E5RJM4.1
+#=GS PROZ_HUMAN/147-170        AC P22891.2
+#=GS B0X6X6_CULQU/324-346      AC B0X6X6.1
+#=GS Q91YY0_MOUSE/731-754      AC Q91YY0.1
+#=GS A7SNM8_NEMVE/128-151      AC A7SNM8.1
+#=GS V5BBZ5_TOXGV/990-1019     AC V5BBZ5.1
+#=GS A7RVN4_NEMVE/380-402      AC A7RVN4.1
+#=GS A7SBZ1_NEMVE/469-492      AC A7SBZ1.1
+#=GS B4KUM9_DROMO/958-981      AC B4KUM9.2
+#=GS H3D9U0_TETNG/468-493      AC H3D9U0.1
+#=GS FBLN1_DANRE/479-503       AC O42182.1
+#=GS B7Q8G4_IXOSC/1312-1335    AC B7Q8G4.1
+#=GS B4H2A4_DROPE/832-855      AC B4H2A4.1
+#=GS B4KUM9_DROMO/758-781      AC B4KUM9.2
+#=GS HMCN2_MOUSE/4689-4712     AC A2AJ76.1
+#=GS FBLN1_MOUSE/506-530       AC Q08879.2
+#=GS HMCN2_HUMAN/4883-4906     AC Q8NDA2.3
+#=GS H3D7B7_TETNG/604-627      AC H3D7B7.1
+#=GS B7QKE3_IXOSC/229-251      AC B7QKE3.1
+#=GS NPNT_MOUSE/148-172        AC Q91V88.1
+#=GS M0QZX0_HUMAN/89-113       AC M0QZX0.8
+#=GS E9Q2A0_MOUSE/115-138      AC E9Q2A0.1
+#=GS B7Q8G4_IXOSC/1106-1129    AC B7Q8G4.1
+#=GS FBN1_BOVIN/1953-1976      AC P98133.2
+#=GS F6Z0F8_HORSE/763-786      AC F6Z0F8.3
+#=GS LTBP3_MOUSE/762-785       AC Q61810.4
+#=GS A7RSD3_NEMVE/451-474      AC A7RSD3.1
+#=GS G3HNR1_CRIGR/1383-1406    AC G3HNR1.1
+#=GS B7Q8G4_IXOSC/1146-1169    AC B7Q8G4.1
+#=GS C1MPL0_MICPC/630-652      AC C1MPL0.1
+#=GS Q4SWS1_TETNG/239-262      AC Q4SWS1.1
+#=GS A7SSL3_NEMVE/561-584      AC A7SSL3.1
+#=GS FBLN1_CAEEL/540-563       AC O77469.3
+#=GS FBN1_HUMAN/593-616        AC P35555.4
+#=GS A0A8R1DFK0_CAEJA/371-394  AC A0A8R1DFK0.1
+#=GS L5K9C1_PTEAL/45-66        AC L5K9C1.1
+#=GS LTBP1_MOUSE/1133-1156     AC Q8CG19.2
+#=GS SCUB2_DANRE/51-72         AC Q5G872.1
+#=GS SCUB3_MOUSE/52-73         AC Q66PY1.1
+#=GS A8XWY9_CAEBR/542-565      AC A8XWY9.2
+#=GS B6AGF9_CRYMR/419-442      AC B6AGF9.1
+#=GS LTBP2_BOVIN/1149-1171     AC Q28019.2
+#=GS FBN3_HUMAN/1093-1116      AC Q75N90.3
+#=GS LTBP3_HUMAN/847-869       AC Q9NS15.4
+#=GS B4MY15_DROWI/818-841      AC B4MY15.2
+#=GS LDLR_RAT/336-358          AC P35952.1
+#=GS LDLR_HUMAN/335-357        AC P01130.1
+#=GS B6AGF9_CRYMR/238-261      AC B6AGF9.1
+#=GS FBN1_MOUSE/1997-2018      AC Q61554.2
+#=GS LTBP4_HUMAN/651-674       AC Q8N2S1.2
+#=GS A7SSL3_NEMVE/437-460      AC A7SSL3.1
+#=GS LTBP4_MOUSE/775-798       AC Q8K4G1.2
+#=GS MEGF6_MOUSE/143-166       AC Q80V70.3
+#=GS A7SBY9_NEMVE/107-130      AC A7SBY9.1
+#=GS EGF_FELCA/333-356         AC Q95ND4.1
+#=GS LTBP1_HUMAN/1059-1082     AC Q14766.4
+#=GS B3N075_DROAN/4151-4175    AC B3N075.2
+#=GS M0R2Q5_HUMAN/149-171      AC M0R2Q5.1
+#=GS B3RNY2_TRIAD/341-362      AC B3RNY2.1
+#=GS A7S9P5_NEMVE/178-199      AC A7S9P5.1
+#=GS A7RXF2_NEMVE/237-258      AC A7RXF2.1
+#=GS B7PXC1_IXOSC/154-176      AC B7PXC1.1
+#=GS A7SG77_NEMVE/92-113       AC A7SG77.1
+#=GS B4GQE7_DROPE/76-99        AC B4GQE7.1
+#=GS UROM_BOVIN/91-113         AC P48733.1
+#=GS A7SS59_NEMVE/9-30         AC A7SS59.1
+#=GS A7S7V4_NEMVE/51-72        AC A7S7V4.1
+#=GS B7Q8G4_IXOSC/553-574      AC B7Q8G4.1
+#=GS A7RGE3_NEMVE/48-69        AC A7RGE3.1
+#=GS C1E4W7_MICCC/571-592      AC C1E4W7.1
+#=GS B3SDB2_TRIAD/83-104       AC B3SDB2.1
+#=GS C1N9J5_MICPC/526-547      AC C1N9J5.1
+#=GS B4MF28_DROVI/609-635      AC B4MF28.2
+#=GS B3RS17_TRIAD/1290-1312    AC B3RS17.1
+#=GS B3RIT9_TRIAD/389-412      AC B3RIT9.1
+#=GS FBLN1_CAEEL/175-198       AC O77469.3
+#=GS A7RSD3_NEMVE/125-148      AC A7RSD3.1
+#=GS B3S3N0_TRIAD/500-521      AC B3S3N0.1
+#=GS B3RQ05_TRIAD/137-158      AC B3RQ05.1
+#=GS H0YI34_HUMAN/163-187      AC H0YI34.8
+#=GS H3D1J6_TETNG/183-214      AC H3D1J6.1
+#=GS B1AHM8_HUMAN/116-139      AC B1AHM8.1
+#=GS B3SDN5_TRIAD/54-75        AC B3SDN5.1
+#=GS B3SDB3_TRIAD/60-81        AC B3SDB3.1
+#=GS B3RS19_TRIAD/247-270      AC B3RS19.1
+FBLN5_PONAB/187-210                  SYSC.T....CN.PGFT.....LN........E.DG.RS.........CQ.DVNE
+H3CNV5_TETNG/198-221                 SFSC.S....CN.RGFV.....LD........P.EG.RT.........CQ.DVNE
+AGRE1_RAT/54-84                      SYYC.T....CK.QGFL...............P.SNGQTNFQG.PGVECQ.DVNE
+H3DDK6_TETNG/732-755                 SYTC.S....CP.KGFI.....FK........P.DS.ET.........CE.DINE
+FBN2_MOUSE/825-848                   SYSC.T....CP.PGYV.....FR........T.ET.ET.........CE.DVNE
+A0A8M2B2Z6_DANRE/217-240             SYSC.S....CS.PGFL.....LN........T.DA.RT.........CQ.DVDE
+B3MZ83_DROAN/709-732                 SFQC.S....CP.RGYT.....LS........T.DL.ST.........CR.DIDE
+B4MF28_DROVI/749-772                 SYQC.S....CP.RGYT.....LA........A.DK.NT.........CR.DIDE
+FBN2_MOUSE/1665-1688                 SFQC.E....CP.QGYY.....LS........E.ET.RI.........CE.DIDE
+B3RL37_TRIAD/323-345                 SFQC.Q....CP.AGYK.....ID........T.RT..T.........CQ.DIDE
+PROS_MOUSE/223-246                   DFEC.E....CP.DGYR.....YD........P.SS.KS.........CK.DVDE
+PROS_MACMU/196-219                   DFEC.E....CP.EGYR.....YN........L.KS.KS.........CE.DVDE
+H3CG09_TETNG/337-360                 GFNC.S....CP.TGYS.....LK........M.DK.KT.........CE.DIDE
+LRP8_CHICK/372-394                   GYEC.E....CP.PGYK.....L.........L.DK.KT.........CG.DIDE
+B6AGF9_CRYMR/195-218                 SYTC.E....CP.TGYK.....LD........I.DK.KN.........CI.DIDE
+TRBM_BOVIN/196-218                   PTIC.R....CP.EGYI...............I.DEGST.........CT.DINE
+TRBM_HUMAN/422-444                   QASC.E....CP.EGYI...............L.DDGFI.........CT.DIDE
+B3SD52_TRIAD/183-206                 SYRC.T....CP.SGYY.....LA........M.DG.RT.........CQ.DINE
+H7C0I7_HUMAN/61-83                   SYDC.T....CP.DGFQ.....L.........D.DN.KT.........CQ.DINE
+B3SD52_TRIAD/358-381                 SYRC.T....CP.KGYY.....LD........V.DG.KT.........CK.DINE
+G3SFX5_GORGO/2384-2407               SFLC.S....CP.RGYL.....LE........E.DG.RT.........CK.DLDE
+FBN2_MOUSE/2505-2528                 SYQC.S....CP.RGYV.....LQ........E.DG.KT.........CK.DLDE
+A7RVK3_NEMVE/151-174                 GYQC.Q....CP.RGYI.....MQ........Q.DN.KT.........CE.DINE
+Q68EF9_MOUSE/181-204                 GVRC.S....CP.VGFT.....LQ........P.DG.KT.........CK.DINE
+SCUB3_HUMAN/257-280                  GVHC.T....CP.VGFM.....LQ........P.DR.KT.........CK.DIDE
+A7RGB0_NEMVE/301-324                 GVQC.S....CR.PGFT.....LA........S.DN.KT.........CE.DINE
+H3DNK6_TETNG/1324-1347               GAQC.S....CP.SGFQ.....LL........N.DS.KT.........CE.DINE
+A7RN00_NEMVE/192-215                 SFTC.A....CK.RGFI.....LR........H.DG.KT.........CE.DIDE
+H2XYP0_CIOIN/500-523                 SFTC.S....CR.RGFL.....LQ........S.ET.NA.........CD.DIDE
+A7T8E5_NEMVE/343-364                 SYTC.R....CK.RGFT.....LV........N.NT............CK.DIDE
+A7SG77_NEMVE/13-34                   GYRC.S....CY.RGFT.....G...........DG.VN.........CT.DIDE
+A7S7V4_NEMVE/91-112                  SYTC.T....CY.PGFS...............G.NG.FN.........CT.DIDE
+AGRE1_MOUSE/245-275                  SYSC.S....CP.AGFS.....LPTFQILGHPA.DG..N.........CT.DIDE
+A9V5W5_MONBE/1040-1061               GYTC.A....CA.PGFS...............G.DG.FT.........CT.DVDE
+B3RJF7_TRIAD/102-125                 NYTC.S....CY.SGFT.....LG........S.NN.HN.........CT.DVDE
+SCUB3_MOUSE/92-115                   NYRC.T....CY.DGFH.......L......AH.DG.HN.........CL.DVDE
+B3RS18_TRIAD/111-132                 SYTC.Q....CK.QGYT...............G.NG.TI.........CT.DNNE
+B3SCC4_TRIAD/530-551                 SYDC.S....CK.SGFT...............G.DG.LS.........CT.DIDE
+B3S3N0_TRIAD/618-639                 SYSC.Q....CK.QGFT...............G.NG.LT.........CT.DIDE
+B3S3N0_TRIAD/459-480                 SYTC.T....CK.TGFA.....G...........NG.TT.........CS.DIDE
+B3RQ06_TRIAD/233-254                 SYQC.I....CN.NGYT.....G...........NG.TV.........CT.DIDE
+U3KME5_RABIT/2257-2280               SYHC.I....CK.TGYT.....PD........I.TG.TA.........CV.DLNE
+A7RF88_NEMVE/67-99                   SFKC.S....CK.SGYT.....PKFSEAVGDAP.ANLTS.........CD.DIDE
+B3S3N0_TRIAD/418-439                 SYYC.S....CK.TGFT.....G...........DG.ST.........CT.DINE
+B3RQ10_TRIAD/438-459                 SYKC.T....CK.TGFT...............G.SG.KY.........CT.DINE
+A9VCG0_MONBE/329-350                 GFTC.T....CR.EGWT.....G...........DG.TS.........CA.DIDE
+A7SRT8_NEMVE/11-32                   SYTC.A....CD.SGYT...............G.DG.QI.........CT.DVDE
+A7SRT8_NEMVE/138-159                 SYTC.A....CN.VGYT...............G.DG.ET.........CV.DIDE
+A7RQ82_NEMVE/65-86                   SYTC.T....CN.AGYH...............G.DG.KQ.........CT.DIDE
+B3RZV6_TRIAD/351-372                 SYTC.S....CY.PGYT...............G.NG.KT.........CS.DINE
+B9QP44_TOXGV/983-1006                SYTC.S....CL.PGYT.....PS........D.DG.RV.........CT.DIDE
+G1TAQ7_RABIT/522-543                 SYTC.S....CL.PGFS...............G.DG.RA.........CQ.DVDE
+A0A125YX19_TOXGV/123-148             AVTC.R....CL.PGYT.....GND......GK.PG.RA.........CK.DINE
+W5QHQ8_SHEEP/991-1012                SFSC.A....CL.PGYA...............G.DG.HR.........CT.DVDE
+B3SE10_TRIAD/7-28                    SYTC.T....CM.PGYA...............G.DG.YR.........CQ.DINE
+A7SRT8_NEMVE/347-368                 SFTC.A....CN.PGYN.....G...........DG.HV.........CS.DINE
+A7ST24_NEMVE/265-286                 GTRC.V....CN.PGYL...............G.DG.RK.........CT.DIDE
+A7TAU1_NEMVE/175-196                 SHHC.M....CN.PGFS...............G.DG.RN.........CT.DIDE
+A7T1U1_NEMVE/90-111                  SYTC.R....CN.NGHV...............G.NG.QS.........CT.DIDE
+A7SIA1_NEMVE/107-128                 SYSC.H....CN.SGYA...............G.NG.RS.........CS.DIDE
+FBN1_MOUSE/1428-1451                 GYRC.E....CD.MGFV.....PS........A.DG.KA.........CE.DIDE
+A7RVK3_NEMVE/192-215                 GYRC.E....CG.QGFV.....PN........A.NQ.TH.........CS.DVNE
+B3RL37_TRIAD/89-112                  FYQC.Q....CA.QGYV...............W.NR.KNE.......ICT.DINE
+A7RF86_NEMVE/85-108                  GYKC.K....CR.PGYI.....SS........N.NG.RI.........CT.DINE
+A7SBY9_NEMVE/235-256                 SYRC.E....CK.PGFI.....GD........G.S...S.........CT.DVDE
+B3RZV6_TRIAD/310-331                 SYRC.Q....CN.EGFI.....G...........NG.LV.........CT.DVNE
+A7SCA6_NEMVE/186-207                 SYTC.T....CK.PGYT.....G...........DG.KT.........CH.DIDE
+H3C692_TETNG/2455-2478               SYSC.T....CK.PGYT......T........DITG.AV.........CV.DVDE
+B3RQ10_TRIAD/356-377                 SYSC.T....CK.PGFS.....G...........DG.KI.........CL.DVNE
+A7S357_NEMVE/580-602                 NYSC.T....CK.PGYK.....G...........DP.KV........KCE.DINE
+B3M965_DROAN/804-827                 SFKC.S....CL.PGFE.....LD........E.DQ.RT.........CQ.DVDE
+B4HV95_DROSE/971-994                 SFKC.S....CP.PGYK.....LD........S.DQ.KT.........CQ.DIDE
+A7RVN4_NEMVE/291-314                 SFIC.S....CR.RGFK.....LE........P.DK.RS.........CR.DIDE
+G3IL49_CRIGR/137-160                 SFDC.S....CK.KGFK.....LL........T.DE.KS.........CQ.DVDE
+A7SME0_NEMVE/157-180                 SFEC.N....CK.KGFS.....LS........A.DK.KS.........CR.DVDE
+A7RN00_NEMVE/101-124                 TYRC.R....CR.DGYK.....LD........P.NR.RT.........CQ.DLDE
+B0XEB3_CULQU/214-237                 SYYC.T....CR.EGFQ.....LQ........S.DR.QS.........CK.RMDE
+B3RQ06_TRIAD/109-132                 SYYC.S....CR.TGYQ.....LN........T.DR.RT.........CR.DIDE
+H3DJ72_TETNG/865-888                 SYKC.T....CN.HGYQ.....VT........P.DS.RS.........CE.DIDE
+A7RVK3_NEMVE/110-133                 SYRC.A....CD.YGYR.....LL........S.DG.KT.........CQ.DIDE
+B4H2A4_DROPE/914-937                 THAC.A....CE.RGYE.....LS........E.DG.RS.........CQ.DIDE
+B4J121_DROGR/905-928                 SHTC.A....CD.RGYE.....LT........D.DG.HS.........CQ.DVDE
+A7RVK5_NEMVE/549-572                 SFKC.S....CH.HGYA.....LT........D.DG.LT.........CQ.DIDE
+B4MY15_DROWI/578-599                 SFIC.E....CP.PGYV...............N.EG.TG.........CK.DIDE
+AGRE1_HUMAN/241-271                  SYFC.T....CH.PGFAPSNGQLNF......TD.QG.VE.........CR.DIDE
+C1QR1_MOUSE/403-427                  SFYC.S....CK.EGYI.....VS........G.EDSTQ.........CE.DIDE
+C1QR1_HUMAN/406-430                  SFHC.S....CE.EGYV.....LA........G.EDGTQ.........CQ.DVDE
+AGRL4_MOUSE/80-111                   GFSC.F....CR.EGYQ......T........A.TG.KSQFTPNDGSYCQ.DIDE
+F6Z1C2_MOUSE/17-39                   RFSC.H....CP.QGYQ.....LL........A.T..RL.........CQ.DIDE
+Q5WQV6_DANRE/261-283                 KFSC.V....CP.EGYE.....L.........L.GS.RL.........CQ.DVNE
+A7T0C2_NEMVE/19-42                   GHRC.M....CH.EGYK.....LS........S.NG.RD.........CE.DMDE
+V5BBZ5_TOXGV/332-355                 GYAC.S....CY.DGYM.....LK........A.NG.KD.........CQ.DINE
+A0A8M2B2Z6_DANRE/180-201             GYTC.S....CT.EGYW.....LV...........G.GQ.........CQ.DIDE
+B4HV95_DROSE/621-644                 GGAC.S....CR.EGFR.....LS........A.DG.KS.........CE.DVDE
+I3JQH4_ORENI/159-182                 NDTC.A....CF.KGYK.....LK........P.DG.KS.........CE.DINE
+FBLN1_DANRE/173-196                  NGTC.S....CL.DGFK.....LK........T.DG.KH.........CE.DINE
+B4K1Y2_DROGR/434-457                 GGAC.T....CG.KGYL.......L......SS.DG.KS.........CT.DVDE
+B3RQ07_TRIAD/2605-2628               SYKC.S....CR.NGYQ.....LR........A.DG.RT.........CQ.DIDE
+W5K392_ASTMX/738-760                 SYLC.E....CQ.KGYM.....L.........V.SG.RR.........CQ.DIDE
+B3RQ10_TRIAD/1495-1518               SYLC.S....CK.NGYQ.....LS........S.DG.RN.........CQ.DIDE
+H3DI89_TETNG/247-268                 SYEC.S....CL.EGYL...............G.DG.RQ.........CE.DINE
+A7S9P5_NEMVE/260-282                 SYYC.K....CP.DGYE...............A.DGPHR.........CK.DVNE
+A7RVK5_NEMVE/382-405                 SYYC.T....CN.EGFV.....LS........A.NG.RR.........CR.DVNE
+PROS_BOVIN/181-204                   SYHC.S....CK.NGFV.....ML........S.NK.KD.........CK.DVDE
+AGRE1_HUMAN/53-83                    SYYC.A....CK.QGFL......S........S.NG.QNHFKD.PGVRCK.DIDE
+B7Q8G4_IXOSC/1627-1650               SYRC.N....CP.RGYI.......T......DA.SG.QS.........CK.DTDE
+H7BXL0_HUMAN/23-47                   SYQC.A....CPEQGYT.....MT........A.NG.RS.........CK.DVDE
+FBLN2_HUMAN/923-946                  SYRC.S....CA.SGFL.....LA........A.DG.KR.........CE.DVNE
+G3IFZ1_CRIGR/366-389                 SYHC.S....CS.AGFR.....LS........V.DG.RS.........CE.DVNE
+FBLN1_DANRE/396-419                  SYKC.S....CT.AGFK.....LA........D.DG.RN.........CD.DVNE
+FBLN1_CHICK/422-445                  SYYC.T....CT.MGFK.....LS........S.DG.RS.........CE.DLNE
+B3RRK6_TRIAD/135-158                 SYYC.S....CP.KGLR.....LA........S.DD.KQ.........CE.DINE
+L8Y7Y6_TUPCH/1135-1159               SYQC.Y....CR.RGYQ.....LS.......DV.DG.VT.........CE.DIDE
+H3DKQ0_TETNG/907-930                 SYQC.Y....CR.QGYF.....LR........Q.DG.HT.........CD.DIDE
+A7RVN4_NEMVE/332-355                 SYQC.Y....CK.DGYT.....LA........A.DK.RS.........CD.DIDE
+B4JZT0_DROGR/646-669                 GYRC.A....CN.PGYE.....LS........S.DN.RT.........CN.DVDE
+B7QBX8_IXOSC/306-329                 GFHC.E....CH.PGFK.....LT........E.D.NRT.........CD.DVDE
+CCBE1_MOUSE/157-180                  SYHC.E....CR.EGYI.....LE........D.DG.RT.........CT.RGDK
+A7RIX8_NEMVE/146-169                 SYRC.S....CY.KGYE.......L......DL.DG.KT.........CS.DKDE
+A7RIX8_NEMVE/21-44                   GYHC.A....CA.DGYE.....VS........G.DG.KT.........CG.DKDE
+B5DS00_DROPS/700-723                 GYRC.T....CN.SGYQ.....LG........Q.DN.RT.........CN.DIDE
+Q54YP0_DICDI/299-322                 GYSC.S....CS.AGYT.....LA........G.DG.KT.........CT.DIDE
+B3RIT7_TRIAD/582-605                 GYQC.S....CS.SGYS.....LN........V.DG.KT.........CS.DINE
+B3S2H0_TRIAD/340-363                 GYYC.A....CN.PGYT.....LD........T.DG.RT.........CL.DINE
+G1P849_MYOLU/871-894                 SFKC.R....CD.SGFA.....LD........S.EE.RN.........CT.DIDE
+A7T4U6_NEMVE/22-45                   SYRC.I....CN.AGYA.......A......NA.EE.NK.........CA.DINE
+A7SNM8_NEMVE/87-110                  SYKC.E....CR.VGFT.......M......NA.DK.HN.........CT.DINE
+B3SD52_TRIAD/11-34                   SYRC.Q....CR.SGYR.....LN........A.D.GKG.........CQ.DINE
+A7S8T1_NEMVE/104-127                 SYYC.T....CR.SGYA.....LT........A.DL.HG.........CR.DVDE
+A7SNM6_NEMVE/51-74                   SYRC.M....CH.SGYA.....LT........A.DK.HA.........CQ.DVNE
+A7SXS3_NEMVE/62-85                   TYHC.A....CH.SGYT.....MN........S.DN.RT.........CT.DIDE
+B0G154_DICDI/981-1004                SFQC.S....CN.SGYL.....LN........Q.DN.KK.........CD.DIDE
+GAS6_RAT/174-197                     SFQC.A....CH.SGFS.....LQ........S.DN.KS.........CQ.DIDE
+A7S357_NEMVE/661-684                 SYKC.A....CP.TGFI.....LN........S.DK.KT.........CS.DIDE
+A7SBC1_NEMVE/265-288                 SYHC.S....CD.PGFQ.....LN........S.DK.KT.........CS.DIDE
+A7RN04_NEMVE/93-116                  SYYC.A....CS.EGFK.....LS........S.DN.FT.........CT.DIDE
+A7SNM6_NEMVE/11-33                   GYKC.A....CA.NGYA.....LR........S.DG..T.........CT.DIDE
+B4J121_DROGR/864-887                 GFQC.A....CA.DGFQ.....LA........S.DG.FS.........CL.DIDE
+A7RSD3_NEMVE/330-353                 SYKC.S....CN.PGFV.....LA........S.DN.FG.........CL.DINE
+B3SD50_TRIAD/19-42                   SYRC.Q....CN.PGYR.....LS........N.DS.KT.........CT.DINE
+F7CLL4_MONDO/3938-3962               GFIC.S....CR.PGYS.....AG.......PV.DR.NS.........CV.DINE
+LRP2_RAT/3988-4012                   GFIC.S....CR.PGFK.....PS........T.SDKNS.........CQ.DINE
+A7RSD3_NEMVE/207-230                 SYYC.T....CF.PGFY.....LM........M.ED.QS.........CV.DIDE
+LRP2_RAT/3134-3157                   SFYC.S....CL.PGYK.....LM........S.DK.RS.........CV.DIDE
+A7RJZ9_NEMVE/267-291                 GYFC.S....CR.PGYK.....VA.......LD.DP.KS.........CR.DVDE
+A7SSL3_NEMVE/118-141                 TFRC.I....CR.PGFY.....LL........D.DE.RT.........CE.DLDE
+A7SIZ8_NEMVE/157-180                 GYYC.T....CN.PGYR.....LM........D.DD.KS.........CE.DLNE
+L9JZJ2_TUPCH/2473-2496               TYFC.S....CP.PGYI.....LL........D.DN.RS.........CQ.DINE
+A7RVK5_NEMVE/673-696                 SYFC.F....CP.PGYQ.....LT........D.DK.RH.........CQ.DVDE
+A7T713_NEMVE/13-36                   NYTC.G....CN.PGFQ.....LA........P.DK.HR.........CT.DINE
+D6REJ2_HUMAN/72-95                   TYQC.S....CN.PGYQ.....AT........P.DR.QG.........CT.DIDE
+F6ZFS0_MOUSE/19-42                   SFIC.Q....CN.QGYE.....LS........S.DR.LN.........CE.DINE
+B3RS19_TRIAD/125-148                 SYTC.S....CI.QGYE.....LS........S.DK.LT.........CV.DINE
+A7S8T1_NEMVE/22-45                   GYSC.L....CP.PGFE.......L......SL.DK.RT.........CT.DINE
+F1MCN3_BOVIN/146-170                 SYTC.Q....CP.PGLE.....FS........PEDP.RH.........CT.DVNE
+AGRE2_CANLF/144-168                  SYTC.K....CP.PGFE.....LN........L.GDLNL.........CT.DVNE
+B3RZV6_TRIAD/90-113                  SYSC.Q....CL.PGYQ.....LD........N.DK.KG.........CT.DIDE
+A7SBZ1_NEMVE/185-208                 SFTC.Q....CI.AGYT.....LS........A.DR.RH.........CI.DVNE
+B3RS19_TRIAD/43-66                   SYSC.Q....CL.PGYT.....LN........S.DN.RG.........CI.DVNE
+A7RGE4_NEMVE/397-419                 SFTC.Q....CA.EGYE...............R.DSQGK.........CA.DVNE
+Q23587_CAEEL/1723-1744               SYRC.E....CA.EGYE...............G.EG.GV.........CT.DIDE
+A7RGF1_NEMVE/106-127                 SYRC.E....CN.NGYE.....G...........DG.VI.........CT.DINE
+B4GQE7_DROPE/35-57                   HFLC.K....CN.DGYE...............G.DGEVL.........CT.DVDE
+A7RL39_NEMVE/83-105                  SFKCES....CP.DGYE.....G...........DG.VT.........CT.DINE
+A9V5W5_MONBE/1495-1516               SFTC.T....CA.DGYE.....G...........DG.LS.........CT.DINE
+A7RF87_NEMVE/32-53                   SYTC.R....CK.RGYE.....LN........N.NE............CE.DLNE
+A7SME0_NEMVE/113-136                 SYKC.E....CP.SGMS.....YN........H.GT.GT.........CE.DIDE
+H3C2H5_TETNG/374-397                 AYRC.E....CR.KGFF.....FN..........DGTKR.........CE.DVNE
+FBLN1_DANRE/354-377                  SYRC.E....CR.TGFI.....FN........S.I.SRS.........CE.DIDE
+A7SBZ1_NEMVE/144-166                 SYRC.E....CH.PGFK...............L.NRGGF.........CQ.DIDE
+FBN1_BOVIN/510-533                   SYTC.Q....CR.PGYQ.....ST........L.TR.TE.........CR.DIDE
+A7RN04_NEMVE/11-35                   SYTC.E....CW.QGYR.....KR........L.NYHSQ.........CI.DINE
+A7SXS3_NEMVE/189-211                 SFNC.S....CY.QGYQ...............L.AGKTR.........CQ.DINE
+H3C3D2_TETNG/316-338                 SYYC.E....CP.EGYQ...............L.QGNRL.........CQ.DINE
+NELL2_XENTR/576-603                  WYHC.E....CR.DGYH.....DNGM....FSL.SG.ES.........CE.DIDE
+H3CW50_TETNG/573-600                 WYHC.E....CR.SGFQ.....DNGT....YLL.DG.SS.........CI.DVDE
+NELL1_HUMAN/572-599                  WYHC.E....CR.SGFH.....DDGT....YSL.SG.ES.........CI.DIDE
+FBLN1_CAEEL/410-433                  TYKC.K....CG.PGYE.....FN........D.AK..K........RCE.DVDE
+A7RGE4_NEMVE/562-585                 SYTC.K....CK.EGFE.....DN........D.QD..K........HCK.DIDE
+B3RIT6_TRIAD/94-117                  GYTC.D....CQ.SGYQ.....LN........S.DG.RT.........CT.DINE
+NID2_HUMAN/783-804                   DYTC.E....CA.SGYQ...............G.DG.RN.........CV.DENE
+B3RIT7_TRIAD/460-483                 GYTC.D....CQ.SGYQ.....LN........A.DG.KT.........CL.DADE
+B4JZT0_DROGR/328-351                 SYYC.S....CV.AGYS.....LD........A.TQ.NT.........CV.DINE
+B7Q439_IXOSC/113-136                 SYYC.A....CF.QGYK.......L......DG.TK.RN.........CV.DIDE
+B3SDW9_TRIAD/68-91                   SYTC.N....CS.AGYQ.....FN........P.TL.QR.........CI.DINE
+A7SBY8_NEMVE/376-399                 DYTC.D....CN.SGYR.....ND........A.TQ.KL.........CL.DINE
+W5P538_SHEEP/322-345                 DFTC.H....CP.PGYQ.....LD........S.TQ.RD.........CV.DVDE
+C1QR1_RAT/322-345                    NYTC.H....CP.RGYQ.....LD........S.SQ..V........HCV.DIDE
+C1QR1_HUMAN/325-348                  NYTC.R....CP.QGYQ.....LD........S.SQ.LD.........CV.DVDE
+LTBP3_HUMAN/596-619                  DYSC.H....CN.PGYR...............S.HP.QHR.......YCV.DVNE
+H2QM37_PANTR/881-904                 SYRC.D....CK.AGFQ.....RD........A.FG.RG.........CI.DVNE
+G3IFZ1_CRIGR/324-347                 SFRC.E....CK.AGYY.....FD........G.IS.RT.........CV.DINE
+FBLN1_CHICK/380-403                  NYRC.E....CK.SGYS.....FD........V.I.SRT.........CI.DINE
+B3M965_DROAN/333-357                 GFEC.A....CQ.AGYQ.....LD.......PS.TG.NT.........CV.DIDE
+B4MY15_DROWI/351-375                 SYQC.A....CQ.EGYQ.....ID.......VA.TG.KT.........CV.DIDE
+FBN1_BOVIN/745-768                   TYKC.I....CN.SGYE.....VD........S.TG.KN.........CV.DINE
+B4HV95_DROSE/323-346                 EYKC.S....CQ.EGYY.....LD........E.SG.KN.........CV.DINE
+H3CMC8_TETNG/244-267                 SFQC.S....CR.AGYQ.....LH........I.DA.HT.........CV.DIDE
+B6AEN1_CRYMR/179-202                 QGEC.S....CK.DGYR.....LH........N.DG.KT.........CI.DIDE
+B6AEN1_CRYMR/92-116                  GYEC.E....CK.QGYR.....VH........E.QRQNE.........CV.DIDE
+B7PP87_IXOSC/7-30                    GPEC.S....CK.PGYR.......L......MG.DR.QA.........CA.DINE
+A7T5E3_NEMVE/27-50                   SFSC.V....CN.QGYH.....LT........D.NK.RT.........CV.DIDE
+B4L5J5_DROMO/1386-1409               GAVC.T....CL.EGYR.....LQ........S.DQ.RS.........CV.DIDE
+Q23587_CAEEL/400-422                 NATC.A....CI.DGFR...............G.DPHKK.........CV.DINE
+G1P849_MYOLU/1081-1104               EYRC.L....CY.DGFM.....AS........E.DM.KT.........CV.DVNE
+W5PKX8_SHEEP/694-717                 RYTC.I....CY.DGYK.....FN........E.QQ.RK.........CV.DIDE
+F6X4H6_CIOIN/89-112                  EPVC.A....CF.EGFR.....LE........A.NG.RT.........CV.DIDE
+B0W3Y5_CULQU/123-146                 RAFC.V....CP.EGFM.....LD........D.DW.KT.........CI.DIDE
+B1ASH4_MOUSE/246-269                 GPLC.T....CP.RGYE.....LD........E.DQ.KT.........CI.DIDD
+Q8SYF5_DROME/181-205                 EFIC.T....CN.SGFE.....ID.......ES.DE.KT.........CL.DIDE
+Q55CM2_DICDI/339-362                 SFTC.V....CN.DGYT.....LS........G.DA.KS.........CI.DIDE
+B0G154_DICDI/213-236                 SFTC.S....CR.AGYT.....LN........S.DK.KS.........CT.DINE
+B0G154_DICDI/254-277                 SFAC.S....CR.AGYT.....LG........T.DK.KT.........CV.DINE
+A7RSD3_NEMVE/84-107                  SFTC.S....CG.NGYF.....LG........S.DR.TS.........CL.DIDE
+Q54YP0_DICDI/504-527                 SITC.S....CG.NGYS.....LD........A.DN.KS.........CS.DVDE
+B3RZV6_TRIAD/172-195                 NYTC.S....CN.SGYE.....LS........N.DQ.HT.........CV.DIDE
+A7RGE3_NEMVE/7-28                    SYDC.K....CN.KGFK.....G...........DG.KT.........CL.DVDE
+A7RKU2_NEMVE/87-108                  LYVC.R....CL.KGFE.....G...........DG.KT.........CI.DVDE
+LRP1_HUMAN/2962-2985                 GFKC.R....CR.PGFR.....LK........D.DG.RT.........CA.DVDE
+LRP1B_MOUSE/2948-2971                SYKC.K....CW.PGFQ.....LK........D.DG.KT.........CV.DIDE
+A7SIZ8_NEMVE/21-44                   KVKC.G....CY.PGFK.......M......AY.DG.RT.........CI.DIDE
+A7RVK5_NEMVE/505-529                 SYHC.K....CE.PGYN.....AT........D.AGART.........CV.DIDE
+A7T5E3_NEMVE/193-216                 SFRC.Q....CK.MGFK.......L......DA.SG.HH.........CE.DKNE
+B7Q8G4_IXOSC/1230-1253               SYRC.Q....CE.PGFK.....LD........P.SG.HV.........CL.DEDE
+B7Q8G4_IXOSC/62-85                   SYKC.E....CD.RGFT.....LS........T.SG.RA.........CV.DIDE
+F7ALZ5_CALJA/2295-2316               SYRC.E....CP.FGYI.....L...........AG.NE.........CV.DTDE
+G1R0Y5_NOMLE/589-614                 SYNC.H....CN.RGYR.....LHV......GA.GG.RS.........CV.DLNE
+B7Q8G4_IXOSC/1504-1527               SYRC.L....CN.RGYK...............TDPTGTR.........CV.DVNE
+F6SDH3_CIOIN/351-372                 SFRC.V....CR.NGYR...............A.QG.SR.........CV.DINE
+B7Q8G4_IXOSC/105-128                 SYRC.V....CN.NGYV.....LS........Q.DG.QF.........CV.DVNE
+A7RF88_NEMVE/24-46                   SYKC.S....CK.RGYA...............H.NDSNV.........CV.DVNE
+A7SBY9_NEMVE/276-297                 SHRC.V....CH.EGYT.....G...........DG.IT.........CV.DINE
+B3S0C6_TRIAD/539-560                 SYRC.V....CP.QGYT...............G.DG.HV.........CI.DVNE
+A7SBY9_NEMVE/150-173                 GYYC.T....CG.KGYK.....QS........V.DS.RS.........CI.DVDE
+B3LYM1_DROAN/580-603                 GYRC.E....CH.AGYK.....LA........P.DN.RS.........CV.DIDE
+Q86B77_DROME/341-364                 GYRC.E....CH.DGYK.....LG........A.DQ.HT.........CV.DIDE
+B4K4V0_DROMO/578-601                 GYRC.E....CH.AGYK.....LT........S.DG.HH.........CM.DINE
+B4M4P1_DROVI/528-551                 GYSC.E....CH.EGYK.....LA........S.DG.HH.........CV.DIDE
+A7RVK5_NEMVE/339-362                 GYYC.E....CH.KGYQ.....VG........P.DG.MS.........CI.DVNE
+B4K4U9_DROMO/484-507                 GYKC.D....CH.EGYK.....LS........G.DG.HS.........CV.DVNE
+A7RIX8_NEMVE/186-209                 GYQC.S....CH.HGYV.....LS........A.N.QHA.........CV.DVDE
+Q559U0_DICDI/309-332                 GYNC.N....CP.AGYI.....KS........T.DG.LS.........CI.DVDE
+A7SBY8_NEMVE/330-353                 GYSC.I....CN.SGYI.....TS........A.DG.HH.........CV.DIDE
+B7Q8G4_IXOSC/1188-1211               GFRC.S....CP.PGFK.....LS........A.DA.RG.........CI.DINE
+B9GI91_POPTR/500-522                 GGKC.Q....CP.PGFK...............G.DGVKS.........CL.DVDE
+VSR3_ARATH/498-520                   SVKC.E....CP.PGFK...............G.DGTKK.........CE.DINE
+Q339K4_ORYSJ/500-522                 NGKC.Q....CP.AGFR...............G.DGVKK.........CE.DINE
+A7RK41_NEMVE/64-90                   SYTC.Q....CE.PGFR.....LDR.....TLG.LS.GV.........CV.DVDE
+E3NCL0_CAERE/3795-3819               SFYC.H....CR.DGFR.....PD........P.QSPKD.........CI.DIDE
+B4I3A6_DROSE/688-710                 GFTC.A....CP.PGFS.....GD........P.HS.K..........CV.DVDE
+LTBP4_MOUSE/610-633                  GYTC.A....CD.PGFR.....LG........P.QG.TR.........CI.DIDE
+A7RQZ7_NEMVE/57-79                   SYKC.A....CH.PGFR.....LT........S.Q..NE.........CI.DVDE
+UROM_MOUSE/88-110                    SFKC.S....CQ.DGFR.....LT........P.E..LS.........CT.DVDE
+UROM_CANLF/91-113                    SYLC.T....CP.DGFR.....LT..........PG.LG.........CI.DVDE
+A7RFT0_NEMVE/62-83                   SFSC.H....CR.HGFT...............G.FG.LA.........CI.DVDE
+Q5WQV6_DANRE/143-164                 TFTC.Q....CP.DGYS...............K.IG.IE.........CV.DIDE
+B4H852_DROPE/544-571                 HFRCESL.LQCK.AGYK.....ST........P.EG.TS.........CI.DIDE
+Q9V4B8_DROME/541-568                 HFRC.ESLLQCS.PGYK.....ST........V.DG.KS.........CI.DIDE
+FBN3_HUMAN/1176-1199                 SYRC.S....CG.QGYS.....LM........P.DG.RA.........CA.DVDE
+FBN2_HUMAN/1263-1286                 SYEC.S....CS.EGYA.....LM........P.DG.RS.........CA.DIDE
+B7Q8G4_IXOSC/426-449                 SYYC.A....CE.PGYA.....LL........P.DG.VS.........CT.DVDE
+F7ALZ5_CALJA/1365-1388               SYEC.S....CQ.PGFA.....LM........P.DQ.RS.........CT.DIDE
+B0G154_DICDI/739-760                 SYQC.S....CP.SGYS.....FT...........G.SS.........CI.DIDE
+B7PIR8_IXOSC/21-44                   SYRC.Q....CP.DGYK.....LA........R.DN.KS.........CL.DIDE
+Q4T5R2_TETNG/294-317                 SYRC.A....CP.DGYM.....LA........P.DE.HD.........CM.DVDE
+A7SBZ1_NEMVE/689-712                 SYEC.S....CP.KGYQ.....VD........A.DK.KK.........CL.DVDE
+B3RRK6_TRIAD/175-196                 SYKC.S....CP.KGYS.....IN........A.NQ............CL.DIDE
+E5RJM4_HUMAN/16-39                   SFVC.Q....CY.SGYA.....LA........E.DG.KR.........CV.AVDY
+PROZ_HUMAN/147-170                   SYTC.S....CA.QGYR.....LG........E.DH.KQ.........CV.PHDQ
+B0X6X6_CULQU/324-346                 APVC.T....CP.AGYT...............G.NPGRK.........CV.PVTT
+Q91YY0_MOUSE/731-754                 KYTC.S....CP.NGYN.....LE........E.NG.RE.........CQ.RINV
+A7SNM8_NEMVE/128-151                 RYYC.S....CP.KGFE.......V......GA.SG.KT.........CV.DKNE
+V5BBZ5_TOXGV/990-1019                KWKC.S....CP.DGFS.....AA........P.SS.RRNSN...PPRCV.DINE
+A7RVN4_NEMVE/380-402                 SYRC.T....CP.AGYK.....LS..........GG.RN.........CY.DIDE
+A7SBZ1_NEMVE/469-492                 SFKC.A....CP.NGFE.....LS........T.NQ.RH.........CK.DINE
+B4KUM9_DROMO/958-981                 SYQC.A....CP.AGYQ.....LA........A.NA.RD.........CQ.DVDE
+H3D9U0_TETNG/468-493                 SFHC.S....CPINGYT.....LA........T.NG.RS.........CQADVDE
+FBLN1_DANRE/479-503                  SFHC.T....CPASGYT.....LA........A.NG.RS.........CQ.DIDE
+B7Q8G4_IXOSC/1312-1335               SFRC.T....CP.YGYT.....LA........P.DG.KH.........CQ.DLDE
+B4H2A4_DROPE/832-855                 RFQC.A....CP.LGYA.....LA........E.DG.RT.........CQ.DIDE
+B4KUM9_DROMO/758-781                 SFQC.A....CP.LGFS.....LA........A.DG.RS.........CQ.DDDE
+HMCN2_MOUSE/4689-4712                HFSC.S....CP.TGFS.....LA........W.DH.RN.........CR.DVDE
+FBLN1_MOUSE/506-530                  SFQC.S....CPSSGYR.....LA........P.NG.RN.........CQ.DIDE
+HMCN2_HUMAN/4883-4906                SYQC.L....CP.AGYR.....LL........P.SG.KN.........CQ.DINE
+H3D7B7_TETNG/604-627                 SFHC.L....CP.PGYQ.....LL........P.NG.RN.........CK.DIDE
+B7QKE3_IXOSC/229-251                 Q.RC.S....CK.EGYQ.....LA........P.DG.RS.........CL.DVDE
+NPNT_MOUSE/148-172                   QVRC.Q....CPSPGLQ.....LA........P.DG.RT.........CV.DIDE
+M0QZX0_HUMAN/89-113                  SFRC.S....CA.PGYR......A........P.SG.RPG.......PCA.DVNE
+E9Q2A0_MOUSE/115-138                 SFRC.Q....CE.PGFQ.....LG........P.NN.RS.........CV.DVNE
+B7Q8G4_IXOSC/1106-1129               SFQC.H....CQ.AGYQ.....LS........P.DG.RS.........CV.DVNE
+FBN1_BOVIN/1953-1976                 SFQC.Q....CN.EGYE.....VA........P.DG.RT.........CV.DINE
+F6Z0F8_HORSE/763-786                 SFRC.T....CA.QGYA.....PA........P.DG.RS.........CL.DVDE
+LTBP3_MOUSE/762-785                  SYRC.T....CA.QGYE.....PA........Q.DG.LS.........CI.DVDE
+A7RSD3_NEMVE/451-474                 SYRC.S....CF.PGYQ.....QG........P.KN.DS.........CL.DVDE
+G3HNR1_CRIGR/1383-1406               SFAC.T....CA.PGYR.....PG........P.RG.AS.........CL.DVDE
+B7Q8G4_IXOSC/1146-1169               SFEC.S....CP.EGYQ.....LS........H.DG.RE.........CV.DVDE
+C1MPL0_MICPC/630-652                 ATTC.A....CP.KGFS...............G.DGVRS.........CV.DVDE
+Q4SWS1_TETNG/239-262                 ARVC.G....CK.EGYR.....LG........R.DG.RS.........CV.DVDE
+A7SSL3_NEMVE/561-584                 GYQC.K....CP.PGYR.....TS........P.DG.RT.........CM.DDDE
+FBLN1_CAEEL/540-563                  SYLC.Q....CP.PGYK.....IQ........P.DG.RT.........CV.DVDE
+FBN1_HUMAN/593-616                   SFKC.I....CK.PGFQ.....LA........S.DG.RY.........CK.DINE
+A0A8R1DFK0_CAEJA/371-394             SFEC.K....CK.PGFQ.....LA........S.DG.RR.........CE.DVNE
+L5K9C1_PTEAL/45-66                   SYKC.L....CK.PGYK...............G.EG.RQ.........CE.DIDE
+LTBP1_MOUSE/1133-1156                SFQC.V....CN.QGYR.....AS........V.LG.DH.........CE.DINE
+SCUB2_DANRE/51-72                    SYKC.T....CK.TGFK.....G...........DG.KH.........CE.DIDE
+SCUB3_MOUSE/52-73                    SYKC.I....CK.SGYT.....G...........DG.KH.........CK.DVDE
+A8XWY9_CAEBR/542-565                 SYQC.I....CD.RGFA.....LG........P.DG.TK.........CE.DIDE
+B6AGF9_CRYMR/419-442                 SFKC.T....CP.SGYE.....LN........S.NG.KI.........CE.DIDE
+LTBP2_BOVIN/1149-1171                SYQC.L....CP.PGFQ.....L.........A.NG.TV.........CE.DVDE
+FBN3_HUMAN/1093-1116                 SYKC.Q....CP.PGHE.....LT........A.KG.TA.........CE.DIDE
+LTBP3_HUMAN/847-869                  SYRC.L....CP.QGHR.....L.........V.GG.RK.........CQ.DIDE
+B4MY15_DROWI/818-841                 SFKC.L....CP.EGYQ.....LD........E.TQ.RR.........CQ.DIDE
+LDLR_RAT/336-358                     GYEC.L....CP.SGFR.....L.........V.DG.HQ.........CE.DIDE
+LDLR_HUMAN/335-357                   GYEC.L....CP.DGFQ.....L.........V.AQ.RR.........CE.DIDE
+B6AGF9_CRYMR/238-261                 SYEC.I....CP.SGYR.....LD........K.SN.QK.........CK.DINE
+FBN1_MOUSE/1997-2018                 SYRC.I....CP.PGYS.....LQ........N.D...K.........CE.DIDE
+LTBP4_HUMAN/651-674                  SFLC.V....CP.AGYQ.....AA........P.HG.AS.........CQ.DVDE
+A7SSL3_NEMVE/437-460                 SFYC.T....CP.RGFK.....SK........T.PG.GP.........CQ.DVNE
+LTBP4_MOUSE/775-798                  SFHC.A....CP.AGFR.....SR........G.PG.AP.........CQ.DVDE
+MEGF6_MOUSE/143-166                  GFYC.R....CP.PGYQ.....LQ........G.DG.KT.........CQ.DVDE
+A7SBY9_NEMVE/107-130                 SYLC.D....CG.AGFA.....LQ........P.DG.RT.........CR.DIDE
+EGF_FELCA/333-356                    SHLC.T....CA.EGYT.....LS........P.DG.KH.........CE.DVNE
+LTBP1_HUMAN/1059-1082                SYMC.S....CH.KGYT.....RT........P.DH.KH.........CR.DIDE
+B3N075_DROAN/4151-4175               GYIC.T....CY.PGYI.....IA........P.DNKKK.........CT.DVDE
+M0R2Q5_HUMAN/149-171                 SYLC.T....CP.AGYT.....LR........E.DG.AM.........CR.DVD.
+B3RNY2_TRIAD/341-362                 SYRC.L....CP.PGFT...............V.DH.HL.........CK.DIDE
+A7S9P5_NEMVE/178-199                 TYEC.L....CK.PGFE.....KR........D.G...V.........CK.DINE
+A7RXF2_NEMVE/237-258                 GFEC.I....CP.DGFT.....VT........E.G...V.........CK.DVDE
+B7PXC1_IXOSC/154-176                 SYRC.S....CP.PGFT...............G.DPFRF.........CE.DVNE
+A7SG77_NEMVE/92-113                  SYTC.A....CP.AGFF...............E.NN.GT.........CT.DRNE
+B4GQE7_DROPE/76-99                   NYTC.A....CP.EGFV.....GA........D.PY..K........DCQ.DVDE
+UROM_BOVIN/91-113                    SYTC.V....CP.EGFL.....L.........S.SE.LG.........CE.DVDE
+A7SS59_NEMVE/9-30                    SYAC.A....CP.AGYT.....N...........NG.HV.........CD.DVNE
+A7S7V4_NEMVE/51-72                   SYTC.A....CP.AGYT.....V...........SG.HR.........CN.DVNE
+B7Q8G4_IXOSC/553-574                 SYRC.T....CR.DGFD...............G.DG.VT.........CK.DVNE
+A7RGE3_NEMVE/48-69                   SFRC.N....CI.KGFT...............G.DG.KT.........CQ.DVNE
+C1E4W7_MICCC/571-592                 DHTC.V....CP.KGFT...............G.DG.KV.........CE.DVDE
+B3SDB2_TRIAD/83-104                  TRMC.I....CP.KGFT...............G.DG.ES.........CK.DINE
+C1N9J5_MICPC/526-547                 GYEC.V....CP.PGFK...............G.DG.AT.........CE.DVDE
+B4MF28_DROVI/609-635                 GYIC.A....CP.PGHQ.....VTR......LP.DGVNS.........CE.DINE
+B3RS17_TRIAD/1290-1312               Q.SC.S....CR.SGFK.....LS........Q.DG.RT.........CR.DINE
+B3RIT9_TRIAD/389-412                 KVQC.A....CK.NGYV.....LQ........P.DG.VS.........CK.DLDE
+FBLN1_CAEEL/175-198                  KVEC.S....CR.SGFD.....LA........P.DG.MA.........CV.DRNE
+A7RSD3_NEMVE/125-148                 SYTC.S....CR.SGFS.....LA........S.DG.RS.........CK.DLDE
+B3S3N0_TRIAD/500-521                 SYTC.T....CL.SGYS...............G.NG.VV.........CQ.DINE
+B3RQ05_TRIAD/137-158                 SYTC.S....CM.SGFE...............G.NG.TY.........CQ.DIDE
+H0YI34_HUMAN/163-187                 RAVC.S....CR.DGFR.....AL.......RE.DN.AY.........CE.DIDE
+H3D1J6_TETNG/183-214                 SYYC.T....CL.SGYR.....ASNNMAVFTPN.DG.TH.........CR.DVDE
+B1AHM8_HUMAN/116-139                 EVVC.S....CF.VGYQ.....LL........S.DG.VS.........CE.DVNE
+B3SDN5_TRIAD/54-75                   YLAC.Q....CL.DGFD...............G.DG.FS.........CQ.DINE
+B3SDB3_TRIAD/60-81                   TYIC.S....CK.SGFN...............G.DG.FR.........CY.DIDE
+B3RS19_TRIAD/247-270                 SYTC.S....CM.NGYR.....FG........S.DG.WT.........CY.DINE
+#=GC seq_cons                        SYpC.s....C..sGYp.....ht........s.-u.+s.........Cp.DlDE

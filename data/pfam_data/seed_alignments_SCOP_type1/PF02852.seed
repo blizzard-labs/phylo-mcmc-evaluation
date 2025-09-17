@@ -1,0 +1,254 @@
+# STOCKHOLM 1.0
+#=GF ID   Pyr_redox_dim
+#=GF AC   PF02852.26
+#=GF DE   Pyridine nucleotide-disulphide oxidoreductase, dimerisation domain
+#=GF PI   pyr_redox_dim; 
+#=GF AU   Griffiths-Jones SR;0000-0001-6043-807X
+#=GF SE   Structural domain
+#=GF GA   25.30 25.30;
+#=GF TC   25.30 25.30;
+#=GF NC   25.10 25.20;
+#=GF BM   hmmbuild HMM.ann SEED.ann
+#=GF SM   hmmsearch --cpu 4 -Z 75585367 -E 1000 HMM pfamseq
+#=GF TP   Domain
+#=GF CL   CL0608
+#=GF RN   [1]
+#=GF RM   8771196
+#=GF RT   The crystal structure of trypanothione reductase from the human
+#=GF RT   pathogen Trypanosoma cruzi at 2.3 A resolution. 
+#=GF RA   Zhang Y, Bond CS, Bailey S, Cunningham ML, Fairlamb AH, Hunter
+#=GF RA   WN; 
+#=GF RL   Protein Sci 1996;5:52-61.
+#=GF DR   INTERPRO; IPR004099;
+#=GF DR   SCOP; 1lvl; fa;
+#=GF DR   SO; 0000417; polypeptide_domain;
+#=GF CC   This family includes both class I and class II oxidoreductases
+#=GF CC   and also NADH oxidases and peroxidases.
+#=GF SQ   82
+#=GS Q9YBZ2_AERPE/337-446      AC Q9YBZ2.1
+#=GS F2L6T3_PSEUX/351-459      AC F2L6T3.1
+#=GS Q07XE8_SHEFN/428-535      AC Q07XE8.1
+#=GS LPDA_MYCTU/352-461        AC P9WHH7.1
+#=GS Q9X8C3_STRCO/338-448      AC Q9X8C3.1
+#=GS Q9RD26_STRCO/362-471      AC Q9RD26.1
+#=GS Q9RKH2_STRCO/369-478      AC Q9RKH2.1
+#=GS P73059_SYNY3/382-491      AC P73059.1
+#=GS GSHR_PSEAE/338-447        AC P23189.1
+#=GS GSHR_NOSS1/348-459        AC P48638.2
+#=GS TRXR2_HUMAN/395-508       AC Q9NNW7.3
+#=GS TRXR2_CAEEL/373-487       AC P30635.2
+#=GS TRXR1_DROME/467-580       AC P91938.2
+#=GS TRXR1_RAT/370-483         AC O89049.5
+#=GS TRXR1_CAEEL/536-650       AC Q17745.3
+#=GS A0A024W1S1_PLAFA/381-496  AC A0A024W1S1.1
+#=GS GSHR_CAEEL/356-467        AC Q93379.2
+#=GS A0A0K0J7H1_BRUMA/394-505  AC A0A0K0J7H1.1
+#=GS GSHR_SCHPO/351-464        AC P78965.2
+#=GS GSHR_YEAST/372-483        AC P41921.2
+#=GS A0A125YVR9_TOXGV/362-477  AC A0A125YVR9.1
+#=GS GSHR_HUMAN/411-522        AC P00390.2
+#=GS GSHR_ECOLI/339-450        AC P06715.1
+#=GS Q5M5Q5_STRT2/339-450      AC Q5M5Q5.1
+#=GS Q8DUR5_STRMU/339-450      AC Q8DUR5.1
+#=GS I1MNX4_SOYBN/373-483      AC I1MNX4.1
+#=GS GSHRP_ARATH/431-540       AC P42770.1
+#=GS C5WWX0_SORBI/417-526      AC C5WWX0.1
+#=GS O28421_ARCFU/325-436      AC O28421.1
+#=GS NAOX_METJA/326-433        AC Q58065.2
+#=GS O29985_ARCFU/319-424      AC O29985.1
+#=GS O29852_ARCFU/319-426      AC O29852.1
+#=GS O69869_STRCO/341-449      AC O69869.1
+#=GS Q9RVN5_DEIRA/326-435      AC Q9RVN5.1
+#=GS O29847_ARCFU/332-442      AC O29847.1
+#=GS O51670_BORBU/326-434      AC O51670.2
+#=GS NAPE_ENTFA/326-434        AC P37062.2
+#=GS NAOX_ENTFA/326-434        AC P37061.1
+#=GS MTR_MYCTU/345-454         AC P9WHH3.1
+#=GS RCLA_ECOLI/328-437        AC P77212.2
+#=GS XECC_XANP2/387-512        AC Q56839.1
+#=GS Q9YBC8_AERPE/335-445      AC Q9YBC8.2
+#=GS DLDH_MYCPN/339-448        AC P75393.1
+#=GS Q6MTX7_MYCMS/475-584      AC Q6MTX7.1
+#=GS DLDH1_BACSU/349-458       AC P21880.1
+#=GS Q2G2A3_STAA8/348-456      AC Q2G2A3.1
+#=GS Q88EP9_PSEPK/340-449      AC Q88EP9.1
+#=GS DLDH_HALVD/353-462        AC Q04829.3
+#=GS Q9RRW5_DEIRA/345-454      AC Q9RRW5.1
+#=GS A8ALH7_CITK8/348-456      AC A8ALH7.1
+#=GS Q9JZ09_NEIMB/469-577      AC Q9JZ09.1
+#=GS Q9WYL2_THEMA/332-439      AC Q9WYL2.1
+#=GS Q88FB1_PSEPK/353-462      AC Q88FB1.1
+#=GS Q9RRG6_DEIRA/361-470      AC Q9RRG6.1
+#=GS DLDH_CUPNH/355-464        AC P52992.2
+#=GS Q9ZD83_RICPR/334-443      AC Q9ZD83.1
+#=GS D5APB9_RHOCB/343-452      AC D5APB9.1
+#=GS Q88C17_PSEPK/347-456      AC Q88C17.1
+#=GS Q381B3_TRYB2/358-466      AC Q381B3.1
+#=GS LEGRE_SOYBN/381-490       AC Q41219.1
+#=GS DLDH_SCHPO/391-500        AC O00087.2
+#=GS DLDH_YEAST/380-489        AC P09624.1
+#=GS DLDH_CANLF/389-498        AC P49819.1
+#=GS A0A212FM25_DANPL/375-483  AC A0A212FM25.1
+#=GS IRC15_YEAST/368-483       AC Q02733.1
+#=GS STHA_MYCTU/345-453        AC P9WHH5.1
+#=GS STHA_PECAS/348-459        AC Q6CZB1.1
+#=GS Q3A7N7_SYNC1/351-460      AC Q3A7N7.1
+#=GS DLDH3_BACSU/339-448       AC O34324.1
+#=GS Q9S2Q6_STRCO/365-474      AC Q9S2Q6.1
+#=GS A4FA83_SACEN/337-443      AC A4FA83.1
+#=GS DLDH_CORGL/348-459        AC Q8NTE1.1
+#=GS DLDH_MYCTU/346-452        AC P9WHH9.1
+#=GS DLDH_CHLTE/352-461        AC Q8KCW2.1
+#=GS Q9ZCF1_RICPR/340-449      AC Q9ZCF1.1
+#=GS DLDH_ZYMMO/347-456        AC P50970.3
+#=GS DLDH2_BACSU/355-464       AC P54533.1
+#=GS Q834J0_ENTFA/351-459      AC Q834J0.1
+#=GS A5I2A4_CLOBH/341-450      AC A5I2A4.1
+#=GS O66945_AQUAE/342-451      AC O66945.1
+#=GS DLDH_SYNY3/357-470        AC P72740.3
+#=GS DLDH_CHLTR/341-450        AC O84561.1
+Q9YBZ2_AERPE/337-446                 IPRAVFTDPEFASVGLTERELARKLGV.......CACRTVDIT..........QIPRARIM..G....YETGFVKMVVDP.RTKKVAGVHMMA.PQAAE..AIHEAAFILKAGM...TVD.D.VIDTIHIFPSISEGIKYAA
+F2L6T3_PSEUX/351-459                 .PKVTFTSPAIASVGMTE.AQLTEAGIA......HQTRTLPLE..........NVPRALVNRD......TRGLVKLIAER.GSGKLLAAHVLA.DSAGD..IITAATYAITAGM...TVD.Q.LAHTWHPYLTMAEALKLAA
+Q07XE8_SHEFN/428-535                 MPAVIFTDPQVATVGLTE.VQAKAQDIE......TDSRVLGME..........NVPRALANFE......TDGFIKLVAEK.KTGRIIGAQILA.HEGGE..IIQSAALAIRNRM...TVT.E.LADQLFPYLTMVEGLKL..
+LPDA_MYCTU/352-461                   VAATVFTRPEIAAVGVPQ.SVIDAGSVA......ARTIMLPLR..........TNARAKMSEM......RHGFVKIFCRR.STGVVIGGVVVA.PIASE..LILPIAVAVQNRI...TVN.E.LAQTLAVYPSLSGSITEAA
+Q9X8C3_STRCO/338-448                 LPRVTFTDPEVGSVGLTE.ARAREKGLR......VRTGTAQVP..........SSARGWIHK.A....GNEGLIKLVEDV.DRGVLVGATSAG.PMGGE..VLYGLVVAVQGEV...PVD.R.LRHMMYAYPTFHRAVEDAL
+Q9RD26_STRCO/362-471                 VPQVVFTDPEVASVGLTL.AEAEQAGHR......VRAVDVPIA..........VAGSSLYGDG......YKGRARMVVDL.EDEIVRGVTFVG.PGVGE..MIHSATIAVAGRV...PIS.R.LWHAVPSYPTISEVWLRLL
+Q9RKH2_STRCO/369-478                 APRVTYTDPEIAGVGLTL.DEAHAKYGD.....RARVHTLEND..........RVDRAVADGR......TEGFTTL.VLG.PRGKIVGATVVS.PRAGE..TVAHLAAAVRLGW...TPS.D.YARTVHPYPTYADGPWHTA
+P73059_SYNY3/382-491                 MPWVTYTDPEIAHVGLNE.TMAEALDIG......YKIIKIPFS..........QVDRAIAADE......TEGFLKIIHVA.NSDEILGATIVA.SHAGE..MISEITTAIVNKI...GLS.K.LAGVIHPYPTQAEAIKKAA
+GSHR_PSEAE/338-447                   IPTAVFSLPNIGTVGLTE.EEALSAGHK......VKIFESRFR..........PMKLTLTDDQ......EKTLMKLVVDA.HDDRVLGCHMVG.AEAGE..ILQGIAVAMKAGA...TKQ.A.FDETIGIHPTAAEEFVTLR
+#=GR GSHR_PSEAE/338-447        pAS   ..................................................................................................................................*...........
+GSHR_NOSS1/348-459                   IATAVFSNPQASTVGLTE.AEARAKLGDD....AVTIYRTRFR..........PMYHSFTGKQ......ERIMMKLVVDT.KTDKVLGAHMVG.ENAAE..IIQGVAIAVKMGA...TKK.D.FDATVGIHPSSAEEFVTMR
+#=GR GSHR_NOSS1/348-459        pAS   ..................................................................................................................................*...........
+TRXR2_HUMAN/395-508                  VPTTVFTPLEYGCVGLSE.EEAVARHGQE....HVEVYHAHYK..........PLEFTVAGRD.....ASQCYVKMVCLREPPQLVLGLHFLG.PNAGE..VTQGFALGIKCGA...SYA.Q.VMRTVGIHPTCSEEVVKLR
+#=GR TRXR2_HUMAN/395-508       pAS   ..................................................................................................................................*...........
+TRXR2_CAEEL/373-487                  VATTVFTPLELSTVGLTE.EEAIQKHG.E...DSIEVFHSHFT..........PFEYVVPQNKD....SGFCYVKAVCTRDESQKILGLHFVG.PNAAE..VIQGYAVAFRVGI...SMS.D.LQNTIAIHPCSSEEFVKLH
+#=GR TRXR2_CAEEL/373-487       pAS   ..................................................................................................................................*...........
+TRXR1_DROME/467-580                  VATTVFTPLEYACVGLSE.EDAVKQFGAD....EIEVFHGYYK..........PTEFFIPQK.S....VRYCYLKAVAERHGDQRVYGLHYIG.PVAGE..VIQGFAAALKSGL...TIN.T.LINTVGIHPTTAEEFTRLA
+#=GR TRXR1_DROME/467-580       AS    ..................................................................................................................................*...........
+TRXR1_RAT/370-483                    VPTTVFTPLEYGCCGLSE.EKAVEKFGEE....NIEVYHSFFW..........PLEWTVPSRD.....NNKCYAKVICNLKDNERVVGFHVLG.PNAGE..VTQGFAAALKCGL...TKQ.Q.LDSTIGIHPVCAEIFTTLS
+#=GR TRXR1_RAT/370-483         pAS   ..................................................................................................................................*...........
+TRXR1_CAEEL/536-650                  IPTTVFTPLEYGCCGLSE.EDAMMKYGKD....NIIIYHNVFN..........PLEYTISERMD....KDHCYLKMICLRNEEEKVVGFHILT.PNAGE..VTQGFGIALKLAA...KKA.D.FDRLIGIHPTVAENFTTLT
+#=GR TRXR1_CAEEL/536-650       pAS   ..................................................................................................................................*...........
+A0A024W1S1_PLAFA/381-496             IPTVIFSHPPIGTIGLSE.EAAIQIYGKE....NVKIYESKFT..........NLFFSVYDIEPE..LKEKTYLKLVCVG.KDELIKGLHIIG.LNADE..IVQGFAVALKMNA...TKK.D.FDETIPIHPTAAEEFLTLQ
+#=GR A0A024W1S1_PLAFA/381-496  pAS   ..................................................................................................................................*...........
+GSHR_CAEEL/356-467                   IATVVFSHPLIGTVGLTE.AEAVEKYG.K...DEVTLYKSRFN..........PMLFAVTKHK......EKAAMKLVCVG.KDEKVVGVHVFG.VGSDE..MLQGFAVAVTMGA...TKK.Q.FDQTVAIHPTSAEELVTMR
+#=GR GSHR_CAEEL/356-467        pAS   ..................................................................................................................................*...........
+A0A0K0J7H1_BRUMA/394-505             IPSVVFSHPPLGTVGLTE.AQAVDQYGKN....NLTIYKTKFN..........PMYYAVTQHK......EPTMMKLICAG.ENERVVGLHMLG.EGCDE..MLQGFAVAIKMGA...TKK.D.FDNTVAIHPTSAEELVTMR
+#=GR A0A0K0J7H1_BRUMA/394-505  pAS   ..................................................................................................................................*...........
+GSHR_SCHPO/351-464                   VPSVVFAHPEAGTIGLTE.QEAIDKYG.E...SQIKVYNTKFN..........GLNYSMVEQED....KVPTTYKLVCAG.PLQKVVGLHLVG.DFSAE..ILQGFGVAIKMGA...TKS.D.FDSCVAIHPTSAEELVTLV
+#=GR GSHR_SCHPO/351-464        pAS   ..................................................................................................................................*...........
+GSHR_YEAST/372-483                   VPSVIFSHPEAGSIGISE.KEAIEKYG.K...ENIKVYNSKFT..........AMYYAMLSEK......SPTRYKIVCAG.PNEKVVGLHIVG.DSSAE..ILQGFGVAIKMGA...TKA.D.FDNCVAIHPTSAEELVTMR
+#=GR GSHR_YEAST/372-483        pAS   ..................................................................................................................................*...........
+A0A125YVR9_TOXGV/362-477             VPTVVFSHPPAACVGLTE.AEAKATYGEK....DIKVYTGTSV..........NLYYGAWPVAPE..EKPKTFIKMICVKSQMLKVVGLHVVG.MGADE..MIQGFGVAMKMGA...TKA.D.FDNCVAVHPTAAEEVVTL.
+#=GR A0A125YVR9_TOXGV/362-477  pAS   ..................................................................................................................................*...........
+GSHR_HUMAN/411-522                   IPTVVFSHPPIGTVGLTE.DEAIHKYG.I...ENVKTYSTSFT..........PMYHAVTKRK......TKCVMKMVCAN.KEEKVVGIHMQG.LGCDE..MLQGFAVAVKMGA...TKA.D.FDNTVAIHPTSSEELVTLR
+#=GR GSHR_HUMAN/411-522        pAS   ..................................................................................................................................*...........
+GSHR_ECOLI/339-450                   IPTVVFSHPPIGTVGLTE.PQAREQYGDD....QVKVYKSSFT..........AMYTAVTTHR......QPCRMKLVCVG.SEEKIVGIHGIG.FGMDE..MLQGFAVALKMGA...TKK.D.FDNTVAIHPTAAEEFVTMR
+#=GR GSHR_ECOLI/339-450        pAS   ..................................................................................................................................*...........
+Q5M5Q5_STRT2/339-450                 VATVVFSHPAIGAIGLTE.EKAIAKYGAE....NIKVYKSSFT..........PMYTALGDNR......QLSTMKLVTLG.EDEKIIGLHGIG.YGVDE..MIQGFSVAIKMGA...TKA.D.FDNTVAIHPTGSEEFVTMR
+#=GR Q5M5Q5_STRT2/339-450      pAS   ..................................................................................................................................*...........
+Q8DUR5_STRMU/339-450                 VATVIFSHPVIGSIGLSE.EAALDQYGEE....NVTVYRSTFT..........SMYTAVTSHR......QACKMKLVTVG.EDEKIVGLHGIG.YGVDE..MIQGFAVAIKMGA...TKA.D.FDNTVAIHPTGSEEFVTMR
+#=GR Q8DUR5_STRMU/339-450      pAS   ..................................................................................................................................*...........
+I1MNX4_SOYBN/373-483                 IPYAVFSIPPLSVVGLSE.EQAIEQTNG.....DLLVFTSTFN..........PMKNTISGRQ......EKTVMKLVVDA.ETDKVLGASMCG.PDAPE..IMQGIAVALKCGA...TKA.Q.FDSTVGIHPSAAEEFVTMR
+#=GR I1MNX4_SOYBN/373-483      pAS   ..................................................................................................................................*...........
+GSHRP_ARATH/431-540                  VPCAVFSQPPIGTVGLTE.EQAIEQYGD......VDVYTSNFR..........PLKATLSGLP......DRVFMKLIVCA.NTNKVLGVHMCG.EDSPE..IIQGFGVAVKAGL...TKA.D.FDATVGVHPTAAEEFVTMR
+#=GR GSHRP_ARATH/431-540       pAS   ..................................................................................................................................*...........
+C5WWX0_SORBI/417-526                 IPSAVFSQPPIGQVGLTE.EQAIEEYGD......VDVFVANFR..........PLKATLSGLP......DRVLMKILVCA.TSNKVVGVHMCG.DDAPE..IIQGIAIAVKAGL...TKQ.D.FDATIGIHPTSAEEFVTMR
+#=GR C5WWX0_SORBI/417-526      pAS   ..................................................................................................................................*...........
+O28421_ARCFU/325-436                 VFSTFVGDVALGAAGLTE.EMAKKEG........FEVVAGYGE..........SLNRHLASIPG....AAKTKVKLIFAK.ESGVILGGQVTGRYEVGE..MVNQIAMAIQNNL...TASEI.DTLQIGTHPLLTSAPTTPP
+#=GR O28421_ARCFU/325-436      pAS   ..................................................................................................................................*...........
+NAOX_METJA/326-433                   SAVSKIGDLEIGGTGLTA.FSANLKRIP......IVIGRAKA............LTRARYYP.G....GKEIEIKMIFNE..DGKVVGCQIVGGERVAE..RIDAMSIAIFKKV...SAEEL.ANMEFCYAPPVS..MVHEP
+O29985_ARCFU/319-424                 SQLTGFKDIEIGKAGLSE.NEAIRFG........YEVVSAFIT..........SRTSARYLPG......GLIHLKVVADR..NGKLLGLQAVG.KDVAM..RVYAASALLHKNG...DVKDL.FFCDFPYYPPVS..RVWDP
+O29852_ARCFU/319-426                 TQLTKFFDLEIGATGLTE.KAAKAEG........FEVKTAVVK..........AKTRVHYYP.G....AKDTFLKVVADA.STKRILGAQVLG.ADVAM..RVNVFAAMIQGGF...TTKDV.FFADLGYAPPFT..PIWDP
+O69869_STRCO/341-449                 TAVSKVCDLEIARTGLRE.KDALRAG........LRFVTATVE..........STSRAGYYP.N....ASPMTVKMLAER.RTGRLLGVQIVG.R.EGAGKRVDIAAVALTAGM...TVEQM.TALDLGYAPPFS..PVWDP
+Q9RVN5_DEIRA/326-435                 TSIFKVFGLGVARTGLTQ.GEAAALG........LNAVSVDVT..........STDHAGYYA.D....ARPIHVRLTGER.GTGRLLGGQLVA.ENPLSVKRVDVIAAHLHSRG...KVEDL.FQMDLAYAPPFS..GVWDV
+O29847_ARCFU/332-442                 TAIFKVFDFTAASAGVNE.QMAKEAG........LDYFTVIAP..........SPDRAHYYP.Q....ANYIRLKLIVEK.GSWRVIGAQGVG.M.GEVAKRIDVLSTAIQAGM...TIDQL.ANLDLAYAPPYSPALDPVI
+O51670_BORBU/326-434                 SASIKILSLEAARTGLTE.KDAKKLQ........IKYKTIFVK..........DKNHTNYYPG.....QEDLYIKLIYEE.NTKIILGAQAIG.KNGAV.IRIHALSIAIYSKL...TTKEL.GMMDFSYSPPFS..RTWDI
+NAPE_ENTFA/326-434                   SSGLAVFDYKFASTGINE.VMAQKLG........KETKAVTVV..........EDYLMDFNP.D....KQKAWFKLVYDP.ETTQILGAQLMS.K.ADLTANINAISLAIQAKM...TIEDL.AYADFFFQPAFD..KPWNI
+NAOX_ENTFA/326-434                   TSGLYLFGWKIGSTGVTK.ESAKLNG........LDVEATVFE..........DNYRPEFMP.T....TEKVLMELVYEK.GTQRIVGGQLMS.K.YDITQSANTLSLAVQNKM...TVEDL.AISDFFFQPHFD..RPWNY
+MTR_MYCTU/345-454                    VPAAVFTDPQIAAVGLTE.NQAVAKGLD......ISVKIQDYG..........DVAYGWAMED......TSGIVKLITER.GSGRLLGAHIMG.YQASS..LIQPLIQAMSFGL...TAAEM.ARGQYWIHPALPEVVENA.
+#=GR MTR_MYCTU/345-454         pAS   ..................................................................................................................................*...........
+RCLA_ECOLI/328-437                   VPYSVFMTPPLSRVGMTE.EQARESGAD......IQVVTLPVA..........AIPRARVMND......TRGVLKAIVDN.KTQRMLGASLLC.VDSHE..MINIVKMVMDAGL...PYS.I.LRDQIFTHPSMSESLNDLF
+#=GR RCLA_ECOLI/328-437        pAS   ..................................................................................................................................*...........
+XECC_XANP2/387-512                   YPDFLHTHYEVSFLGMGE.EEARAAGHE......IVTIKMPPDTENGLNVALPASDRTMLYAFGKGTAHMSGFQKIVIDA.KTRKVLGAHHVG.YGAKD..AFQYLNVLIKQGL...TVDELGDMDELFLNPTHF..IQLSR
+Q9YBC8_AERPE/335-445                 VPAVVYTDPELATVGLTL.EEARAAGVD......AAETRLPLA..........SLPRVGAIE.G....CRECFAKVVYDR.SSRAILGFHVAA.PHASE..IIAEAALAIEMGA...TLE.D.LALTIHPHPSVSEALKEVA
+#=GR Q9YBC8_AERPE/335-445      pAS   ..................................................................................................................................*...........
+DLDH_MYCPN/339-448                   CPSCIYTNPEVASVGYTE.MELKKQGIP......YVKTNLVLA..........HCGKAIADNE......TNGFVKMMFDP.QTGKILGCCIIA.ATASD..MIAELALAMGAGL...TVF.D.IANSISPHPTINEMIADVC
+#=GR DLDH_MYCPN/339-448        pAS   ..................................................................................................................................*...........
+Q6MTX7_MYCMS/475-584                 IPSCIYTHPEVSMIGKTE.QQLKQENIE......YKTFKFPFS..........AIGKALADND......TSGFVKIIIEP.KYKTILGAHIIG.NRATE..MISEIAAVIECEG...TIT.E.IANTIHPHPTMSEAIGEAA
+#=GR Q6MTX7_MYCMS/475-584      pAS   ..................................................................................................................................*...........
+DLDH1_BACSU/349-458                  IPAVVFSEPELASVGYTE.AQAKEEGLD......IVAAKFPFA..........ANGRALSLNE......TDGFMKLITRK.EDGLVIGAQIAG.ASASD..MISELSLAIEGGM...TAE.D.IAMTIHAHPTLGEITMEAA
+#=GR DLDH1_BACSU/349-458       pAS   ..................................................................................................................................*...........
+Q2G2A3_STAA8/348-456                 MPAVCFTEPELATVGYSE.AQAKEEGLA......IKASKFPYA..........ANGRALSLDD......TNGFVKLITLK.EDDTLIGAQVVG.TGASD..IISELGLAIEAGM...NAE.D.IALTIHAHPTLGEMTMEA.
+#=GR Q2G2A3_STAA8/348-456      pAS   ..................................................................................................................................*...........
+Q88EP9_PSEPK/340-449                 IAAVCFTDPEVVVVGKTP.EQASQQGLD......CIVAQFPFA..........ANGRAMSLES......KSGFVRVVARR.DNHLIVGWQAVG.VAVSE..LSTAFAQSLEMGA...CLE.D.VAGTIHAHPTLGEAVQEAA
+#=GR Q88EP9_PSEPK/340-449      pAS   ..................................................................................................................................*...........
+DLDH_HALVD/353-462                   VPAAVFTDPEIGTVGMTE.ADAEEAGFT......PVVGQMPFR..........ASGRALTTNH......ADGFVRVVADE.ESGFVLGAQIVG.PEASE..LIAELAFAIEMGA...TLE.D.VASTIHTHPTLAEAVMEAA
+#=GR DLDH_HALVD/353-462        pAS   ..................................................................................................................................*...........
+Q9RRW5_DEIRA/345-454                 IPGVVYTNPELAWVGLTE.AEAQEKGYE......VKTGVFPMS..........ASGRAMTLQA......TEGFVKMVVEK.DTDLLLGVHIVA.PHASD..MLAEAGLALEMAA...TAT.D.ISLTIHAHPTLGESILEAA
+#=GR Q9RRW5_DEIRA/345-454      pAS   ..................................................................................................................................*...........
+A8ALH7_CITK8/348-456                 IPSIAYTEPEVAWVGLTE.KEAKEKGIS......YETATFPWA..........ASGRAIASDC......ADGMTKLIFDK.ESHRVIGGAIVG.TNGGE..LLGEIGLAIEMGC...DAE.D.IALTIHAHPTLHESVGLA.
+#=GR A8ALH7_CITK8/348-456      pAS   ..................................................................................................................................*...........
+Q9JZ09_NEIMB/469-577                 IPGVAYTSPEVAWVGETE.LSAKASGRK......ITKANFPWA..........ASGRAIANGC......DNGFTKLIFDA.ETGRIIGGGIVG.PNGGD..MIGEVCLAIEMGC...DAA.D.IGKTIHPHPTLGESIGMA.
+#=GR Q9JZ09_NEIMB/469-577      pAS   ..................................................................................................................................*...........
+Q9WYL2_THEMA/332-439                 VPSIIFSSPEVASVGVRE.KDVNPEE........VVISKFPVS..........ANGRARTMLE......NIGFAKVIADK.KDGTVLGMSIVS.PSATD..MIMEGVIAVKFRM...KAE.D.LEKAIHPHPTLTETILGAL
+#=GR Q9WYL2_THEMA/332-439      pAS   ..................................................................................................................................*...........
+Q88FB1_PSEPK/353-462                 IPSVIYTHPEIAWVGKTE.QALKAEGVE......VNVGTFPFA..........ASGRAMAAND......TGGFVKVIADA.KTDRVLGVHVIG.PSAAE..LVQQGAIAMEFGT...SAE.D.LGMMVFSHPTLSEALHEAA
+#=GR Q88FB1_PSEPK/353-462      pAS   ..................................................................................................................................*...........
+Q9RRG6_DEIRA/361-470                 IPWIIYTSPEIAWAGLTE.KQAKERGLN......VKTGQFPFS..........ANGRALGHGD......PRGFVKVVADA.QTDKLLGVHMIG.GGVSE..LIGEIVAIMEFGG...SAE.D.LARTIHAHPTLSEVVKEAA
+#=GR Q9RRG6_DEIRA/361-470      pAS   ..................................................................................................................................*...........
+DLDH_CUPNH/355-464                   VPWVIYTFPEIAWVGKTE.AQLKAEGRE......YKAGQFPFM..........ANGRALGMGH......ADGFVKMLADA.KTDEILGVHIVA.ANASD..LIAEAVVAMEFKA...ASE.D.IGRVCHPHPSMSEVMREAA
+#=GR DLDH_CUPNH/355-464        pAS   ..................................................................................................................................*...........
+Q9ZD83_RICPR/334-443                 IPSVIYTYPEVASVGATE.EQLQEQGIN......YKVGKFPFL..........ANSRARAIGS......TEGMVKILADS.KTDRVLGAHIIG.SDAGT..LIAELIAYMEFGA...SSE.D.IARTCHAHPTLSEAIKEAA
+#=GR Q9ZD83_RICPR/334-443      pAS   ..................................................................................................................................*...........
+D5APB9_RHOCB/343-452                 IPGVIYTTPEVAAVGKTE.DALKQEGRA......YKVGKFSFM..........GNGRAKAVFQ......AEGFVKILADA.ATDRILGAHIIG.PSAGD..MIHEICVAMEFGA...SAQ.D.LALTCHAHPTYSEAVREAA
+#=GR D5APB9_RHOCB/343-452      pAS   ..................................................................................................................................*...........
+Q88C17_PSEPK/347-456                 IPGVIYTRPEMATVGKTE.EQLKAEGRA......YKVGKFPFT..........ANSRAKINHE......TEGFAKVIADA.ETDEVLGVHLVG.PSVSE..MIGEFCVAMEFSA...SAE.D.IALTCHPHPTRSEALRQAA
+#=GR Q88C17_PSEPK/347-456      pAS   ..................................................................................................................................*...........
+Q381B3_TRYB2/358-466                 IPGVIYTMPEVASVGKTE.EELKKAGVA......YKVGKFPFN..........ANSRAKAVAT......EDGFVKVLTDK.ATDRILGVHIVC.SAAGE..LIAEACLAMEYGA...SSE.D.VGRTCHAHPTMSEAVKEA.
+#=GR Q381B3_TRYB2/358-466      pAS   ..................................................................................................................................*...........
+LEGRE_SOYBN/381-490                  VPGVVYTNPEVASVGKTE.EQVKETGVE......YRVGKFPFL..........ANSRAKAIDN......AEGLVKIIAEK.ETDKILGVHIMA.PNAGE..LIHEAAIALQYDA...SSE.D.IARVCHAHPTMSEAVKEAA
+#=GR LEGRE_SOYBN/381-490       pAS   ..................................................................................................................................*...........
+DLDH_SCHPO/391-500                   IPAVMYTHPEVAWVGITE.QKAKESGIK......YRIGTFPFS..........ANSRAKTNMD......ADGLVKVIVDA.ETDRLLGVHMIG.PMAGE..LIGEATLALEYGA...SAE.D.VARVCHAHPTLSEATKEAM
+#=GR DLDH_SCHPO/391-500        pAS   ..................................................................................................................................*...........
+DLDH_YEAST/380-489                   IPSVMYSHPEVAWVGKTE.EQLKEAGID......YKIGKFPFA..........ANSRAKTNQD......TEGFVKILIDS.KTERILGAHIIG.PNAGE..MIAEAGLALEYGA...SAE.D.VARVCHAHPTLSEAFKEAN
+#=GR DLDH_YEAST/380-489        AS    ..................................................................................................................................*...........
+DLDH_CANLF/389-498                   VPSVIYTHPEVAWVGKSE.EQLKEEGIE......YKVGKFPFA..........ANSRAKTNAD......TDGMVKILGQK.STDRVLGAHILG.PGAGE..MVNEAALALEYGA...SCE.D.IARVCHAHPTLSEAFREAN
+#=GR DLDH_CANLF/389-498        pAS   ..................................................................................................................................*...........
+A0A212FM25_DANPL/375-483             IPSVIYTSPEVGWVGKTE.EDLKKEGKA......YKVGKFPFL..........ANSRAKTNGE......PDGFVKVLADK.ATDVILGTHIIG.PGGGE..LINEAVLAQEYGA...AAE.D.VARVCHAHPTCAEALREA.
+#=GR A0A212FM25_DANPL/375-483  pAS   ..................................................................................................................................*...........
+IRC15_YEAST/368-483                  PPNVLYCQPQIGWVGYTE.EGLAKARIP......YQKGRVLFSQ........NVRYNTLLPREEN..TTVSPFIKVLIDS.RDMKILGVHMIN.DDANE..LLSQASMAVSLGL...TAH.D.VCKVPFPHPSLSESFKQAV
+#=GR IRC15_YEAST/368-483       pAS   ..................................................................................................................................*...........
+STHA_MYCTU/345-453                   .PIGIYSIPEVSYVGATE.VELTKSSIP......YEVGVARYR..........ELARGQIAGD......SYGMLKLLVST.EDLKLLGVHIFG.TSATE..MVHIGQAVMGCGG...SVE.Y.LVDAVFNYPTFSEAYKNAA
+STHA_PECAS/348-459                   IPTGIYTIPEISSVGKTE.QELTAMKVP......YEVGRAQFK..........HLARAQIVGM......NVGSLKILFHR.ETKQILGIHCFG.ERAAE..IIHIGQAIMEQKGEGNTIE.Y.FVNTTFNYPTMAEAYRVA.
+Q3A7N7_SYNC1/351-460                 IPGVCYTWPEVASVGKTE.QQLQEEGTP......VKVGKFNFV..........GNGRARAMAE......TEGFVKIIAHA.ENGQVLGVHIFG.PRASD..MIAEAVAVMSYGG...TAH.D.IGAMFHGHPTLSEAVKEAA
+#=GR Q3A7N7_SYNC1/351-460      pAS   ..................................................................................................................................*...........
+DLDH3_BACSU/339-448                  VPRCIYTSPEIACIGMTE.RQARSIYGD......VKIGEFSFS..........ANGKALIKQQ......AEGKVKIMAEP.EFGEIVGVSMIG.PDVTE..LIGQAAAIMNGEM...TAD.M.AEHFIAAHPTLSETLHEAL
+#=GR DLDH3_BACSU/339-448       pAS   ..................................................................................................................................*...........
+Q9S2Q6_STRCO/365-474                 VPRVTYCHPEVASVGLTE.ARAKEVYGAD....KVVSIKFPLG..........GNGKSRILK.......TAGEIKL.VQV.KDGAVVGVHMVG.DRMGE..QVGEAQLIYNWEA...LPA.E.VAQLIHAHPTQNEALGEAH
+#=GR Q9S2Q6_STRCO/365-474      pAS   ..................................................................................................................................*...........
+A4FA83_SACEN/337-443                 IPRVTYSHPEVASVGLTE.AAAKEQYGS......VETFNYDLA..........GNGKSQILK.......TSGAVKL.VRA.TDGPVVGLHMVG.DRVGE..LIGEAQLIYNWEA...LPE.D.VAPLVHAHPTQTEALGEA.
+#=GR A4FA83_SACEN/337-443      pAS   ..................................................................................................................................*...........
+DLDH_CORGL/348-459                   MPRATFCNPQVSSFGYTE.EQAKEKWPDR....EIKVASFPFS..........ANGKAVGLAE......TDGFAKIVADA.EFGELLGAHLVG.ANASE..LINELVLAQNWDL...TTE.E.ISRSVHIHPTLSEAVKEAA
+#=GR DLDH_CORGL/348-459        pAS   ..................................................................................................................................*...........
+DLDH_MYCTU/346-452                   .PRATFCQPNVASFGLTE.QQARNEGYD......VVVAKFPFT..........ANAKAHGVGD......PSGFVKLVADA.KHGELLGGHLVG.HDVAE..LLPELTLAQRWDL...TAS.E.LARNVHTHPTMSEALQE..
+#=GR DLDH_MYCTU/346-452        pAS   ..................................................................................................................................*...........
+DLDH_CHLTE/352-461                   IPRCVYAQPSVASVGLTE.EAAVNAGYQ......VAVGRSQFA..........ASGKANAYGQ......LEGFVKLVFDA.ATGKMLGGHLIG.HDAVE..LIGELGLACRYGV...TAG.G.LVNTVHAHPTLSETVREAA
+#=GR DLDH_CHLTE/352-461        pAS   ..................................................................................................................................*...........
+Q9ZCF1_RICPR/340-449                 IPYCIYSSPQIASVGLTE.EIAKDLGYE......IKIGRFPFS..........ANGKALVSGN......SDGLIKTIFDV.KTGELLGAHMVG.LEVTE..LIQGYVVSKNLEG...TEL.D.LINTIFPHPTLSEMMHESV
+#=GR Q9ZCF1_RICPR/340-449      pAS   ..................................................................................................................................*...........
+DLDH_ZYMMO/347-456                   IPGCTYARPQVASVGLTE.EKARQQGYN......VKIGNFPFI..........ANGKAIAQGA......TDGFVKTVFDA.DSGALLGAHMVG.AEVTE..MIQGYTVARTLET...TEA.E.IMETIFPHPTLSEAMHESV
+#=GR DLDH_ZYMMO/347-456        pAS   ..................................................................................................................................*...........
+DLDH2_BACSU/355-464                  VPKCIYSSPEAASVGLTE.DEAKANGHN......VKIGKFPFM..........AIGKALVYGE......SDGFVKIVADR.DTDDILGVHMIG.PHVTD..MISEAGLAKVLDA...TPW.E.VGQTIHPHPTLSEAIGEAA
+#=GR DLDH2_BACSU/355-464       pAS   ..................................................................................................................................*...........
+Q834J0_ENTFA/351-459                 VPRGVYTNPEIASVGYTR.ETLPAEK.E......VVIGTFNFN..........GNGKSLVYGE......TDGFIEVIRDK.KTDDLLGVSMIG.PHVTD..LIAEASTAMYLDA...API.E.IGEAIHAHPTMTEVLQEAA
+#=GR Q834J0_ENTFA/351-459      pAS   ..................................................................................................................................*...........
+A5I2A4_CLOBH/341-450                 VPACVYTKPELASVGLTE.EQAKQKGVD......YKVGKFPLI..........YNGKSLIMND......TEGFIKIIADK.KYEEILGVHILG.PRATD..LITEAALALRLEA...TLE.E.IITTVHAHPTIGEAMKEAA
+#=GR A5I2A4_CLOBH/341-450      pAS   ..................................................................................................................................*...........
+O66945_AQUAE/342-451                 IPKIIYSALEVASVGLTE.EQAEDEDIE......VRVGVASFV..........SNPKAMDDGE......NEGFVRIVADD.ETGEILGCHIVG.PHAGE..LIHQVVHMIKDGK...TVE.F.ASKTMYSHPSLSENIGIAS
+#=GR O66945_AQUAE/342-451      pAS   ..................................................................................................................................*...........
+DLDH_SYNY3/357-470                   IPAAAFTHPEISYVGLTE.AQAKELG..EKEGFVVSTAKTYFK..........GNSKALAEKE......TDGIAKVVYRQ.DTGELLGAHIIG.IHASD..LIQEAAQAIADRK...SVR.E.LAFHVHAHPTLSEVLDEAY
+#=GR DLDH_SYNY3/357-470        pAS   ..................................................................................................................................*...........
+DLDH_CHLTR/341-450                   VPSVIFTFPEVASVGLSP.TAAQQQKIP......VKVTKFPFR..........AIGKAVAMGE......ADGFAAIISHE.TTQQILGAYVIG.PHASS..LISEITLAVRNEL...TLP.C.IYETIHAHPTLAEVWAESA
+#=GR DLDH_CHLTR/341-450        pAS   ..................................................................................................................................*...........
+#=GC seq_cons                        lPsslaopPElusVGlTE.ppApppsht......lclhphsas..........s.s+Ahshtp......scGhlKlls-t.cspclLGsHllG.ssuuE..hIpthulAlchus...Thp.-.lspslasHPThuEshtpst

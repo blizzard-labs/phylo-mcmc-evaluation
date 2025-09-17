@@ -1,0 +1,488 @@
+# STOCKHOLM 1.0
+#=GF ID   Big_7
+#=GF AC   PF17957.5
+#=GF DE   Bacterial Ig domain
+#=GF AU   Bateman A;0000-0002-6982-4660
+#=GF SE   ECOD:EUF03291
+#=GF GA   24.10 24.10;
+#=GF TC   24.10 24.10;
+#=GF NC   24.00 24.00;
+#=GF BM   hmmbuild HMM.ann SEED.ann
+#=GF SM   hmmsearch -E 1000 --cpu 4 -Z 75585367 HMM pfamseq
+#=GF TP   Domain
+#=GF CL   CL0159
+#=GF RN   [1]
+#=GF RM   22349231
+#=GF RT   Structure and function of the Clostridium thermocellum
+#=GF RT   cellobiohydrolase A X1-module repeat: enhancement through
+#=GF RT   stabilization of the CbhA complex.
+#=GF RA   Brunecky R, Alahuhta M, Bomble YJ, Xu Q, Baker JO, Ding SY,
+#=GF RA   Himmel ME, Lunin VV;
+#=GF RL   Acta Crystallogr D Biol Crystallogr. 2012;68:292-299.
+#=GF RN   [2]
+#=GF RM   16171384
+#=GF RT   The structure and characterization of a modular
+#=GF RT   endo-beta-1,4-mannanase from Cellulomonas fimi.
+#=GF RA   Le Nours J, Anderson L, Stoll D, Stalbrand H, Lo Leggio L;
+#=GF RL   Biochemistry. 2005;44:12700-12708.
+#=GF DR   SO; 0000417; polypeptide_domain;
+#=GF CC   This entry represents a bacterial ig-like domain that is found
+#=GF CC   in glycosyl hydrolase enzymes.
+#=GF SQ   228
+#=GS F0RE33_CELLC/673-750        AC F0RE33.1
+#=GS Q21MW3_SACD2/409-485        AC Q21MW3.1
+#=GS K1LLR2_9BACT/132-202        AC K1LLR2.1
+#=GS K1M556_9BACT/125-193        AC K1M556.1
+#=GS W0V3Z4_9BURK/443-511        AC W0V3Z4.1
+#=GS A0A023BX72_9FLAO/979-1050   AC A0A023BX72.1
+#=GS R9PPX5_AGAAL/681-752        AC R9PPX5.1
+#=GS A0A098LA95_9BACT/681-749    AC A0A098LA95.1
+#=GS R7ZNE0_9BACT/831-898        AC R7ZNE0.1
+#=GS B0VFB3_CLOAI/491-564        AC B0VFB3.1
+#=GS A0A0J8GXJ8_9ALTE/132-200    AC A0A0J8GXJ8.1
+#=GS A0A0S2I2M5_9BACT/43-113     AC A0A0S2I2M5.1
+#=GS A0A0Q9F486_9GAMM/199-266    AC A0A0Q9F486.1
+#=GS D4ZJC7_SHEVD/277-345        AC D4ZJC7.1
+#=GS A3DCH2_ACET2/913-980        AC A3DCH2.1
+#=GS Q5E665_ALIF1/95-162         AC Q5E665.1
+#=GS Q6LQ32_PHOPR/134-201        AC Q6LQ32.1
+#=GS A0A069DIR8_9BACL/455-523    AC A0A069DIR8.1
+#=GS H6NH93_9BACL/440-508        AC H6NH93.1
+#=GS F4KTG0_HALH1/390-458        AC F4KTG0.1
+#=GS W7XV43_9BACT/642-710        AC W7XV43.1
+#=GS R9PUA6_AGAAL/447-514        AC R9PUA6.1
+#=GS A0A0Q6MQN6_9BURK/171-240    AC A0A0Q6MQN6.1
+#=GS D4ZJC8_SHEVD/506-574        AC D4ZJC8.1
+#=GS A0A150ARJ3_9BACT/402-470    AC A0A150ARJ3.1
+#=GS A0A162XIB9_9FLAO/110-177    AC A0A162XIB9.1
+#=GS A0A098LDC3_9BACT/182-250    AC A0A098LDC3.1
+#=GS A0A0F4QZ70_9GAMM/83-152     AC A0A0F4QZ70.1
+#=GS C1E3I7_MICCC/326-417        AC C1E3I7.1
+#=GS W4LZJ4_9BACT/299-385        AC W4LZJ4.1
+#=GS A0A0C5WQ31_9GAMM/337-425    AC A0A0C5WQ31.1
+#=GS A0A090RL86_9VIBR/338-408    AC A0A090RL86.1
+#=GS A0A0C1DW46_9FLAO/971-1045   AC A0A0C1DW46.1
+#=GS A0A023BWD9_9FLAO/579-651    AC A0A023BWD9.1
+#=GS L8JXZ3_9BACT/577-647        AC L8JXZ3.1
+#=GS L0G501_ECHVK/594-664        AC L0G501.1
+#=GS A0A0J1GGA3_9GAMM/182-249    AC A0A0J1GGA3.1
+#=GS R4LN55_9ACTN/739-806        AC R4LN55.1
+#=GS D4ZAY2_SHEVD/192-259        AC D4ZAY2.1
+#=GS G8TAB8_NIAKG/467-534        AC G8TAB8.1
+#=GS D2B768_STRRD/149-216        AC D2B768.1
+#=GS Q2SMW0_HAHCH/186-253        AC Q2SMW0.1
+#=GS Q2SNL2_HAHCH/86-153         AC Q2SNL2.1
+#=GS K4KHW4_SIMAS/214-279        AC K4KHW4.1
+#=GS D0YYI8_PHODD/253-321        AC D0YYI8.1
+#=GS S2DWA4_INDAL/10-95          AC S2DWA4.1
+#=GS A0A0P6XYK9_9CHLR/859-927    AC A0A0P6XYK9.1
+#=GS A0A0P6X6V2_9CHLR/868-935    AC A0A0P6X6V2.1
+#=GS F2JH10_CELLD/661-739        AC F2JH10.1
+#=GS A0A150AI08_9BACT/1816-1884  AC A0A150AI08.1
+#=GS A0A0C5WQ31_9GAMM/85-153     AC A0A0C5WQ31.1
+#=GS D7AVQ5_NOCDD/1068-1156      AC D7AVQ5.1
+#=GS A0A0J1GGA3_9GAMM/87-155     AC A0A0J1GGA3.1
+#=GS A0A0A7EIG9_9GAMM/91-158     AC A0A0A7EIG9.1
+#=GS U1KPG2_9GAMM/94-164         AC U1KPG2.1
+#=GS A0A0S2K7Q2_9GAMM/92-178     AC A0A0S2K7Q2.1
+#=GS A0A0S2JBI0_9GAMM/93-179     AC A0A0S2JBI0.1
+#=GS U5BKN9_9BACT/24-109         AC U5BKN9.1
+#=GS A1ZFU5_9BACT/234-319        AC A1ZFU5.1
+#=GS R8AU09_PLESH/95-180         AC R8AU09.1
+#=GS L8JBH3_9GAMM/49-116         AC L8JBH3.1
+#=GS Q2SMW0_HAHCH/88-174         AC Q2SMW0.1
+#=GS U4K2B3_9VIBR/86-153         AC U4K2B3.1
+#=GS A0A090T7T9_9VIBR/107-174    AC A0A090T7T9.1
+#=GS A0A0F4PAN2_PSEO7/339-423    AC A0A0F4PAN2.1
+#=GS F9RG53_VIBSN/270-341        AC F9RG53.1
+#=GS A0A090RK58_9VIBR/57-146     AC A0A090RK58.1
+#=GS U1JLA6_9GAMM/669-737        AC U1JLA6.1
+#=GS A0A098LAY8_9BACT/685-770    AC A0A098LAY8.1
+#=GS L8JXZ3_9BACT/479-550        AC L8JXZ3.1
+#=GS A0A0E3UHJ0_9BACT/1114-1188  AC A0A0E3UHJ0.1
+#=GS H3NWK2_9GAMM/306-381        AC H3NWK2.1
+#=GS F6FQL9_ISOV2/1078-1145      AC F6FQL9.1
+#=GS A0A0G2ZW88_9DELT/1576-1643  AC A0A0G2ZW88.1
+#=GS A0A0Q8PY21_9ACTN/50-122     AC A0A0Q8PY21.1
+#=GS D5EIK4_CORAD/259-327        AC D5EIK4.1
+#=GS A0A0G2ZNN5_9DELT/405-472    AC A0A0G2ZNN5.1
+#=GS A0A0F4PAN2_PSEO7/87-173     AC A0A0F4PAN2.1
+#=GS U1J7X2_9GAMM/86-172         AC U1J7X2.1
+#=GS M7NQ41_9BACT/525-593        AC M7NQ41.1
+#=GS D7BFL8_MEISD/496-562        AC D7BFL8.1
+#=GS A0A0D6PLI4_9PROT/352-420    AC A0A0D6PLI4.1
+#=GS R4LFQ6_9ACTN/343-425        AC R4LFQ6.1
+#=GS I0GWZ9_ACTM4/665-732        AC I0GWZ9.1
+#=GS A0A0C2DQ50_9DELT/405-472    AC A0A0C2DQ50.1
+#=GS Q122Z6_POLSJ/238-310        AC Q122Z6.1
+#=GS A0A166EPJ0_9EURY/32-108     AC A0A166EPJ0.1
+#=GS F5LNY8_9BACL/134-203        AC F5LNY8.1
+#=GS A0A0M2VW84_9BACL/131-200    AC A0A0M2VW84.1
+#=GS A0A0A2T8P0_9BACI/128-197    AC A0A0A2T8P0.1
+#=GS A0A0A5GBA5_9BACI/135-205    AC A0A0A5GBA5.1
+#=GS A0A0A5GFM3_9BACI/123-192    AC A0A0A5GFM3.1
+#=GS E3FG02_STIAD/680-749        AC E3FG02.1
+#=GS D3S327_FERPA/951-1044       AC D3S327.1
+#=GS A0A151B3D7_9CLOT/691-758    AC A0A151B3D7.1
+#=GS M3B5G6_STRMB/124-194        AC M3B5G6.1
+#=GS E3FTS5_STIAD/2466-2535      AC E3FTS5.1
+#=GS A0A0Q8EA44_9ACTN/33-105     AC A0A0Q8EA44.1
+#=GS A0A085VZE2_9DELT/427-494    AC A0A085VZE2.1
+#=GS A0A085W3C7_9DELT/65-132     AC A0A085W3C7.1
+#=GS R4LN55_9ACTN/552-619        AC R4LN55.1
+#=GS A0A099KMB3_9GAMM/475-546    AC A0A099KMB3.1
+#=GS I0HNC2_RUBGI/499-581        AC I0HNC2.1
+#=GS A0A0G2ZNN5_9DELT/313-379    AC A0A0G2ZNN5.1
+#=GS A0A0G2ZW88_9DELT/1044-1111  AC A0A0G2ZW88.1
+#=GS T0MNW9_9BACT/34-119         AC T0MNW9.1
+#=GS I3IKT1_9BACT/482-549        AC I3IKT1.1
+#=GS N1USL0_9MICC/363-430        AC N1USL0.1
+#=GS A0A085WKK0_9DELT/420-487    AC A0A085WKK0.1
+#=GS A1AQZ5_PELPD/1053-1121      AC A1AQZ5.1
+#=GS Q3A4E5_SYNC1/395-464        AC Q3A4E5.1
+#=GS H8GWZ2_DEIGI/33-99          AC H8GWZ2.1
+#=GS E8U4F4_DEIML/29-98          AC E8U4F4.1
+#=GS H8GZ39_DEIGI/63-126         AC H8GZ39.1
+#=GS L0A8P2_DEIPD/323-393        AC L0A8P2.1
+#=GS K9ZZN1_DEIPD/176-244        AC K9ZZN1.1
+#=GS L0A185_DEIPD/185-254        AC L0A185.1
+#=GS E8U3C3_DEIML/761-828        AC E8U3C3.1
+#=GS A0A0G2ZUQ4_9DELT/446-513    AC A0A0G2ZUQ4.1
+#=GS E3FG32_STIAD/782-849        AC E3FG32.1
+#=GS Q39XN1_GEOMG/406-473        AC Q39XN1.1
+#=GS G4SZP5_META2/415-482        AC G4SZP5.1
+#=GS A0A0Q8RIH5_9BURK/401-468    AC A0A0Q8RIH5.1
+#=GS A0A0Q8RA88_9BURK/398-482    AC A0A0Q8RA88.1
+#=GS A0A0B5FWH7_9DELT/395-462    AC A0A0B5FWH7.1
+#=GS Q08ZC1_STIAD/419-486        AC Q08ZC1.1
+#=GS I0H834_ACTM4/1111-1181      AC I0H834.1
+#=GS A0A0K1QD36_9DELT/80-150     AC A0A0K1QD36.1
+#=GS A0A0M2HNJ1_9MICO/408-483    AC A0A0M2HNJ1.1
+#=GS F8A470_CELGA/431-504        AC F8A470.1
+#=GS A0A0N0T757_9ACTN/409-481    AC A0A0N0T757.1
+#=GS H6NCF3_9BACL/199-273        AC H6NCF3.1
+#=GS A0A089LQD8_9BACL/808-880    AC A0A089LQD8.1
+#=GS C6IZG3_9BACL/803-875        AC C6IZG3.1
+#=GS A0A0M2H456_9MICO/491-561    AC A0A0M2H456.1
+#=GS A0A0Q5AXV3_9MICO/344-414    AC A0A0Q5AXV3.1
+#=GS H8ML56_CORCM/1389-1456      AC H8ML56.1
+#=GS A0A060HHH3_9ARCH/43-120     AC A0A060HHH3.1
+#=GS R4VVV7_9EURY/674-744        AC R4VVV7.1
+#=GS Q97GP1_CLOAB/321-397        AC Q97GP1.1
+#=GS A9WHF3_CHLAA/884-957        AC A9WHF3.1
+#=GS B5I9E3_ACIB4/834-899        AC B5I9E3.1
+#=GS F5YJR4_TREPZ/3490-3573      AC F5YJR4.1
+#=GS G0GC65_SPITZ/916-984        AC G0GC65.1
+#=GS D7BHE6_MEISD/33-119         AC D7BHE6.1
+#=GS D7BBV4_MEISD/240-311        AC D7BBV4.1
+#=GS F8EXW2_GRAC1/38-121         AC F8EXW2.1
+#=GS I3II11_9BACT/280-350        AC I3II11.1
+#=GS Q6M0J5_METMP/420-489        AC Q6M0J5.1
+#=GS Q6M0J5_METMP/610-677        AC Q6M0J5.1
+#=GS Q1J0Q4_DEIGD/806-881        AC Q1J0Q4.1
+#=GS D7DT32_METV3/717-783        AC D7DT32.1
+#=GS F2JH11_CELLD/879-975        AC F2JH11.1
+#=GS H8MPB1_CORCM/99-179         AC H8MPB1.1
+#=GS E6U6Z9_ETHHY/91-180         AC E6U6Z9.1
+#=GS R4K027_CLOPA/1068-1153      AC R4K027.1
+#=GS R4K021_CLOPA/44-129         AC R4K021.1
+#=GS E6U581_ETHHY/972-1065       AC E6U581.1
+#=GS Q4J6L8_SULAC/1130-1195      AC Q4J6L8.1
+#=GS Q6L2K8_PICTO/1156-1223      AC Q6L2K8.1
+#=GS Q96XM6_SULTO/1130-1200      AC Q96XM6.1
+#=GS I0XCE6_9SPIR/379-452        AC I0XCE6.1
+#=GS F4LNH4_TREBD/376-452        AC F4LNH4.1
+#=GS E3FIR8_STIAD/25-93          AC E3FIR8.1
+#=GS S0FZN7_9DELT/612-681        AC S0FZN7.1
+#=GS N6VPU6_9ARCH/775-846        AC N6VPU6.1
+#=GS A0A0A0WYY6_9SPIR/79-147     AC A0A0A0WYY6.1
+#=GS S3L0V2_TREMA/80-149         AC S3L0V2.1
+#=GS A0A098R0H3_9SPIO/86-154     AC A0A098R0H3.1
+#=GS H7EKS6_9SPIR/82-152         AC H7EKS6.1
+#=GS F8F197_GRAC1/1616-1685      AC F8F197.1
+#=GS S5ZS46_9SPIR/931-1000       AC S5ZS46.1
+#=GS A0A0G2ZXQ7_9DELT/29-105     AC A0A0G2ZXQ7.1
+#=GS A0A062XWA5_9BACT/608-700    AC A0A062XWA5.1
+#=GS Q5V6X6_HALMA/637-711        AC Q5V6X6.1
+#=GS V4XGW4_9ARCH/389-463        AC V4XGW4.1
+#=GS A0A062XWA5_9BACT/710-782    AC A0A062XWA5.1
+#=GS D1C8L4_SPHTD/258-329        AC D1C8L4.1
+#=GS A0A168E218_9CLOT/83-164     AC A0A168E218.1
+#=GS A0A0Q4BEV2_9ARCH/398-463    AC A0A0Q4BEV2.1
+#=GS A0A098C166_9BACT/38-114     AC A0A098C166.1
+#=GS A0A0D3LHP1_9BACT/41-117     AC A0A0D3LHP1.1
+#=GS H2BVD4_GILLR/40-116         AC H2BVD4.1
+#=GS G0L852_ZOBGA/39-116         AC G0L852.1
+#=GS Q1J0Q4_DEIGD/337-408        AC Q1J0Q4.1
+#=GS H8MZM3_CORCM/856-927        AC H8MZM3.1
+#=GS H6NBC6_9BACL/570-632        AC H6NBC6.1
+#=GS A5G3Y9_GEOUR/590-657        AC A5G3Y9.1
+#=GS A0A0C2DQ50_9DELT/500-583    AC A0A0C2DQ50.1
+#=GS A0A0B5FWH7_9DELT/498-565    AC A0A0B5FWH7.1
+#=GS C0QHZ8_DESAH/599-666        AC C0QHZ8.1
+#=GS Q5P7D9_AROAE/513-580        AC Q5P7D9.1
+#=GS Q3JCZ6_NITOC/509-576        AC Q3JCZ6.1
+#=GS G4SZP5_META2/526-609        AC G4SZP5.1
+#=GS Q39XN1_GEOMG/501-569        AC Q39XN1.1
+#=GS Q1ILC2_KORVE/408-473        AC Q1ILC2.1
+#=GS A0A0Q6MKM1_9BURK/320-389    AC A0A0Q6MKM1.1
+#=GS C6VTQ4_DYAFD/531-600        AC C6VTQ4.1
+#=GS A0A0S9Q3Q6_9ACTN/1217-1305  AC A0A0S9Q3Q6.1
+#=GS A0A127JUE8_9BURK/493-562    AC A0A127JUE8.1
+#=GS A0A098LAY8_9BACT/428-496    AC A0A098LAY8.1
+#=GS B1ZZE2_OPITP/2927-3004      AC B1ZZE2.1
+#=GS A0A011NQ22_9PROT/226-296    AC A0A011NQ22.1
+#=GS A0A098LDD3_9BACT/469-537    AC A0A098LDD3.1
+#=GS I0K805_9BACT/604-691        AC I0K805.1
+#=GS A0A080MCC4_9PROT/724-792    AC A0A080MCC4.1
+#=GS W0J5B7_9BACT/702-770        AC W0J5B7.1
+#=GS A0A0Q6MQN6_9BURK/628-697    AC A0A0Q6MQN6.1
+#=GS B3E8T7_TRIL1/1117-1186      AC B3E8T7.1
+#=GS B9XT59_PEDPL/96-163         AC B9XT59.1
+#=GS A0A098LD78_9BACT/29-105     AC A0A098LD78.1
+#=GS A0A098LHS8_9BACT/433-500    AC A0A098LHS8.1
+#=GS U5BKN9_9BACT/219-287        AC U5BKN9.1
+#=GS S2DWA4_INDAL/388-456        AC S2DWA4.1
+#=GS A0A098LHB6_9BACT/245-313    AC A0A098LHB6.1
+#=GS A0A098LCP0_9BACT/508-592    AC A0A098LCP0.1
+#=GS A0A023BWB3_9FLAO/623-708    AC A0A023BWB3.1
+#=GS A0A098LJH1_9BACT/417-502    AC A0A098LJH1.1
+#=GS G0L3J4_ZOBGA/384-467        AC G0L3J4.1
+#=GS A0A098LD82_9BACT/246-330    AC A0A098LD82.1
+#=GS A0LGF3_SYNFM/376-461        AC A0LGF3.1
+#=GS A0A098LFQ8_9BACT/528-614    AC A0A098LFQ8.1
+#=GS A0A162XPG6_9FLAO/413-480    AC A0A162XPG6.1
+#=GS A0A023BW74_9FLAO/413-479    AC A0A023BW74.1
+#=GS D3S326_FERPA/339-406        AC D3S326.1
+#=GS D3S327_FERPA/529-598        AC D3S327.1
+#=GS D3S327_FERPA/1070-1144      AC D3S327.1
+#=GS D3S327_FERPA/1173-1248      AC D3S327.1
+F0RE33_CELLC/673-750                   PTISF.L.SPVNNI...TLV.EGY.....NLQVEVNATDA.......DGTI......DNV..KL..YID......NN....LVRQ........................INS..TS...Y.KWGH...SDSP.......................NTDELNGLTEGTYTLKA
+Q21MW3_SACD2/409-485                   PTVSF.D.EPNGNI...TVS.PGY.....AQSVIVEATDS........DGI......AHV..VL..FID......GS....E..........................VRKE..TK...Y.PYTW...GITESDT................PNEINN.....LPAGTHTIKA
+K1LLR2_9BACT/132-202                   PEIRI.A.SPTANA...SFM.EGE.....NILVTVEAKSP.......NGAI......ERI..EL..FRN......NN....L..........................VGSV..SG...N.PQSI...SFTL.......................SN.....MPAASYELTA
+K1M556_9BACT/125-193                   PTIRI.V.SPGNNG...SFD.AGN.....DIPVKFDASSE.......NGRI......TRV..EL..FRN......DV....L..........................IGSV..AN...P.DNNF...T..L.......................TN.....LAIGNHTLKA
+W0V3Z4_9BURK/443-511                   PVATI.T.SPANGA...SFL.PGA.....NIPVAIGVASN.......GFTI......SKV..EI..YDG......TN....L..........................VGTA..LG...A.PYSI...TMVD..............................VSAGSHVLTA
+A0A023BX72_9FLAO/979-1050              PVITV.L.KPSNGQ...NFV.QKE.....NIAVETVIKDD........EKV......EKA..EL..KVD......GE....L..........................ISTD..YV...A.PYQW...THIN.......................KLN...FLSPGQHELTI
+R9PPX5_AGAAL/681-752                   PTVSV.S.AP..NG...SLN.EGD.....DVTITATANDS.......DGSI......NSV..NF..YLTA....PGA....N.EQ......................LLASD..NA...A.PYQT...NITN..............................LSAGTYQLRV
+A0A098LA95_9BACT/681-749               PSVVI.T.SPKSGT...VIT.EGT.....DLTITVEATDS.......DGQI......TAV..NF..YKE......NE....S..........................LFAS..TT...A.PYTY...TVPK..............................ITAGTYNFRV
+R7ZNE0_9BACT/831-898                   PSIQL.T.APSNNQ...QFD.FGT.....AVNLTANASSQ.......SSSI......VRV..NY..FSG......EQ....Q..........................IGST..TS...A.PYSF...RWNA.......................P........LGTHQLRA
+B0VFB3_CLOAI/491-564                   PQCKI.V.YPINNT...GFV.INS.....LIPVRVEASDLD......DRSV......MEV..RF..FLD......NN....PD........................YVFSD..AT...M.PYEW...IWNT.......................AE.....ASLGMHKIKV
+A0A0J8GXJ8_9ALTE/132-200               PSISF.N.SPANNS...QFT.FAE.....PIRFSVDAIDL.......DGSI......SQV..EF..FVN......NQ....S..........................VSID..TA...S.PYEY...VNNQ..............................LSLGDHEITA
+A0A0S2I2M5_9BACT/43-113                PTCTI.T.SPEDGA...EFT.QGE.....TITIAVEAEDE.......DNNL......EEV..RF..YVN......DV....G..........................IGSA..SS...F.PYNF...DWDT.......................NE.....EEPGSFTIKA
+A0A0Q9F486_9GAMM/199-266               PSVAL.T.APAQNQ...VFL.AGS.....AIALTANASDA.......DDGV......QRV..EF..LVD......GI....K..........................MGED..TS...A.PYEL...HWTM.......................L........EGSHAVTA
+D4ZJC7_SHEVD/277-345                   PSVEL.T.SPSANF...NLA.VNG.....ELSIGANALDS.......DGDI......VSV..SF..FAN......GV....L..........................IETD..TL...A.PYAT...LYSA.......................TQ.......AGDLSITA
+A3DCH2_ACET2/913-980                   PTVKL.T.APKSNV...VAY.GNE.....FLKITATASDS.......DGKI......SRV..DF..LVD......GE....V..........................IGSD..RE...A.PYEY...EWKA.......................V........EGNHEISV
+Q5E665_ALIF1/95-162                    PTVDL.T.SPSATE...QLT.TGD.....LVTLTASAADS.......DGNI......VRV..DF..SVD......GV....V..........................ISSV..TA...S.PYST...TWTA.......................L........EGNHTISA
+Q6LQ32_PHOPR/134-201                   PTVSL.S.SPSASD...IIT.EGD.....TVSITANAADA.......DGAV......VRV..DF..YTN......GT....L..........................IGSD..SS...T.PFAL...SWMA.......................V........PGQHSVTA
+A0A069DIR8_9BACL/455-523               PEVEI.V.SPEMNA...LKG.QPG.....KIMINAEASDP.......DGSI......AKV..EF..YAS......GV....K..........................LGED..TS...A.PYQW...KWDD..............................LPEGSYYITA
+H6NH93_9BACL/440-508                   PAAVI.T.QPADNT...IVT.EGA.....SVEIQASASDA.......DGSV......AKV..EF..YRN......DV....L..........................LGED..ST...A.PYSF...TWEN.......................V.......QDGTHFLTV
+F4KTG0_HALH1/390-458                   PNLTF.T.SPLKDT...IVG.QGT.....PLTVQLNANDP.......DGEI......IRI..EL..FLN......DV....K..........................VGED..GQ...V.PYSF...TLNN.......................LP.....L..GTHKLRA
+W7XV43_9BACT/642-710                   PVVSV.L.TPAHQD...VFV.EGE.....SLTLSAAASDA.......EGAI......TKV..QY..YAG......AI....L..........................LGEV..SE...A.PYSF...TWKY..............................LPKGTYSITA
+R9PUA6_AGAAL/447-514                   PEVSI.I.SPKQLL...V....PS.....TLELSAIASDD........VAI......QKV..EF..LVD......GV....V..........................MGEL..LE...P.PYKM...SFPL.......................DA....NFAGRSIDVTA
+A0A0Q6MQN6_9BURK/171-240               PNIGI.T.TPANGT...VST.MPS.....SFGFTSSASDS.......DGTV......SSV..QY..FAN......GA....AISG......................AI.....AA...S.PYAF...SWSG.......................M.......SAGSYSIVA
+D4ZJC8_SHEVD/506-574                   PTVRI.T.SPNVGD...VFS.PGD.....DINFTLEASDA.......DGHI......TRV..DY..LNG......GI....K..........................IGSS..AI...S.PFDF...RWSS.......................V.......GEGSYSITA
+A0A150ARJ3_9BACT/402-470               PDIGL.I.SPADQQ...YYT.SPQ.....TITLSASASDS.......DGSI......SSV..RF..YIN......GN....Y..........................VGQD..YT...T.PYQV...NYAI.......................P.......SDGNYTFTA
+A0A162XIB9_9FLAO/110-177               PVVSI.I.TPISGE...TFI.TGD.....SISITASTSDQ.......DGEI......RKV..EF..YVN......GN....N..........................IGED..LT...A.PYTV...NWIA.......................V........QGNHSITA
+A0A098LDC3_9BACT/182-250               PSVTI.T.SPKSTD...ILF.TGN.....EITVSANAQAQ.......SGTL......VSV..EF..FYD......GK....S..........................IGVD..KD...A.PYSV...KYTP.......................A.......ASGSHTITA
+A0A0F4QZ70_9GAMM/83-152                PQVTV.T.SPSNNT...SII.IGT.....PIDLAASVSHPQ......NIAI......ERA..EF..FID......GT....L..........................IATD..NT...A.PYSV...PWQA.......................QG.....L..GSHQLQV
+C1E3I7_MICCC/326-417                   PTVAM.S.GPSDGS...QMG.TGV.....GITLSADANDP........DGIGGAGSVAKV..EF..FVR......GD...CL..........................VSAD..AA...Y.PYSV...TFNPPSDGLYE........FHARVTDRDG.....NTATSGSVTV
+W4LZJ4_9BACT/299-385                   PTIAV.T.APAANL...EII.EGT.....RLTLRADASDD........VGV......ARV..EL..FVD......GR....L..........................VGTD..TT...A.PYTI...DFRVPGGPDHSP.......VRLRAVATDT....AAQTAEATLTI
+A0A0C5WQ31_9GAMM/337-425               PELGF.T.SPAAGE...TLL.AGI.....PTDLIVNATAG.......AFDI......AKV..QF..FAD......NQ....LIGN......................GVVDG.......T.KYQL...EWIPVNTGSIT........LKAVATDTDN....GEGETTQQVTV
+A0A090RL86_9VIBR/338-408               PEVTF.I.SPSAGE...TLM.AGV.....ETRLIADVTAG.......DFGI......ESV..KF..YAN......GD....LID........................DAER..MG...E.QYVT...NWTP.......................VE.....L..GSVTLSV
+A0A0C1DW46_9FLAO/971-1045              PQVTI.T.APSAAT..VAIA.LGT.....AIQLKATASVDA......SLTI......SSV..VF..NIN......GQ....NITA......................AL.....SG...T.EYVA...NWTP.......................VA....ADFNKNYTLKA
+A0A023BWD9_9FLAO/579-651               PSITL.I.TPKDAD...VIE.QTAL...SSIELKATVTDD........NQV......SSV..KF..MVN......NI....EI.........................TPTA..NG...T.LYTT...DWTP.......................TA.....FGEVSYKITA
+L8JXZ3_9BACT/577-647                   PVVSM.L.SPADGQ...VIE.QSEF...SEIRLSASVTDD........TSV......QNV..VL..SID......GQ....LLNV......................STAGD.........EYYA...LWTP.......................T.......AEGSYVFKV
+L0G501_ECHVK/594-664                   PSIEL.T.NPSAGI..LEIN.PGL....ALVELLASANDL.......DGEV......THV..NF..FVD......GN....L..........................VGSA..NG...S.PFTV...DWVN.......................V.......SAGTYSLSA
+A0A0J1GGA3_9GAMM/182-249               PVVDL.A.YPTANT...QMK.AGD.....QVVLKANASDT.......DGAV......ARV..EF..YVD......NQ....L..........................VGSD..ET...S.PYEM...PWTA.......................T........EGSHTFKV
+R4LN55_9ACTN/739-806                   PEARV.A.APAAGD...TVS...A.....VTYLKAAVADS........NGV......ARV..YF..YLD......GK....L..........................LGSR..IV...T.PFQW...KWDP.......................AT.....VSPGTHTVQV
+D4ZAY2_SHEVD/192-259                   PSATL.T.SPTADS...QIT.AGA.....ITLLTADAADS.......DGAI......TQV..DF..YLD......DV....L..........................LSSV..AS...A.PFQH...NWTA.......................TA........GLHSFKV
+G8TAB8_NIAKG/467-534                   PVVSF.T.APANNA...IVD.AGA.....PVPLTVDAISF.......SGAI......SKI..AY..SVD......GV....T..........................IGED..TT...A.PWSL...TWIA.......................A........AGAHTITA
+D2B768_STRRD/149-216                   PTVSL.T.SPASGA...SIP.AGS.....AVPLAATAGDD........GAV......SKV..EF..YVD......GA....L..........................VNTD..TS...A.PYGY...SATG..............................VAAGSHTARA
+Q2SMW0_HAHCH/186-253                   PTASV.T.SPKAGD...EFE.ADA.....SVNISVDAADE.......DGSV......SKV..EF..YVD......NA....L..........................IGED..DA...A.PYEM...DWKA.......................ES........GAHRISA
+Q2SNL2_HAHCH/86-153                    PSARL.T.SPSAGQ...SFK.VGA.....TVAISAEANDA.......DGSV......SSV..AF..FVD......GA....Q..........................IAQD..AT...A.PYAA...TWTA.......................T........AGEHSLKV
+K4KHW4_SIMAS/214-279                   PTVSMAT.VPAD......LQ.AGQ.....SVAFSADANDV.......DGTI......NSV..RF..YVD......GS....L..........................IDTD..TS...A.PFTA...NWIA.......................V........EGNHTVSV
+D0YYI8_PHODD/253-321                   PVIAI.T.APQQGT...KVE.QGE.....TITITTQASDK.......DDDI......RYV..EL..WVN......DA....K..........................VATN..TQ...A.PYSF...SWTA.......................E.......KSGIHTLTV
+S2DWA4_INDAL/10-95                     PTVSI.T.APVSGT...EIE.AGE.....SIIITAEASDE.......GGEV......VKV..EF..FVN......GS....S..........................IGTT..TQ...A.PYSI...NWTADEAGTFE.........IRAVATDNE....GASANSQTVTV
+A0A0P6XYK9_9CHLR/859-927               PQAAL.T.YPTPQQ...RFS.RADS...RTINFLAQVSDA........GGV......ARV..EW..WLD......GI....K..........................INEN..QQ...A.PYST...PWVP......................IP.........GEHSLVV
+A0A0P6X6V2_9CHLR/868-935               PKVTI.L.SPQEGI...SVS.GVQ.....PVFLQADIFDS........SAI......NKV..EW..RID......GT....S..........................IGES..QQ...A.PYTF...DWST.......................P.......QRGTHKLTV
+F2JH10_CELLD/661-739                   PTTSI.A.SPVAGTIFKDVT.EAN.....PVVIKANAEVQ.......ESTI......SKV..EF..FVD......GT....K..........................IGES..TK...A.PYEM...NFVPSD...................YSTV....VGTTKDYSLTV
+A0A150AI08_9BACT/1816-1884             PTVTV.S.TSDAST...EYT.VGT.....TITLTADANDT.......DGSI......SKV..EF..FVG......TE....S..........................VGEV..TE...V.PFTM...DWTP.......................EV.....A..DNYSITA
+A0A0C5WQ31_9GAMM/85-153                PTISI.T.SPQNGG...QFV.LDK.....PILLAAEVSSQ.......NSEI......KDV..EF..LVN......GE....S..........................VAVI..TQ...A.PFST...EWTP.......................SQ.....LGQS..VVTV
+D7AVQ5_NOCDD/1068-1156                 PQTEL.T.SPQDGA...VFE.EGA.....DVPLSAEVTDHA......EAGV......EKV..DF..LVG......GE....V..........................VATV..TE...G.PYTA...TWQGAAAGEYEV......SAVATDGDGNT.....GASDTATITV
+A0A0J1GGA3_9GAMM/87-155                PTIDV.T.SPLNNA...QFT.DGD.....SITLSANAADS.......DGAV......RDV..EF..MVN......GA....S..........................VAVV..DQ...A.PYQF...VWKN.......................VA.....V..GQYTITA
+A0A0A7EIG9_9GAMM/91-158                PLAEV.L.SPMSGS...SFT.EGD.....SVVIEAQASDS.......DGTV......VKL..EV..LVD......GV....A..........................IATL..TQ...A.PYST...SWVA.......................V........KGQHQISV
+U1KPG2_9GAMM/94-164                    PVVAG.L.TPASGT...EFN.VND.....SVAISVNATDA.......DGTV......AKV..DF..YVD......DV....L..........................IATD..TQASAD.MFDG...TWAA.......................Q........EGSHVISV
+A0A0S2K7Q2_9GAMM/92-178                PKVTL.L.SPANGN...LLN.END.....SVAILAEASDT.......DGQV......KQV..EV..YLD......GQ....L..........................LTTL..NT...A.PFEF...NWTAVVGEHVFY......AIAQDDDGAR......TESARHSVTV
+A0A0S2JBI0_9GAMM/93-179                PTVSI.I.SPEKNS...SFF.END.....SVVFSVFATDE.......DGSV......AKI..AL..YLD......DV....M..........................LTTL..TS...S.PYQF...TWSAVLGEHLLK......AIAFDDKGAQ......ASTENTTLTV
+U5BKN9_9BACT/24-109                    PKISF.K.TPSANS...EYF.RFE.....DISFEVAVDAP.......DAEI......VKV..EY..FRN......NI....L..........................IGSN..SE...A.PFNL...KWRASTVGNLN........IRAIATDEDG.....STATSETLTV
+A1ZFU5_9BACT/234-319                   PTVGF.T.QPANNS...QFR.DGQ.....SIDLRATAQDS.......DGQV......TSV..KF..YAN......NT....L..........................LGEA..TS...A.PYAF...AWNGALAGQYQ........LTAIAQDNDG.....ATTTSAAITV
+R8AU09_PLESH/95-180                    PSVQL.T.APANNA...SFK.QGD.....VVTLQASASDS.......DGSV......SKV..EF..YID......GV....K..........................TATS..TA...A.PYSY...AWTATTGAHT..........LLAKAYDDKG...ATTDNSVSVTV
+L8JBH3_9GAMM/49-116                    PKVTL.T.SPLNNT...QFV.DSN.....TIILSAHTNDI.......DGSI......ENV..TF..LID......DK....I..........................VGTL..TS...E.PFSL...KWRA.......................E........NGTHKVTT
+Q2SMW0_HAHCH/88-174                    PSVTL.T.APTSGS...EYA.VGD.....IVMLSAQASDE.......DGSV......AKV..TF..MVD......DE....V..........................VGED..DS...A.PYSV...EWKAELGAHTV........SAAAVDDDDA....DATSGKASIKV
+U4K2B3_9VIBR/86-153                    PEVTI.T.SPLNNA...QLS.TGQ.....IIGLQANASDI.......DGNV......AQV..EF..FLS......GV....S..........................LGVV..TA...V.PYTL...DWTT.......................T........TGSHTISA
+A0A090T7T9_9VIBR/107-174               PSVSI.A.SPENNA...QLA.VGN.....VVTFSATAGDT.......DGTV......TEV..AF..ALD......GV....T..........................LATL..SS...A.PYTT...DWLT.......................E........LGSYQLTV
+A0A0F4PAN2_PSEO7/339-423               PTVTF.E.SPSNNG...TVL.VNA.....PTTISVSAQDT.......DGSI......ATL..SL..YAD......NT....L..........................LATA..NQ...G.TLSH...SWTPTTLNPV..........SLNAIAVDN....ESNQSEQTITV
+F9RG53_VIBSN/270-341                   PVVSF.V.TPSNGT...TIK.VTD.....SVAISVNATDA.......DNDL......STL..VV..KAN......NK....Q.IC......................SFDAA..TT...D.AFAC...NWQP.......................TQ.......AGNVTLKA
+A0A090RK58_9VIBR/57-146                PEVRF.I.TPEEGS...VFN.KTE.....TASISVDVSDT.......DGDL......AIV..VV..KAN......NV....PV.C......................EFHNE..VV...A.PFNC...DWQPTQVGSVI........LDAVATDEQN....LSSTDSVQITV
+U1JLA6_9GAMM/669-737                   PTIRF.A.SPDTNS...TVT.IGD.....NVAVNLAANDT.......DGQV......EQV..NV..SIN......GS....L..........................LTTL..ST...A.PFSF...NWQP.......................E.......AAGTYRLSA
+A0A098LAY8_9BACT/685-770               PAITL.T.SPGNRT...TIS.VDE.....KLTLSADATDP.......DGNI......IGV..SF..YQD......GK....L..........................LTTV..NT...A.PFSY...QWTPTFPGEYS.........FYSEAFDTD....GLSTRTDTVSI
+L8JXZ3_9BACT/479-550                   PNVSW.V.APVDTD...TIV.METF...TPITLQASASDA.......DGTI......AGV..SF..EAA......GA....TL.........................SGAL..NG...N.LYEA...QFTP.......................QQ.....Y..GELTLKV
+A0A0E3UHJ0_9BACT/1114-1188             PSVNL.V.SPVAAK...TLT.VGS.....NLALEATASDS.......DGTI......ASV..GF..YAD......GA....LVAT......................GVQVG..NT...T.TYTA...TWTP.......................TL.....ARSRAYKLTV
+H3NWK2_9GAMM/306-381                   PSVAI.T.APSNGA...QID.AGD.....SVLIEASASDPAGRQYGSEGEV......SSV..SF..YAD......DV....L..........................LGTV..SE...A.PFEL...QWTP.......................ET.......EGEKSLSA
+F6FQL9_ISOV2/1078-1145                 PEVAI.T.APEAGV...ELE..QG.....EITVAADATDA.......ENEI......TQV..EF..FVD......GS....S..........................IGVD..TQ...A.PYEA...AWTV.......................T.......EDGYYELTA
+A0A0G2ZW88_9DELT/1576-1643             PVVAL.T.APARDA...RLK...G.....LVPVSATVASA........TTV......TRV..EF..FAN......GT....P..........................LGTD..TT...A.PYEL...SWDS.......................TT.....AADGAWSLTA
+A0A0Q8PY21_9ACTN/50-122                PTAVL.T.NP..GS...PLQ...G.....TVTLTATASDA.......QSAI......TSV..VFQYLAP......GS....STWT......................TLCTS..AT...A.PYSC...AWNT.......................KA.....VTDGIHDLRV
+D5EIK4_CORAD/259-327                   PDVEI.T.DPVHGT...TIV.PGG.....TVTFTASASDA.......QGSV......VSV..EF..FAG......TT....S..........................LGID..TS...A.PFSQ...AWSS.......................A.......AEGVYEITA
+A0A0G2ZNN5_9DELT/405-472               PIVSI.T.SPTSGA...SFS...D.....SVFVSVSASDD........RQV......QSV..TF..FLN......GN....S..........................LGTD..TV...A.PFET...VFST.......................RK.....YPGGSYQLTA
+A0A0F4PAN2_PSEO7/87-173                PSVVL.T.SPNNGA...VLG.END.....SAVFSANANDA.......DGDL......AYV..EF..LVN......GQ....V..........................IATD..TS...A.PFQT...TWSAVLGEYDIS......AIATDLQGLT......GSSQSARITV
+U1J7X2_9GAMM/86-172                    PIINL.I.TPADGS...TLP.IND.....SAVFSAQANDS.......DGSI......AQV..EF..FLS......GQ....S..........................VGID..TQ...A.PYEI...TWQTIAGQYQIN.......AIATDNNGAN.....TTSNTAQLTV
+M7NQ41_9BACT/525-593                   PAVSI.S.SPASGS...TFT.SLN.....PIAITASASDA.......DGSI......SKV..DF..YVG......AQ....L..........................LSTD..TS...A.PYEA...SFTP.......................P.......GNGTYTLTA
+D7BFL8_MEISD/496-562                   PTVTL.T.LPPDPL...VK....S.....PVPVSAQVQGG........GSI......AKV..DF..YLD......DT....L..........................KSTD..TT...A.PYEW...NWVP.......................DL.....LSNGSHTFKA
+A0A0D6PLI4_9PROT/352-420               PIVVI.D.YPLDCQ...RVT...A.....PVPVYAVASID.......GGAV......TKV..KF..ILD......GH....V..........................VGFA..TK...P.PYHV...EILP.......................DM.....LNSGIHHLTA
+R4LFQ6_9ACTN/343-425                   PVTAF.L.SPGGSA...LVR...G.....TVAVSARATDN........IGI......AKV..EL..FVN......GK....P..........................VGTD..RV...S.PYVV...SWRSSGTTATL........RLRTTDLNGN.....VSTATRTVTV
+I0GWZ9_ACTM4/665-732                   PSVSI.TKAPKNKA...KVK...G.....TVKVSVKASDA........SGI......ARV..EL..IVN......GK....V..........................VATD..KT...S.GYVL...SVNT.......................KK......QKKSMQVRV
+A0A0C2DQ50_9DELT/405-472               PVVAL.T.SPADGS...AVA...G.....LVTLVAEVEDD........QGV......DRV..EF..FVN......GN....R..........................LGQD..TG...T.PYMF...SWDA.......................DQ.....VPAGWHRLNA
+Q122Z6_POLSJ/238-310                   PTVRN.L.APQNNE...TVA..SG.....PVSVSATFDDS........GGVGV..DPKTV..KI..MIG......GQ....D..........................VTRN..AS..IT.PQFL...TWRG.......................D......LRPGAHSVEV
+A0A166EPJ0_9EURY/32-108                PEINF.K.SPKNNA...DVS...G.....NVKLEVDVEYI........HSVA...DSNGV..TF..TIT......GN....DGYS......................KIFKD..TNP.AG.GWIC...NWDT.......................SN.....VPNGKYSIKV
+F5LNY8_9BACL/134-203                   PQVTI.L.SPADRD...KVS...G.....TADVAVNVYGA........SPV......KSV..EV..RIN......GG....NWK........................RAEK..KG...S.GYIY...KWDT.......................KK.....TGSRTNSIEA
+A0A0M2VW84_9BACL/131-200               PLVQI.T.IPAENT...LLK...N.....KVNVIISVEGK........NSI......ELV..QL..RIN......GG....E.WQ......................PA.RP..AN...S.GYIY...SWDT.......................RQ.....AANRVHSLEA
+A0A0A2T8P0_9BACI/128-197               PVVTI.I.SPNDGA...QLL..YK.....KTKVKLSVEAE........NEL......ESV..EI..RVN......GS....E.WI......................KTKSK...H...D.GYEY...KWEI.......................H......QDNQTYSLEA
+A0A0A5GBA5_9BACI/135-205               PAVTI.L.DPETNT...TIK...K.....HTKVNINASGK........NTI......EAV..YI..RIN......GN....E.WV......................SAQKQ..NQ...N.NYSH...QLKL.......................PM.....DKDKTYSLEA
+A0A0A5GFM3_9BACI/123-192               PKVTI.L.NPKEGE...ALT...N.....QTSVSVSVSGK........HTL......DKV..DV..RIN......GG....KWIR........................AKQ..TG...I.RYTV...NFYP.......................NI.....DDVSSYSIEA
+E3FG02_STIAD/680-749                   PTAEI.L.SPTATA...LVN...G.....HVTITARATDD........KKV......DRV..LF..YVG......TK....YV........................SYKRN..AG...N.EFSL...TFDS.......................TK.....FANGSYPITV
+D3S327_FERPA/951-1044                  PTVEI.T.YPRNGD...VFT.TSGY..TYTLTVRVSAHDD........KGV......KKL..TY..YLD......GT....ALSDTS..................FYPYPTD..KS...D.RYTM...TLLTGRHTI............RVVAVDTAG...QTDSDSVTITV
+A0A151B3D7_9CLOT/691-758               PTCSI.T.YPNNGD...ALN...G.....TITITASAQDD........KAM......NKV..EF..YID......GT....K..........................IGED..SS...N.PYSI...DWDT.......................TT.....VTNGNHTIMV
+M3B5G6_STRMB/124-194                   PVTRV.T.GPEDRG...VLS...G.....TVTLSASVAEE.......EGKP......AGA..AF..FVD......GR....AVGT......................ASGPG.......P.AYSV...SLDT.......................TA.....LAEGPHTVTA
+E3FTS5_STIAD/2466-2535                 PTVAI.T.APADGA...TVS...G.....KVTLTAEGTVDA......GTTL......AQL..AL..LVD......GQ....Q..........................IATG..TN...T.VLTA...TWDS.......................AA.....SPAGVHVITA
+A0A0Q8EA44_9ACTN/33-105                PDVWI.D.GPLAEA...RLE..PG.....PITVSAHATAD........DEI......DAL..VL..SVD......GK....EVST......................ATDLK..RTGKLV.YATF...EWDA.......................A........AGQHVLVV
+A0A085VZE2_9DELT/427-494               PRVEL.T.APAEGA...TLS...G.....LVQLQAIASDN........LGV......SKV..EF..YLN......GK....L..........................IGTA..SA...A.PFEI...TWDS.......................TE.....EDNGPSTLSV
+A0A085W3C7_9DELT/65-132                PAVSI.I.SPAQGA...SLA...G.....MVSVEASASDD........RSV......SSV..YF..YAD......GT....F..........................VKAV..YS...A.PFVL...TWDS.......................HA.....VPNGTHTLTA
+R4LN55_9ACTN/552-619                   PSVTL.A.GPDPGS...SVS...Q.....TVTLSAVASDN........DSV......SRV..LF..YVD......GA....F..........................VAAV..RS...E.PYTV...QWDS.......................SA.....HPDGPATIEA
+A0A099KMB3_9GAMM/475-546               PTVSL.T.NPNQNA...IIA...G.....TITVSATAVDD........VAV......AAV..EF..FID......GL....LVGQ......................LLSTA..PA...S.LFTG...SWDT.......................TS.....VLNGTHNLTA
+I0HNC2_RUBGI/499-581                   PKVAL.V.NPVAGS...VS....G.....TVTVSASASDD........SGA......AGIRQQL..YVD......GK....L..........................AASG..SG...A.TLSY...AWNTKRVKLGS.........HVLKAVGTD.....AAGNTASVSV
+A0A0G2ZNN5_9DELT/313-379               PTVSL.V.APTGGA...VLR...N.....NQVLTASAVDD........YDV......ARV..EL..YAG......ST....LLG..........................TL...G...A.SGQL...GWNT.......................RT.....VANGAYTLTA
+A0A0G2ZW88_9DELT/1044-1111             PQVAL.S.SPASGE...VLV...G.....TVTVSAAASDD........FGV......VAV..DF..FEG......ET....L..........................LGTD..NA...E.PFGV...MWNT.......................RS.....VANGSHTLMA
+T0MNW9_9BACT/34-119                    PVANL.T.APADSA...MVQ...D.....TVLISVSATDD........KGV......SRV..EF..YID......SQ....L..........................LFTD..NS...S.PFGF...NWSTLIYQDSSY......HSIFAIAYDAA....GNFDSTQTITV
+I3IKT1_9BACT/482-549                   PSVSI.I.SPSDGA...NIS...S.....SVSVTTSASPL........SNI......SKV..EF..YID......NV....L..........................KFTD..SS...D.PYRW...DWDT.......................TK.....DTNGTHNLTA
+N1USL0_9MICC/363-430                   PTMQL.V.NPEDGA...EVA...G.....TVQLEATAADD........TGV......ARV..EF..RAG......GQ....L..........................LGTD..SS...A.PYSW...SWDT.......................ST.....LPNGSASVAA
+A0A085WKK0_9DELT/420-487               PMAAL.M.APSNGS...TVT...G.....TTTITAGASDD........VAV......SRV..EF..WVD......GA....L..........................KGSD..TT...A.PYSY...AWNT.......................SA.....TANGSRTLRV
+A1AQZ5_PELPD/1053-1121                 PSVVI.VASPADGA...TVS...A.....TVAIKAGVSTG........VSL......TKV..YF..YVD......GS....L..........................RAAD..TK...A.PYSY...NWNS.......................KV.....VANGSHTILI
+Q3A4E5_SYNC1/395-464                   PVAAI.T.TPLSGL...EVT.SAQ.....TLTIVAEASDN........VAV......SKV..EF..YDG......SN....L..........................IGTD..TT...N.TYSA...SLDV.......................SE.....TDNGTHNLTV
+H8GWZ2_DEIGI/33-99                     PTLTL.T.SSANPV...TT....S.....TFTLKADATDN........VAV......TKV..EF..YEG......TT....K..........................LGED..TA...A.PYEL...PLSA.......................QA.....SQNGQHTYTA
+E8U4F4_DEIML/29-98                     PALKV.T.LQADPA...TVN.LPG.....ATTLTATTSRT........MGV......QRV..EF..YEG......TT....K..........................LGED..ST...A.PYTF...TATY.......................TY.....ANNGAHTYTA
+H8GZ39_DEIGI/63-126                    PTVTL.S.AVQD..........GA.....AVNLSAATSDN........VGV......SRV..EF..YRG......GA....L..........................ISTD..TD...A.PYTA...SLPV.......................SS.....ADNGSVSFTA
+L0A8P2_DEIPD/323-393                   PSVSV.T.ASP..A...SLT.AAG.....QVEITADATDN........RSV......SKV..EF..YQN......GA....L..........................LGTD..TNG.SD.GWTA...AAEF.......................SA....NSQNGTYDYTA
+K9ZZN1_DEIPD/176-244                   PVVSL.A.A..AST...SIT.TSS.....TTRLTATATDN........IGV......QKV..EF..YRD......GS....L..........................VHTE..NF...A.PYEH...DASF.......................TS....STQNGSYSYTA
+L0A185_DEIPD/185-254                   PSVTL.A.ASKTSV...TTA..ND.....SVELVANATDN........RGV......TKV..EF..YRN......GT....L..........................YGTD..TS...A.PFTS...TLTY.......................LS....SAANGTYSYSV
+E8U3C3_DEIML/761-828                   PTVSV.T.AT..PS...TLT.SAG.....TVTVNASASDD........KGV......TKV..EF..LRN......GA....V..........................FATD..TT...A.PYSA...TQSY.......................AS.....GQNGTYTYSA
+A0A0G2ZUQ4_9DELT/446-513               PTVSF.T.SPTEGS...TVE...G.....NVTLAVNAASS........FGL......SRV..EF..YLG......TA....L..........................LGTD..TS...A.PFTQ...GLNT.......................RA.....YANGTQTLTA
+E3FG32_STIAD/782-849                   PEVSF.T.APAAGA...VVK...D.....SVTLSVTATDN........VRV......ARV..EF..YKD......DT....K..........................LGSD..TT...A.PYSY...TWST.......................RS.....SANGPYTLSA
+Q39XN1_GEOMG/406-473                   PTVSI.P.SLNAGS...TVK...G.....TVTVNVAAADN........IGV......TRI..EL..YIN......GA....L..........................YASS..NT...S.PFSF...SWDT.......................TT.....LPDSIYTIAV
+G4SZP5_META2/415-482                   PSVNI.F.SPTGGS...TVS...G.....LIAVEVSATDN........VGV......SEV..SL..YAN......GL....Y..........................VGTD..TT...A.PYQF...SWDS.......................KE.....IADGSVTLSA
+A0A0Q8RIH5_9BURK/401-468               PTVAI.A.SPGASS...TVS...G.....IATVTANASDN........VGV......TRV..EL..KVN......ST....V..........................VASD..TA...A.PFSF...AWDT.......................KG.....VINGMATLTA
+A0A0Q8RA88_9BURK/398-482               PAVAM.T.SPSGNS...TVS...G.....LVAIDVNASDN........RAV......TRV..DL..KVN......GI....V..........................VASD..TS...V.PFGF...SWNSSGVANGI........NSLAAVAYDAA...GNAGNSSTVQV
+A0A0B5FWH7_9DELT/395-462               PEVSV.A.SPSEGE...ILQ...G.....TVSFTVAATDD........NGV......DRV..EF..LID......GQ....V..........................VGSD..SS...A.PYAW...SWDT.......................TQ.....WNDGGYTLSA
+Q08ZC1_STIAD/419-486                   PTASV.T.APAHGS...SAS...N.....TVSITAAASDN........VGV......IRV..SF..FVN......GV....L..........................LGSD..AS...A.PYSF...SWDT.......................TR.....AGNGAYTVMA
+I0H834_ACTM4/1111-1181                 PSAEV.A.SPSRTS...TTS.PGR.....SVDVVIRASDD........FGV......TSV..TL..VVD......GK....K..........................VATS..AT...S.PYRF...SWTP.......................TA....KQAGKKVSIEA
+A0A0K1QD36_9DELT/80-150                PTLEI.L.SPREDR...VID..ER.....VVVVTGTAKDD........VGV......TSL..SY..IVG.....AGV....PV........................TVPVD..AD...G.TFSF...TFVP.......................TP.....G.ANTVELTA
+A0A0M2HNJ1_9MICO/408-483               PTVHL.A.SPASGA...RVA..AS.....PATVRASVRGL.........DA......DQV..TV..TVD......GT....DISLE....................LKSPAD..GS...L.WWTG...ELAL.......................PAE...LLDNSTRALTV
+F8A470_CELGA/431-504                   PFLRL.V.SPADGA...RVT..TA.....TTTVRAQVTAA........PDV......DTV..TF..APA......GS....D.PI......................ALTRD..DD...G.YWSA...TWDI.......................GEE...NLTNRTIAVTV
+A0A0N0T757_9ACTN/409-481               PFMHL.V.TPTDRQ...RVT..AS.....KATVRVRVTGA.........RA......SRV..TY..SVN......GG....R.AR......................RLCLG..AD...G.FYSG...DWSI.......................DPA...LSSDRTATLTV
+H6NCF3_9BACL/199-273                   PFMHI.A.SPTANQ...TVP.TTK.....PTTIRAHAVNQ.........KV......KKM..TY..SIG......SD....PAEH......................PMTLD..AE...GFYYTA...DWTP.......................GA....ALDESGTTLTV
+A0A089LQD8_9BACL/808-880               PFLHI.V.SPVAQT...TIQ..KD.....TTIIRARILET.........QP......TRV..VY..SVY......GS....DTEH......................EMTLD..SQ...G.FYSA...AWQP.......................TA....DLNGEAVQLTV
+C6IZG3_9BACL/803-875                   PFMHI.V.TPTNIG...TVS..EV.....PFIIRAKVLNT.........MP......SKV..TY..SIG......QT....GEEI......................EMKLD..AD...G.YYSA...AWLP.......................EA....ALNGKSAEITV
+A0A0M2H456_9MICO/491-561               PTVTV.T.APTSGA...TVS...G.....TVAVVSTASDN........VGV......VSV..SY..WSG......ST....RLGS......................ATR.Q..SD...G.TWRA...SMNS.......................RA.....YPNGTYPLTA
+A0A0Q5AXV3_9MICO/344-414               PSVRI.T.APAGGT...TVG...A.....SVTFVASAADD........VAT......TRV..SF..WSG......TT....KLGD.......................AAKA..AD...G.TWRL...TVAT.......................SG.....YPAGTHSITA
+H8ML56_CORCM/1389-1456                 PTVAI.T.TPANGS...TVG...A.....NVTVTGTTAG..........GA......TSV..TV..SFQ......GT....SYG.......................PIAVD..AS...G.NWSQ...ALPG.......................P......LANGTYTVTA
+A0A060HHH3_9ARCH/43-120                PTGTI.I.SPAPGN...TVQ.LNT.....PITVTGTAFDD........VEI......SKV..EV..RAVNLEDTKGT....TYAL......................ATSSD..GY...A.SWTF...TLTI.......................PSE...SYE....NITV
+R4VVV7_9EURY/674-744                   PSVSI.T.TPMEGY...ALN..GS.....NLTVTGTVSDQ.......FAGV......QSV..AF..DDG......TG....W..T......................DVGFD..RG..AG.TWNA...TITN..............................LSAGAHTYRV
+Q97GP1_CLOAB/321-397                   PSVSI.A.SPSAGS...VFY.DNQ.....TINLSGSATNS........NGI......QEI..DV..YEY......TS....LLGK.....................ANITSV..NG...G.QVNY...SFSI.......................GRN...ILTDGNKTLKV
+A9WHF3_CHLAA/884-957                   PTVSI.T.APTAGS...TVN...R.....TLTVSWNASDP.......DGGVL....HHMV..RY..SAD......NG....TTWT......................VIAQG..LT.....ANTL...NVDI.......................AS.....LPGGTARVQV
+B5I9E3_ACIB4/834-899                   PKVSI.S.SPTNGK...ILA..TS.....SITVYWNGTDN........IGI......SHY..QV..KLD......DG....S.WI......................NVGNA..T......KYTF...N...........................N.....VKDGQHTVYV
+F5YJR4_TREPZ/3490-3573                 PTVRM.E.DPQRLA...KVN...G.....KITIRGTANDN........NTL......SKI..MF..KLG......KN...ASTWTDTAL..............DAASHVTNW..EG...G.LYSW...NFTI.......................DNV..VTYANTTYSYRV
+G0GC65_SPITZ/916-984                   PHVEI.Q.TPPDDF...VVT...K.....DVTIAGMAFDD........DGI......SKI..VW..KLD......DG....T.WQ......................EVP....AQ...H.TFSF...TIPL.......................SS.....LSDNEHTVEI
+D7BHE6_MEISD/33-119                    PTLTL.S.NPPSGT...NVT..VG.....NVTVSGEASDD........TGV......TRL..TY..RLG......AN...PEQEV......................KITPG..TK...I.EFGF...TINLKPGHNV...........IILSAYDA....AGNRTSSTVTV
+D7BBV4_MEISD/240-311                   PSLSV.S.SPASGS...STH..SP.....NISVQGQASGN........VGV......SRL..TY..QLN......GT....A.EQ......................DVGIS..PA...T.SVNF...NFSV.......................GS.....LQPGNNTITL
+F8EXW2_GRAC1/38-121                    PLAKI.I.APTPNS...YVN..GE.....SFSVSGTASDD........NGI......TSL..TI..RVK......DTSGNVVKTT......................TVTPN..TN...G.NWSS...TFTTKKA................SDPSDA.....LNDGQYTIDV
+I3II11_9BACT/280-350                   PSITI.I.SPTTNS...TYSTTSD.....TVVISGSASDS.......ISGV......NSV..IW..NID......KE....G.G........................VTEN..........KTV...DWTT.......................SDI...PLSSGNNMITI
+Q6M0J5_METMP/420-489                   PVVSI.V.SPRENA...FFG.ENE.....TILVDVSVTDN........SEI......HSV..ML..EVD......NS....YKEI......................MVQNG..T......TYSK...SLDN..............................LDYGAHTIKI
+Q6M0J5_METMP/610-677                   PEVEI.I.EPEIGD...SFE...E.....NVSIKVSATDD........SGI......DSV..KV..MLD......EK....V.SF......................TL.TK..NS...E.YYTG...TLTD..............................LSYGIHTLRV
+Q1J0Q4_DEIGD/806-881                   PVVKW.N.IPANGS...VTN..TA.....PIKLEATATDA.......ASGL......ADI..AY..SVN......GQ....TVTS......................PWQPS..SE...G.TFTV...TATA.......................TDK...VGNAASQNTTV
+D7DT32_METV3/717-783                   PYVAI.N.TPLNNN...VYN..TD.....NILINATANDA........RGI......KEV..KA..NIN......GT....NYTM......................NI.....NG...S.YYTL...NKTL...............................TDNKYSLKV
+F2JH11_CELLD/879-975                   PVVVV.T.APTANT...VID.ATTG..KQTVAVSAEATVK.......DGTI......KEV..II..YAD......GK....E..........................IGKA..NG...A.TCTA...TYTTPDGYGPRPDGIVNVVFTAKATTTDD.....MSATSESVKV
+H8MPB1_CORCM/99-179                    PVVTA.S.SSSTNI...TAA...G.....SITISGSATDN........VGV......TKI..EI..LEN......GA....LVATASS...............YTRSFSGSG..QN...G.TYTY...TVKA.......................YDA...AGNVGSKTVTV
+E6U6Z9_ETHHY/91-180                    PRLTI.D.TPTPDS...ANT.AGG.....KLQISGWALGS........GGV......SKV..TV..SID......GT....VAADNIPVDGAR......PDVNNAFPGYTDG..AT...S.GYAT...AVDI.......................SG.....LSFGEHKLTV
+R4K027_CLOPA/1068-1153                 PVGCI.D.TPSEGQ...TIS...G.....SNMINGWFLDG........NGV......KKV..EV..LVD......GT....VVGTASYGDGR........LDVSKVYPSYNN..VN...S.GYHY...SLDT.......................TK.....LTNGRHTIVI
+R4K021_CLOPA/44-129                    PITDI.D.FPKDNS...NNS...K.....SIFVGGWALNK........SGV......KQI..QI..LVD......GQ....FKGNANIGGSR........PDVDKFYSQYND..TN...S.GYSY...TIDF.......................NS.....IGAGSHTLSV
+E6U581_ETHHY/972-1065                  PQTCI.D.APGNGD...YVT..GQ.....NVTISGWALNH........SGI......QRV..DV..YAY......DQ....S.HTPHKLGSILSDNMTNRSDVAGAFPAYGM..LN...S.GYSL...SVST.......................AD.....LPAGTYNLAV
+Q4J6L8_SULAC/1130-1195                 PTIQI.N.VPLGNL.....T...G.....TVNIGITVSGS.........QV......SQV..SL..YLD......NQ....LL.........................TTFS..GS...G.TFSY...QLDT.......................TK.....YPDGTYTLTV
+Q6L2K8_PICTO/1156-1223                 PVISI.T.SPLYSR...AYN...G.....KINIDFTVSGN.........DI......SYT..DV..FIN......GK....LV.........................YNTT..ST...G.SLSF...SFNT.......................KS.....LPDGTYNVTI
+Q96XM6_SULTO/1130-1200                 PLVTI.T.SPKPNS...NVT...G.....TITISYTITGS.........DI......SEV..EI..LLN......GQ....LVKT......................FVPST...SPIIG.NYSI...N...........................TA...MYPDGTYNITV
+I0XCE6_9SPIR/379-452                   PVVEI.K.NPAPDQ...TFG.GRD.....SFVVRGFAKDD........DAL......ASV..KI..VID......GN....Q.EE......................AFIQE..TR...G.AFSY...TPEF.......................PE....GLKTGKHYVTV
+F4LNH4_TREBD/376-452                   PVVNV.S.YPEPGS...VVSGAAD.....SLFIRGAAYDD........DGV......AGV..YY..RVD......GG....A.EW......................NVPSD..GAF.YA.DFSA...MLES.......................RT....ALPAGKHSVSV
+E3FIR8_STIAD/25-93                     PFVTI.Q.APTPSA...QVS...G.....VLGVLGTASDD........VAV......GSV..EV..QVD......QA....PF.........................APTS..GT...T.EWSY...LWNT.......................AS.....LSDGLHALTV
+S0FZN7_9DELT/612-681                   PVISI.V.SPVGDA...TVS...G.....TINIDGTVTLPG......ERTL......ASI..KL..KID......DE....PW.........................VATG..NI...S.PWG....EWDT.......................TQ.....VVNGDHTITI
+N6VPU6_9ARCH/775-846                   PIVDI.I.SPEENA...MVS...G.....TISINGIASDPN.....GNNTL......ESV..EV..KID......DG....SWN.........................TAD..GT...T.SWNY...SWDT.......................TL.....FDDGFHTIYA
+A0A0A0WYY6_9SPIR/79-147                PVVSI.T.NPFKNM...NIT...G.....TFSASGTCFDD........DGI......DYI..EV..ALD......DN....E.........................PVRAK..GK...Q.FWTQ...TFNT.......................AD.....LQEGVHRITA
+S3L0V2_TREMA/80-149                    PVTSI.A.FPASGA...DVA...G.....NVDIIGTCYDD........DAV......AKV..SI..RVD......GA....E..Q......................IYTAK..GT...E.FWSY...ALNT.......................AA.....LAEGVHTVEV
+A0A098R0H3_9SPIO/86-154                PVSRI.I.YPEEES...VVR...D.....DVNIIGIAVDD........DAV......GRV..EV..ALN......DG....EFQT......................AQGTD.........YWRF...AIPA.......................EE.....LENGVHTIRV
+H7EKS6_9SPIR/82-152                    PVSGI.T.NPSEQM...RVP...G.....NLNIVGTCVDD........DGV......DQV..WL..ILD......GD....K.EN......................PVLAD..GK...E.FWSY...YLDT.......................TQ.....LEEGPHTIEV
+F8F197_GRAC1/1616-1685                 PKAEI.R.TPTLDT...TVR...G.....VIDISGVASDA........NGI......KEV..YL..SFD......NA....VTFN......................KC..V..GT...E.NWTY...RLDT.......................RN.....LKSGLHSIYV
+S5ZS46_9SPIR/931-1000                  PSASV.S.SPAISE...TVK...G.....TITVSGTASDK........NGI......KQV..EI..SFN......NG....N.TF......................TLAE...GK...E.NWNY...TLNT.......................HI.....IDDGTHVVFV
+A0A0G2ZXQ7_9DELT/29-105                PTVTI.V.KPASGV...AVS...G.....QAALEVRADDGL.....LGSGV......SRV..EY..QID......TAE..GVWTA......................LSGSL..LS...T.TYRG...TWNT.......................LV.....VADGSHSVYV
+A0A062XWA5_9BACT/608-700               PTVAV.V.SPSSGA...TVS...G.....TVTVRMQASDA.......TCGL......SRV..EL..SIN......GG....PWSQ......................ASYNP..AS...G.YYEL...AWNTGDTACSGAAT...LQARATDASSPA.....HTTNSASVQV
+Q5V6X6_HALMA/637-711                   PSVSW.A.TPTDGE...VTS...G.....EVTLQIAASDEE.....DTADA......LTV..EH..RIG......DA....SWNV......................ATYNA..ET...G.YHES...TWDT.......................TG.....VDGGDYQLEA
+V4XGW4_9ARCH/389-463                   PTASV.V.APADGA...TVS...G.....TTTVQVDASDAE.....DDAST......LTV..DV..AID......GG....SWQS......................ATWSS..AS...S.LHEY...QWDT.......................TT.....VADGDHTVDV
+A0A062XWA5_9BACT/710-782               PLVSI.V.APAAGS...VIS..CQ.....DTVIKVSASDA........SGV......AGV..EV..QVD......GG....AWTP......................ASFNT..AT...G.YWEL...TWAS.......................SA.....APSGTHTIAA
+D1C8L4_SPHTD/258-329                   PTVTI.E.RPAAGP...LGR...R.....TPTVRVRADDA........VGV......TRV..EL..LVD......GT....YVQD......................LRYIP..SQ...G.AYLG...VWDA.......................RD.....WSDASATLTV
+A0A168E218_9CLOT/83-164                PTITI.T.APSSGA...RVV..SS.....TPTITFQLRDA.......DSGIK....ISSL..AL..KID......GG....SAIGNT.................SAGMTCTS..VA...G.GYDC...SYVV.......................QS....ALVDGSHSITI
+A0A0Q4BEV2_9ARCH/398-463               PSITI.A.SPTPGV...MGS...S.....HVDISIRASDQ.......GSGL......STV..TV..QLD......GA....TIGE......................AVK.........G.SMDL...S...........................V....ELADGEHTLTV
+A0A098C166_9BACT/38-114                PVITI.N.YPLEGT...LIR.VRED..ITSINIQINASDD........IEL......ASV..TL..SID......GT....SIGS......................YSDFK..DY...R.RAVI...SHNF.......................EA.....LGNGQHTLTV
+A0A0D3LHP1_9BACT/41-117                PTVNI.I.SPSEGA...TIR.VRED..VTPIEISFEVEDD........IEV......QSI..VI..ALD......GS....Q..........................IASF..SD..FM.DYRR...VIDQ.......................YVY..EELTNGQHTLTV
+H2BVD4_GILLR/40-116                    PVITI.M.YPAEGT...AIQ.VPEA..VATIDIRLEVVDD........IEV......EKI..EV..LVN......GN....QIAM.......................FDEF..TD......YRIVKRTVTF.......................DN.....VTNGEHTLTV
+G0L852_ZOBGA/39-116                    PTITI.T.SPAEGA...AVK.VNEE..LATITVRFQAEDD........IEL......GSV..EV..LLD......GT....RIG..........................NY..................NTFKDYRKL.........IVDDLVYDQ.....LEDGAHQLTV
+Q1J0Q4_DEIGD/337-408                   PTVQI.T.SPEPGS...TIT..SN.....PVKVSLSASDA.......VSGV......ASILLEA..SRD......GG....TYE.......................QVGVL..TS...P.SGEI...IWAP.......................T........NGTYTLRV
+H8MZM3_CORCM/856-927                   PTATL.V.TPAPGS...TVG...G.....VVTLTARVTDA.......LSSI......KNV..AF..TRD......GS....GIRA.......................GTLQ..TN...G.TWTA...ELDT.......................RE.....LLDGTHTVDV
+H6NBC6_9BACL/570-632                   PVIAA.I.TPDAGS...QVK...G.....FIPLTAQVSDT.......ISGV......SKV..EA..KLD......GN....PVDFPG..................TVA.......................A.......................AS.....LTPGSHRLEV
+A5G3Y9_GEOUR/590-657                   PTVSI.N.SPAAGS...RVR...S.....NVTIKASASDN........VGV......TKM..AL..YID......NV....L..........................KVTT..SS...N.TLAW...TWNT.......................NS.....YARGSHVITV
+A0A0C2DQ50_9DELT/500-583               PQVAI.S.NPLPGA...KLN...K.....QEWVRAAASDN........VGV......VRM..EL..YIN......GS....L..........................MTVN..NS...D.TLAW...RWMTHKERSSV........FEVSVKAYDA....AGNASEDTITV
+A0A0B5FWH7_9DELT/498-565               PVTLI.T.NPLPGA...TVE...K.....KEQIDAQASDD........TGV......VLL..EV..YLN......GS....L..........................ISST..SD...N.TLSL...RWMT.......................HR.....LDSGAYKIEV
+C0QHZ8_DESAH/599-666                   PVVTI.T.SPGDGA...SIG...N.....RETVQASASDA........GGI......SRM..EL..FLN......EE....L..........................TAVK..YK...S.ELSW...NWNT.......................RK.....LSKGTYTLSV
+Q5P7D9_AROAE/513-580                   PAATI.S.NPGDGS...KVS...G.....NITVEAHASDN........VGV......SSM..RL..YID......GA....L..........................VSSV..TG...N.SLSY...RWNT.......................RK.....IAAGPHEVVV
+Q3JCZ6_NITOC/509-576                   PSITI.T.EPADNS...AVS...G.....TAHIQVSAHDN........MAL......AAI..RL..SIN......GV....L.........................KSVTD..T....S.PLSY...SWNT.......................RK.....EAQGFHNISV
+G4SZP5_META2/526-609                   PTVAI.S.NPADGS...RVS...R.....VVKINVSAEDD........VAV......ANI..QL..FIN......GS....L..........................ASSA..DG...N.QLSH...NWNTNRESRGT........YIIEAVATDT....SNKTAKHTITV
+Q39XN1_GEOMG/501-569                   PTVSI.T.APATGI...TLG...T.....KTTVSISAKDN........LAV......RKI..EL..YFD......GL....LLTT......................ASGTN.........TLTY...AWNT.......................RK.....VATGTHTILA
+Q1ILC2_KORVE/408-473                   PSVTI.C.APADGA...VVN...S.....PARVTAGTTDN.......SSTV......SFV..QL..YVD......GV....L.........................KLTQ...SG...G.ILDT...SVT...............................LTSGAHRLTV
+A0A0Q6MKM1_9BURK/320-389               PTIAI.T.APANLA...TNL..TG.....TLNVTATSTDN........VGV......AGV..EF..QFD......GA....ALG.........................TED..TA...A.PFTA...SVVT.......................AN.....HASGQHVIRA
+C6VTQ4_DYAFD/531-600                   PTVAI.T.APAEAG...NVP.VGS.....VATITGTAADG........KVI......AGV..EV..STD......NG....VSW.......................RLATG..T....N.AWTF...TWVP.......................SQ.......QGAATIRA
+A0A0S9Q3Q6_9ACTN/1217-1305             PGVTV.T.APAAGA...SLP..AG.....SVAVTGTATDD........TSV......AGV..TV..AVQR...ADGS....WLQASGAWGS.........TRQELDATLAAPGSTS...T.GFSL...SFVA..............................GTAGGHTVSV
+A0A127JUE8_9BURK/493-562               PSVSI.T.SPGNGT...SFD.RRA.....TFNVTANATDN........VGV......TQV..RF..YLN......GA....Q..........................VCTD..TA...A.PYSC...TMTL.......................PG.....RRNSTHTIQV
+A0A098LAY8_9BACT/428-496               PSVTI.A.VPAKDT...VVA.NPS.....DVLVRANVSDP........SAI......NDL..KF..FVN......GV....QSG.........................KTL..TA...P.PFTT...TLNI.......................R.......TAGVYAVTA
+B1ZZE2_OPITP/2927-3004                 PVVKI.V.DPAAGD...LVT.EGQ.....PLVITANTRDL........AGV......AEV..TF..YVD......GV....ELFTD...................RVAAPRD..TL...T.PYRA...TYQV.......................PV....GRAGSTFTLTA
+A0A011NQ22_9PROT/226-296               PTVSL.T.APADGS...VHA.LLA.....TLTLSATASGIE.....VDTPI......TRV..DF..FHG......ST....L..........................IGGS..TT...A.PYTT...TWTP.......................T.......MPGTYSLTA
+A0A098LDD3_9BACT/469-537               PEVTI.T.GPSDNS...MFN.TLQ.....TVELNASASDA.......DGSI......VKV..DF..YHG......ST....F..........................LGTD..NT...S.PFSY...DWSG.......................M.......LAGIYTITA
+I0K805_9BACT/604-691                   PTVTL.T.SPVRSA...TFN.APA.....TIDLEATANDS.......DGSV......TKV..EF..YNG......LA....K..........................IGEA..TA...S.PFRF...TWNEVDEGTYLL......KAVATDDLYAT.....TASTVDTVTV
+A0A080MCC4_9PROT/724-792               PVVNL.T.APLNGA...TIA.AGG.....SVTLIANASDI.......DGTV......SKV..EF..FAG......AE....K..........................LSEI..TS...P.PYQF...FWVS.......................PP.......AGSHILTA
+W0J5B7_9BACT/702-770                   PAVSL.T.SPSSGA...VLV.SGS.....TVELVAEATDA.......DGTV......TKV..EF..YDN......ST....K..........................IGET..TS...A.PWTL...AWTA.......................EG.....Y..GAHTLSA
+A0A0Q6MQN6_9BURK/628-697               PVVAM.A.APMNGV...TYQ.PGW.....DIPLSATASDA.......DGSI......AKL..EL..LDG......AS....V..........................IATL..TS..AP.PYNF...VWRN.......................V.......AAGTHTVSA
+B3E8T7_TRIL1/1117-1186                 PTVDL.T.SPTNGT...VYW.PGT.....TIPLAATATAPN......GSTI......TKV..EF..YDG......TT....L..........................LSTD..TS...S.PYSY...NWAT.......................A.......TSGSHSLTA
+B9XT59_PEDPL/96-163                    PTVAI.S.SPTDGA...SFT.APA.....IVPITATAQDS.......DGSV......TNV..SF..FDG......GT....F..........................LGRA..NN...T.PYTV...A...........................A....GLAIGSHALTA
+A0A098LD78_9BACT/29-105                PSAVI.T.MPFSNA...YFK.TGT.....DVEIHVYATDIGKT..TNNGTV......TKV..EF..FNG......TT....KLGE.......................TSTH..SN...N.TYRF...VWGC.......................V.......PAGEYRITA
+A0A098LHS8_9BACT/433-500               PTIIF.T.LPSDNS...VITTNPA.....DIDIEVSVTGN.........NI......NNV..QF..LNG......TT....L..........................LGQD..AS...A.PYRF...IWIN.......................V.......ANGSYSITA
+U5BKN9_9BACT/219-287                   PEIII.I.TPVNNQ...EFD.AGA.....NVEVMVMFQGS.......AETV......KRV..EY..YSG......SQ....L..........................IGFS..TT...S.PFDF...IWQS.......................PS.......SNQYSITA
+S2DWA4_INDAL/388-456                   PEVRL.L.SPIDKE...EFA.LGT.....SIEIIAEAFDS.......DGYV......DQV..EF..YAN......DV....L..........................IGTS..FN...D.PFST...LLNN.......................A.......TPGTYKLTA
+A0A098LHB6_9BACT/245-313               PVITL.I.SPANNL...SLC.QGT.....PVELIVNATDS.......DGLI......SRV..NF..YDG......TT....L..........................LYTD..YD...S.PYSY...IWEN.......................PS.....I..GTHEISA
+A0A098LCP0_9BACT/508-592               PTVTI.T.APSEGT...DIL.IGT.....PITISVNASDA.......DGTV......TRV..DF..YDG......TT....F..........................LGSD..IN...A.PYSF...LYNNAPGGTR..........TFKAVAFDN....QGGQNYHTVTV
+A0A023BWB3_9FLAO/623-708               PTVSI.T.SPGDNT...SFE.VGT.....SIPITVNASDS.......DGTI......AKV..EF..FNN......NS....K..........................IGES..SA...S.PFSF...TFENVIVGNYS.........LTAKATDNK....GASSTSAAITV
+A0A098LJH1_9BACT/417-502               PSVVL.T.SNVTGT...SPE.APA.....SILLTAAVTDA.......NNNV......TKV..EF..FNG......TN....K..........................LGED..FT...A.PYNL...QLHELPAGTY..........SFTAKATDAE...NLNGTSAAITV
+G0L3J4_ZOBGA/384-467                   PSVSI.T.SPNNNS...QVN.AGS.....NLQISASANDP.......DGSI......SKV..EF..YNG......SV....K..........................LGEA..LS...F.PYNY...TINQIAVGTY..........DLTAVAIDN.....ENNSTRSSTV
+A0A098LD82_9BACT/246-330               PSVTF.V.GPVNNS...IFT.AGG.....NIELSVSATSP.......NGSI......TNV..KF..YAG......GT....L..........................INTD..NS...A.PYSY...TWPSVLAGNY..........QIKAVATDS....QGKTAEATITI
+A0LGF3_SYNFM/376-461                   PSVSI.T.TPVNQA...FFL.APA.....DISIIADANDA.......DDYV......KHV..KF..YSG......TT....L..........................IKTD..YE...A.PYRA...LYRNVPSGKY..........ILTAVATDKY...NAKTTSARITV
+A0A098LFQ8_9BACT/528-614               PVVSI.T.SPANGT...RFN.AGS.....DINITATAITT.......AGTI......ANV..QF..YNG......NT....L..........................LGSD..NS...Y.PYSY...NWMKVSAGIHL.........LRVIATDNAG...RTSESQVSVTV
+A0A162XPG6_9FLAO/413-480               PELTI.T.SPNQGQ...NLP.GGN.....IYTISANAADI.......DGQI......TKV..EF..YLD......GN....L..........................IKTD..NV...A.PYSA...LRTF.......................S........NGVHKIKV
+A0A023BW74_9FLAO/413-479               PQVSF.A.TLQDGQ...HIP..VG.....NTAIEVNATDS.......DGKI......DRV..EF..YID......EN....L..........................IDVD..VA...A.PYST...LKNF...............................TNGIHNIKV
+D3S326_FERPA/339-406                   PEVHI.I.RPADGQ...KFW.NNE.....DISILARAIGA.................DRV..YL..YVD......GR....LIL........................SENA..GS...S.PYDF...GKNV.......................R......LDVGTHTIKA
+D3S327_FERPA/529-598                   PAVRI.T.QPADGS...TFT.TTSN..SYRLTVKASASDD........RGV......REV..RF..YDN......GR....F..........................IGSD..PS...P.PYEV...TATL.......................G........LGTHTIKA
+D3S327_FERPA/1070-1144                 PSVQI.T.NPRNGA...KIC.TDNGGSTARITIRAHAQDA........DGI......MKV..EF..YNN......GV....KIGD......................GQ.PT..AA...G.MYEI...TTTL.......................G........VGTHTIKA
+D3S327_FERPA/1173-1248                 PSVQI.L.YPSDGQ...TFT.TTGN..SIRVTIKVDAKDP........DGI......SDV..NI..YDN......GN....KLDA........................YKF..YD...S.SYGW...IYKA.......................SS....NLGPGTHTIKA
+#=GC seq_cons                          PsVsl.s.uPssss...sls...s.....slslsusAoDs........sul......spV..ca..hls......Gs....h..........................lsss..ss...u.sash...sass.......................st.....hssGsaolos
